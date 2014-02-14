@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release 64|Win32">
+      <Configuration>Release 64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release 64|x64">
+      <Configuration>Release 64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D98C1DD4-008F-34B2-A980-0998ECF8427E}</ProjectGuid>
+    <RootNamespace>Anima.Core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\bin\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\bin\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Anima.Core_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Anima.Core</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>./;../../contrib;../../contrib\Ogre\x32;$(OGRE_HOME_19)\OgreMain\include;$(OGRE_HOME_19)\Components\Overlay\include;$(OGRE_HOME_19)\boost;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>OGRE_VERSION_17;_WINDOWS;NDEBUG;NO_CHECK;QT_NO_DEBUG;UNICODE;QT_LARGEFILE_SUPPORT;WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;K_PLUGIN;K_FBXSDK;K_NODLL;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>QtGuiAnima4.lib;QtCoreAnima4.lib;QtXmlAnima4.lib;OgreMain.lib;Anima.Import.lib;Anima.Media.lib;Anima.Collision.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Anima.Core.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <UACUIAccess>true</UACUIAccess>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/Anima.Core.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>./;../../contrib\;../../contrib\ogre\x64;$(OGRE_HOME)\include;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;UNICODE;QT_LARGEFILE_SUPPORT;WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;K_PLUGIN;K_FBXSDK;K_NODLL;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>QtGuiAnima_x64_4.lib;QtCoreAnima_x64_4.lib;QtXmlAnima_x64_4.lib;OgreMain.lib;Anima.Import_x64.lib;Anima.Media_x64.lib;Anima.Collision_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Anima.Core_x64.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT48DIR)/lib x64;../../lib/x64;$(OGRE_HOME)\lib\x64;../../contrib/ode;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core_x64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/x64/Anima.Core_x64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../../contrib;../../contrib\Ogre\x32;$(OGRE_HOME_19)\OgreMain\include;$(OGRE_HOME_19)\Components\Overlay\include;$(OGRE_HOME_19)\boost;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_WINDOWS;UNICODE;QT_LARGEFILE_SUPPORT;WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;K_PLUGIN;K_FBXSDK;K_NODLL;OGRE_COMPILER_MSVC;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>QtGuiAnima104.lib;QtCoreAnima104.lib;QtXmlAnima104.lib;OgreMain.lib;OgreOverlay.lib;Anima.Import.lib;Anima.Media.lib;Anima.Collision.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Anima.Core_d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/Anima.Core_d.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../../contrib\;../../contrib\ogre\x64;$(OGRE_HOME)\include;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_WINDOWS;UNICODE;QT_LARGEFILE_SUPPORT;WIN64;_WIN64;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings> 4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <PerUserRedirection>true</PerUserRedirection>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>QtGui4.lib;QtCore4.lib;QtXml4.lib;OgreMain.lib;Anima.Import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Anima.Core_d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT48DIR)/lib x64;../../lib/x64;$(OGRE_HOME)\lib\x64;../../contrib/ode;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/x64/Anima.Core_d.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>./;../../contrib\ode\;$(OGRE_HOME)\include;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Dance/ArticulatedObject;../Anima.Dance/Core;../Anima.Dance/Math;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;QT_LARGEFILE_SUPPORT;WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;K_PLUGIN;K_FBXSDK;K_NODLL;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>tmp\obj\release_shared\</AssemblerListingLocation>
+      <ObjectFileName>tmp\obj\release_shared\</ObjectFileName>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;gdi32.lib;user32.lib;QtGui4.lib;QtCore4.lib;QtXml4.lib;OgreMain.lib;Anima.Import.lib;ode_single.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\Anima.Core.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT48DIR)\lib;../../lib;$(OGRE_HOME)\lib;../../contrib/ode;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/Anima.Core.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">
+    <Midl>
+      <WarningLevel>0</WarningLevel>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <EnableErrorChecks>None</EnableErrorChecks>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm200 -EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>./;../../contrib\ode\;$(OGRE_HOME)\include;$(QT48DIR)\include\QtXml;$(QT48DIR)\include\QtCore;$(QT48DIR)\include\QtGui;$(QT48DIR)\include\QtOpenGL;$(QT48DIR)\include;$(QT48DIR)\include\ActiveQt;../include;../Anima.Dance/ArticulatedObject;../Anima.Dance/Core;../Anima.Dance/Math;../Anima.Import;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;QT_LARGEFILE_SUPPORT;WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;K_PLUGIN;K_FBXSDK;K_NODLL;ANIMA_CORE_EXPORTS;ANIMA_NAMESPACE_USE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>tmp\obj\release_shared\</AssemblerListingLocation>
+      <ObjectFileName>tmp\obj\release_shared\</ObjectFileName>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;gdi32.lib;user32.lib;QtGui4.lib;QtCore4.lib;QtXml4.lib;OgreMain.lib;Anima.Import.lib;ode_single.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\Anima.Core.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(QT48DIR)\lib;../../lib;$(OGRE_HOME)\lib;../../contrib/ode;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Anima.Core.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../lib/Anima.Core.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Action.cpp" />
+    <ClCompile Include="Core\ActionLibrary.cpp" />
+    <ClCompile Include="Core\Animation.cpp" />
+    <ClCompile Include="Core\AnimationPart.cpp" />
+    <ClCompile Include="Core\AnimClip.cpp" />
+    <ClCompile Include="Core\AnimClipCollection.cpp" />
+    <ClCompile Include="Core\AnimClipModel.cpp" />
+    <ClCompile Include="Core\BaseModel.cpp" />
+    <ClCompile Include="Core\BuildDispatcher.cpp" />
+    <ClCompile Include="Core\Clip.cpp" />
+    <ClCompile Include="Core\ClipBlend.cpp" />
+    <ClCompile Include="Core\ClipBrain.cpp" />
+    <ClCompile Include="Core\ClipLibrary.cpp" />
+    <ClCompile Include="Core\CollisionManager.cpp" />
+    <ClCompile Include="Core\CollisionManagerIce.cpp" />
+    <ClCompile Include="Core\Config.cpp" />
+    <ClCompile Include="Core\Context.cpp" />
+    <ClCompile Include="Core\DAG.cpp" />
+    <ClCompile Include="Core\Film.cpp" />
+    <ClCompile Include="Core\FilmLayer.cpp" />
+    <ClCompile Include="Core\Item.cpp" />
+    <ClCompile Include="Core\Mesh.cpp" />
+    <ClCompile Include="Core\MeshLibrary.cpp" />
+    <ClCompile Include="Core\Modder.cpp" />
+    <ClCompile Include="Core\Model.cpp" />
+    <ClCompile Include="Core\ModelClip.cpp" />
+    <ClCompile Include="Core\ModelEdit.cpp" />
+    <ClCompile Include="Core\ModelInstance.cpp" />
+    <ClCompile Include="Core\ModelIO.cpp" />
+    <ClCompile Include="Core\ModelLibrary.cpp" />
+    <ClCompile Include="Core\ModelOverlayFunction.cpp" />
+    <ClCompile Include="Core\MovePath.cpp" />
+    <ClCompile Include="Core\MovePathTrx.cpp" />
+    <ClCompile Include="Core\Property.cpp" />
+    <ClCompile Include="Core\ResourceManager.cpp" />
+    <ClCompile Include="Core\SceneLibrary.cpp" />
+    <ClCompile Include="Core\SceneObject.cpp" />
+    <ClCompile Include="Core\SceneObjectGfx.cpp" />
+    <ClCompile Include="Core\SceneObjectMaterial.cpp" />
+    <ClCompile Include="Core\SpeedFunction.cpp" />
+    <ClCompile Include="Core\Command\ActionCommands.cpp" />
+    <ClCompile Include="Core\Command\ActorCommands.cpp" />
+    <ClCompile Include="Core\Command\AnimationCommands.cpp" />
+    <ClCompile Include="Core\Command\AnimationPartCommands.cpp" />
+    <ClCompile Include="Core\Command\ClipCommands.cpp" />
+    <ClCompile Include="Core\Command\CmdLine.cpp" />
+    <ClCompile Include="Core\Command\Command.cpp" />
+    <ClCompile Include="Core\Command\CommandManager.cpp" />
+    <ClCompile Include="Core\Command\FilmCommands.cpp" />
+    <ClCompile Include="Core\Command\GeomCommands.cpp" />
+    <ClCompile Include="Core\Command\PathCommands.cpp" />
+    <ClCompile Include="Core\Command\StdCommands.cpp" />
+    <ClCompile Include="Core\Action\ActionActorModder.cpp" />
+    <ClCompile Include="Core\Action\ActionAnimation.cpp" />
+    <ClCompile Include="Core\Action\ActionClip.cpp" />
+    <ClCompile Include="Core\AnimParts\AnimationPartClipPoint.cpp" />
+    <ClCompile Include="Core\AnimParts\AnimationPartClipSpline.cpp" />
+    <ClCompile Include="Core\AnimParts\AnimationPartEscalator.cpp" />
+    <ClCompile Include="Core\AnimParts\AnimationPartStairs.cpp" />
+    <ClCompile Include="Core\AnimParts\EscalatorMovePath.cpp" />
+    <ClCompile Include="Core\AnimParts\LinkMovePath.cpp" />
+    <ClCompile Include="Core\AnimParts\OgreSpline.cpp" />
+    <ClCompile Include="Core\AnimParts\PointMovePath.cpp" />
+    <ClCompile Include="Core\AnimParts\SplineMovePath.cpp" />
+    <ClCompile Include="Core\AnimParts\StairMovePath.cpp" />
+    <ClCompile Include="Core\Edit\EditorManager.cpp" />
+    <ClCompile Include="Core\Edit\EventManager.cpp" />
+    <ClCompile Include="Core\Edit\PathManipolator.cpp" />
+    <ClCompile Include="Core\Edit\SelectionManager.cpp" />
+    <ClCompile Include="Core\Modders\ClonerModder.cpp" />
+    <ClCompile Include="Core\Modders\ClonerModder_Area_Mask.cpp" />
+    <ClCompile Include="Core\Modders\mersenne.cpp" />
+    <ClCompile Include="Core\Modders\PhaserModder.cpp" />
+    <ClCompile Include="Core\PathGfxBuilders\PathGfxBuilder.cpp" />
+    <ClCompile Include="Core\SceneObjectGfxMesh.cpp" />
+    <ClCompile Include="Core\Edit\SelectionManagerGfx.cpp" />
+    <ClCompile Include="Core\Edit\SelectionManagerGfxMesh.cpp" />
+    <ClCompile Include="Core\Edit\SelectionManagerGfxMeshSplineHelper.cpp" />
+    <ClCompile Include="Core\IA\ModelIA.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActor.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActorCollision.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActorDecision.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActorDecisionBrain.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActorDecisionHistory.cpp" />
+    <ClCompile Include="Core\IA\ModelIAActorSpeed.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilder.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilderPath.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilderPathInfo.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilderPathIO.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilderPathOperator.cpp" />
+    <ClCompile Include="Core\IA\ModelIABuilderScanner.cpp" />
+    <ClCompile Include="Core\IA\ModelIACollision.cpp" />
+    <ClCompile Include="Core\IA\ModelIAQualityManager.cpp" />
+    <ClCompile Include="Core\IA\ModelIAThread.cpp" />
+    <ClCompile Include="Core\IA\ModelInstanceIAGfx.cpp" />
+    <ClCompile Include="Core\IA\OpenSteer\lq.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Gfx\DebugDrawer.cpp" />
+    <ClCompile Include="Gfx\GfxContext.cpp" />
+    <ClCompile Include="Gfx\GfxLabelManager.cpp" />
+    <ClCompile Include="Gfx\GfxModelInstanceRender.cpp" />
+    <ClCompile Include="Gfx\GfxPerformanceManager.cpp" />
+    <ClCompile Include="Gfx\GfxRenderRecord .cpp" />
+    <ClCompile Include="Gfx\GfxScene.cpp" />
+    <ClCompile Include="Gfx\GfxUtil.cpp" />
+    <ClCompile Include="Gfx\GfxZoomManager.cpp" />
+    <ClCompile Include="Gfx\Render\DebugGraphics.cpp" />
+    <ClCompile Include="Gfx\Render\Line3D.cpp" />
+    <ClCompile Include="Gfx\Render\OgreRenderer.cpp" />
+    <ClCompile Include="Gfx\Render\ogreutility.cpp" />
+    <ClCompile Include="Gfx\Render\ogreutility1.cpp" />
+    <ClCompile Include="Gfx\Render\TextureRenderer.cpp" />
+    <ClCompile Include="Gfx\Render\View.cpp" />
+    <ClCompile Include="Gfx\GfxBaseClip.cpp" />
+    <ClCompile Include="Gfx\GfxBaseModel.cpp" />
+    <ClCompile Include="Gfx\GfxClip.cpp" />
+    <ClCompile Include="Gfx\GfxClipAnim.cpp" />
+    <ClCompile Include="Gfx\GfxClipAnimCache.cpp" />
+    <ClCompile Include="Gfx\GfxModel.cpp" />
+    <ClCompile Include="Gfx\GfxModelEdit.cpp" />
+    <ClCompile Include="Gfx\GfxOverlayClip.cpp" />
+    <ClCompile Include="Import\AddOnManager.cpp" />
+    <ClCompile Include="Import\ImportGeometry.cpp" />
+    <ClCompile Include="Import\ImportModel.cpp" />
+    <ClCompile Include="Import\IO\ContextIO.cpp" />
+    <ClCompile Include="Import\OgreBaseImporter.cpp" />
+    <ClCompile Include="Import\OgreModelImporter.cpp" />
+    <ClCompile Include="Ui\GUIManager.cpp" />
+    <ClCompile Include="Ui\ZoomManager.cpp" />
+    <ClCompile Include="Physic\Body.cpp" />
+    <ClCompile Include="Physic\BodyCoord.cpp" />
+    <ClCompile Include="Physic\BodyModder.cpp" />
+    <ClCompile Include="Physic\BodyModderStair_simple.cpp" />
+    <ClCompile Include="Physic\BodyPose.cpp" />
+    <ClCompile Include="Physic\Bone.cpp" />
+    <ClCompile Include="Physic\IKBrain.cpp" />
+    <ClCompile Include="Physic\IKSkeletonBrain.cpp" />
+    <ClCompile Include="Physic\Marker.cpp" />
+    <ClCompile Include="Physic\MarkerFootTranform.cpp" />
+    <ClCompile Include="Physic\MarkerModder.cpp" />
+    <ClCompile Include="Physic\TransformFun.cpp" />
+    <ClCompile Include="Task\Task.cpp" />
+    <ClCompile Include="Task\TaskQueue.cpp" />
+    <ClCompile Include="Ogre\DynamicLines.cpp" />
+    <ClCompile Include="Ogre\DynamicRenderable.cpp" />
+    <ClCompile Include="Ogre\EntityMesh.cpp" />
+    <ClCompile Include="Ogre\EscalatorMovePathMesh.cpp" />
+    <ClCompile Include="Ogre\ModelMesh.cpp" />
+    <ClCompile Include="Ogre\MovableText.cpp" />
+    <ClCompile Include="Ogre\OgreGridPlane.cpp" />
+    <ClCompile Include="Ogre\OgreModelRenderer.cpp" />
+    <ClCompile Include="Ogre\OgrePathHelpers.cpp" />
+    <ClCompile Include="Ogre\OgreUtil.cpp" />
+    <ClCompile Include="Ogre\PointMovePathMesh.cpp" />
+    <ClCompile Include="Ogre\SplineMovePathMesh.cpp" />
+    <ClCompile Include="Ogre\StairMovePathMesh.cpp" />
+    <ClCompile Include="Export\MeshExporter.cpp" />
+    <ClCompile Include="Export\MeshExt.cpp" />
+    <ClCompile Include="Export\MeshExtGeomExt.cpp" />
+    <ClCompile Include="Export\ParamsExporter.cpp" />
+    <ClCompile Include="Export\PresetsExporter.cpp" />
+    <ClCompile Include="Export\VideoManager.cpp" />
+    <ClCompile Include="DebugUtils\MemoryRecorder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Anima.Core.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneralParams.cpp" />
+    <ClCompile Include="Core\moc_list.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 64|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 64|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Action.h" />
+    <ClInclude Include="Core\ActionLibrary.h" />
+    <ClInclude Include="Core\Animation.h" />
+    <ClInclude Include="Core\AnimationPart.h" />
+    <CustomBuild Include="Core\AnimClip.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Step</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Step</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\AnimClipCollection.h" />
+    <ClInclude Include="Core\AnimClipModel.h" />
+    <ClInclude Include="Core\BaseModel.h" />
+    <ClInclude Include="Core\BuildDispatcher.h" />
+    <ClInclude Include="Core\Clip.h" />
+    <ClInclude Include="Core\ClipBlend.h" />
+    <ClInclude Include="Core\ClipBrain.h" />
+    <ClInclude Include="Core\ClipLibrary.h" />
+    <ClInclude Include="Core\CollisionManager.h" />
+    <ClInclude Include="Core\Config.h" />
+    <CustomBuild Include="Core\Context.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\DAG.h" />
+    <CustomBuild Include="Core\Film.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\FilmLayer.h" />
+    <ClInclude Include="Core\IModelRenderer.h" />
+    <ClInclude Include="Core\IMovePath.h" />
+    <ClInclude Include="Core\Item.h" />
+    <ClInclude Include="Core\Mesh.h" />
+    <ClInclude Include="Core\MeshLibrary.h" />
+    <ClInclude Include="Core\Modder.h" />
+    <ClInclude Include="Core\Model.h" />
+    <ClInclude Include="Core\ModelClip.h" />
+    <ClInclude Include="Core\ModelEdit.h" />
+    <ClInclude Include="Core\ModelInstance.h" />
+    <ClInclude Include="Core\ModelLibrary.h" />
+    <ClInclude Include="Core\ModelOverlayFunction.h" />
+    <ClInclude Include="Core\MovePath.h" />
+    <ClInclude Include="Core\MovePathTrx.h" />
+    <ClInclude Include="Core\Property.h" />
+    <ClInclude Include="Core\ResourceManager.h" />
+    <ClInclude Include="Core\SceneLibrary.h" />
+    <ClInclude Include="Core\SceneObject.h" />
+    <ClInclude Include="Core\SceneObjectGfx.h" />
+    <ClInclude Include="Core\SceneObjectMaterial.h" />
+    <ClInclude Include="Core\SpeedFunction.h" />
+    <ClInclude Include="Core\Command\ActionCommands.h" />
+    <ClInclude Include="Core\Command\ActorCommands.h" />
+    <ClInclude Include="Core\Command\AnimationCommands.h" />
+    <ClInclude Include="Core\Command\AnimationPartCommands.h" />
+    <ClInclude Include="Core\Command\ClipCommands.h" />
+    <ClInclude Include="Core\Command\CmdLine.h" />
+    <CustomBuild Include="Core\Command\Command.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Core\Command\CommandManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\Command\FilmCommands.h" />
+    <ClInclude Include="Core\Command\GeomCommands.h" />
+    <ClInclude Include="Core\Command\InCommand.h" />
+    <ClInclude Include="Core\Command\PathCommands.h" />
+    <ClInclude Include="Core\Command\StdCommands.h" />
+    <ClInclude Include="Core\Action\ActionActorModder.h" />
+    <ClInclude Include="Core\Action\ActionAnimation.h" />
+    <ClInclude Include="Core\Action\ActionClip.h" />
+    <ClInclude Include="Core\AnimParts\AnimationPartClipPoint.h" />
+    <ClInclude Include="Core\AnimParts\AnimationPartClipSpline.h" />
+    <ClInclude Include="Core\AnimParts\AnimationPartEscalator.h" />
+    <ClInclude Include="Core\AnimParts\AnimationPartStairs.h" />
+    <ClInclude Include="Core\AnimParts\EscalatorMovePath.h" />
+    <ClInclude Include="Core\AnimParts\LinkMovePath.h" />
+    <ClInclude Include="Core\AnimParts\OgreSpline.h" />
+    <ClInclude Include="Core\AnimParts\PointMovePath.h" />
+    <ClInclude Include="Core\AnimParts\SplineMovePath.h" />
+    <ClInclude Include="Core\AnimParts\StairMovePath.h" />
+    <CustomBuild Include="Core\Edit\EditorManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Core\Edit\EventManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\Edit\PathManipolator.h" />
+    <CustomBuild Include="Core\Edit\SelectionManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Core\Modders\ClonerModder.h" />
+    <ClInclude Include="Core\Modders\ClonerModder_Area_Mask.h" />
+    <ClInclude Include="Core\Modders\PhaserModder.h" />
+    <ClInclude Include="Core\Modders\randomc.h" />
+    <ClInclude Include="Core\PathGfxBuilders\PathGfxBuilder.h" />
+    <ClInclude Include="Core\SceneObjectGfxMesh.h" />
+    <ClInclude Include="Core\Edit\SelectionManagerGfx.h" />
+    <ClInclude Include="Core\Edit\SelectionManagerGfxMesh.h" />
+    <ClInclude Include="Core\Edit\SelectionManagerGfxMeshSplineHelper.h" />
+    <ClInclude Include="Core\IA\ModelIA.h" />
+    <ClInclude Include="Core\IA\ModelIAActor.h" />
+    <ClInclude Include="Core\IA\ModelIAActorCollision.h" />
+    <ClInclude Include="Core\IA\ModelIAActorDecision.h" />
+    <ClInclude Include="Core\IA\ModelIAActorDecisionBrain.h" />
+    <ClInclude Include="Core\IA\ModelIAActorDecisionHistory.h" />
+    <ClInclude Include="Core\IA\ModelIAActorSpeed.h" />
+    <ClInclude Include="Core\IA\ModelIABuilder.h" />
+    <ClInclude Include="Core\IA\ModelIABuilderPath.h" />
+    <ClInclude Include="Core\IA\ModelIABuilderScanner.h" />
+    <ClInclude Include="Core\IA\ModelIACollision.h" />
+    <ClInclude Include="Core\IA\ModelIAQualityManager.h" />
+    <ClInclude Include="Core\IA\ModelIAThread.h" />
+    <ClInclude Include="Core\IA\ModelInstanceIAGfx.h" />
+    <ClInclude Include="Core\IA\OpenSteer\lq.h" />
+    <ClInclude Include="Core\IA\OpenSteer\Proximity.h" />
+    <ClInclude Include="Gfx\DebugDrawer.h" />
+    <ClInclude Include="Gfx\GfxContext.h" />
+    <ClInclude Include="Gfx\GfxLabelManager.h" />
+    <ClInclude Include="Gfx\GfxModelInstanceRender.h" />
+    <ClInclude Include="Gfx\GfxPerformanceManager.h" />
+    <ClInclude Include="Gfx\GfxRenderRecord.h" />
+    <ClInclude Include="Gfx\GfxScene.h" />
+    <ClInclude Include="Gfx\GfxUtil.h" />
+    <ClInclude Include="Gfx\GfxZoomManager.h" />
+    <ClInclude Include="Gfx\Render\DebugGraphics.h" />
+    <ClInclude Include="Gfx\Render\Line3D.h" />
+    <ClInclude Include="Gfx\Render\OgreRenderer.h" />
+    <ClInclude Include="Gfx\Render\ogreutility.h" />
+    <ClInclude Include="Gfx\Render\TextureRenderer.h" />
+    <ClInclude Include="Gfx\Render\View.h" />
+    <ClInclude Include="Gfx\GfxBaseClip.h" />
+    <ClInclude Include="Gfx\GfxBaseModel.h" />
+    <ClInclude Include="Gfx\GfxClip.h" />
+    <ClInclude Include="Gfx\GfxClipAnim.h" />
+    <ClInclude Include="Gfx\GfxClipAnimCache.h" />
+    <ClInclude Include="Gfx\GfxModel.h" />
+    <ClInclude Include="Gfx\GfxOverlayClip.h" />
+    <ClInclude Include="Import\AddOnManager.h" />
+    <ClInclude Include="Import\ImportException.h" />
+    <ClInclude Include="Import\ImportGeometry.h" />
+    <ClInclude Include="Import\ImportModel.h" />
+    <ClInclude Include="Import\IO\ContextIO.h" />
+    <ClInclude Include="Import\OgreBaseImporter.h" />
+    <ClInclude Include="Import\OgreModelImporter.h" />
+    <CustomBuild Include="Ui\GUIManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Ui\ZoomManager.h" />
+    <ClInclude Include="Physic\Body.h" />
+    <ClInclude Include="Physic\BodyCoord.h" />
+    <ClInclude Include="Physic\BodyModder.h" />
+    <ClInclude Include="Physic\BodyModderStair.h" />
+    <ClInclude Include="Physic\BodyPose.h" />
+    <ClInclude Include="Physic\Bone.h" />
+    <ClInclude Include="Physic\IKSkeleton.h" />
+    <ClInclude Include="Physic\Marker.h" />
+    <ClInclude Include="Physic\MarkerFootTranform.h" />
+    <ClInclude Include="Physic\MarkerModder.h" />
+    <ClInclude Include="Physic\TransformFun.h" />
+    <ClInclude Include="Task\Task.h" />
+    <CustomBuild Include="Task\TaskQueue.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Ogre\DynamicLines.h" />
+    <ClInclude Include="Ogre\DynamicRenderable.h" />
+    <ClInclude Include="Ogre\EntityMesh.h" />
+    <ClInclude Include="Ogre\EscalatorMovePathMesh.h" />
+    <ClInclude Include="Ogre\ModelMesh.h" />
+    <ClInclude Include="Ogre\MovableText.h" />
+    <ClInclude Include="Ogre\OgreGridPlane.h" />
+    <ClInclude Include="Ogre\OgreModelRenderer.h" />
+    <ClInclude Include="Ogre\OgrePathHelpers.h" />
+    <ClInclude Include="Ogre\OgreUtil.h" />
+    <ClInclude Include="Ogre\PointMovePathMesh.h" />
+    <ClInclude Include="Ogre\SplineMovePathMesh.h" />
+    <ClInclude Include="Ogre\StairMovePathMesh.h" />
+    <ClInclude Include="Export\MeshExporter.h" />
+    <ClInclude Include="Export\MeshExt.h" />
+    <ClInclude Include="Export\ParamsExporter.h" />
+    <ClInclude Include="Export\PresetsExporter.h" />
+    <CustomBuild Include="Export\VideoManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing moc on %(Filename).h </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QT48DIR)\bin\moc.exe %(RootDir)%(Directory)%(Filename).h -o %(RootDir)%(Directory)moc_%(Filename).cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp ;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="DebugUtils\MemoryRecorder.h" />
+    <ClInclude Include="Anima.Core.h" />
+    <ClInclude Include="GeneralParams.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="..\LOG.txt" />
+    <None Include="..\TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

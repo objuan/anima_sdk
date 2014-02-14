@@ -1,0 +1,248 @@
+ANIMA SETUP 
+
+Environment variables:
+
+for c++ include 
+OGRE_HOME	: ogre directory sdk version 1.7.0
+QTDIR		: qtdirectory sdk version Qt4.6.2
+the precompiled libs are in the lib directory
+
+Anima Exporter API
+
+(from MaxAnima.cpp) 
+
+- implement  a bulk window, can be any window  you have but its batter to use a hide window
+
+- ovverride class Anima::GUIManager, just empty methods 
+ the Anima::ProgressBar *BulkGUIManager::OpenProgressBar(const QString &title,int phaseCount,bool openwin) fire 
+ progress messages if its important to show user.
+ 
+- int MAXAnima::EnsureInit(const char *_programPath)
+	re-implement anything is the anima startup code
+	_programPath must be the anima installed folder, 
+	can be read from registry  HKEY_LOCAL_MACHINE\SOFTWARE\aXYZ design\an(i)ma 1.0
+	or from a config file.
+	
+- to Load scene use this code ( from MashObj.cpp)
+
+	anima can serialize the scene , in max i call it "embeddedFile"
+	Anima::ContextIO contextIO;
+
+	if (embeddedFile != ""  )
+	{
+		// load from serial
+		ok = contextIO.Load(embeddedFile,animaPath,false,progressBar); // carico nell'ambiente
+	}
+	else
+		{
+			try
+			{
+				// for check
+				Anima::AnimaFileInfo *fileInfo = contextIO.PreloadFileInfo(animaPath);
+				if (!fileInfo->HaveCollision)
+				{
+					// avviso attesa
+					MessageBox(NULL, _T("The .ani scene file you are trying to load does not have any collision data saved.\r\n\If you proceed, collisions are going to be calculated while loading.\r\n\This process may take some time."), _T("WARNING!"), MB_OK);
+					//GetCOREInterface()->DisplayTempPrompt("This file don't have collisions, please wait for rebuild");
+				}
+				delete fileInfo;
+			}
+			catch(...)
+			{
+				MessageBox(NULL, _T(QString("Cannot load .ani scene : %1").arg(animaPath).toAscii().data()), _T("WARNING!"), MB_OK);
+			}
+			ok = contextIO.Load(animaPath,false,progressBar); //load from file
+		}
+
+- to save
+
+	embeddedFile =  contextIO.GetSave(animaPath,true,NULL); 
+
+- load scene data
+
+	Anima::Film &film = Anima::Context::Singleton.GetFilm();
+
+	// animation bounds
+	double startTime = film.GetStartActiveTime();
+	double endTime = film.GetEndActiveTime();
+			
+- check demo
+
+	if (Anima::Config::IsDemo())
+	{
+			film.SetPlaybackBounds(true, film.GetStartPlaybackFrame(),2*film.GetFPS()); // 2 seconds max
+			// message box
+	}
+
+
+- LOAD MESH DATA in a given time
+
+	film.SetPlayTime(seconds); // set the animation time
+
+	Anima::GfxContext::Singleton->UpdateAndContinue(); // force mesh update
+
+	Anima::MeshExporte *meshExporter = new Anima::MeshExporter();
+	
+	meshExporter->BuildCurrentTime(); // fill in the exporter clss
+	
+	Anima::MeshExtCollection &meshList = meshExporter->GetModelExportColl(); // mesh list
+	
+	
+	// scan for mesh, anima has layer->animation->model structure
+	
+	foreach(Anima::FilmLayer *layer , film.GetFilmLayers())
+	{
+		foreach(Anima::Animation *anim , layer->GetAnimationList())
+		{
+			foreach(Anima::ModelInstance *mi , anim->GetModels())
+			{
+				Anima::MeshExtModel *ext = meshList.Get(mi);
+				if (ext!=NULL)
+				{
+				}
+			}
+		}
+	}
+	
+	// scan for a fixed geometry ( elevators) 
+	Anima::GeomExtCollection &geomList = meshExporter->GetGeomExportColl();
+	for(int i=0;i<geomList.Count();i++)
+	{
+		Anima::MeshExtGeomExt *ext = geomList.GetGeom(i);
+
+	}
+	
+	// load mesh data
+	
+	int vertexCount = meshExt->GetVertexCount(); 
+	int vertexTxtCount = meshExt->GetTxtVertexCount(); 
+	int faceCount = meshExt->GetTriCount()/3;
+	float *vertices = meshExt->GetVertices();
+	float *normals = meshExt->GetNormals();
+	float *uvList = meshExt->GetUVList();
+	
+	// note mScale is the anima to native scale, anima is always in meters
+	float x,y;
+	for(int i=0;i<vertexCount;i++,c+=3)
+	{
+		pos[0] = vertices[c] * mScale;
+		pos[2] = vertices[c+1]* mScale ;	// y = z
+		pos[1] = -vertices[c+2]* mScale ;	// z = -y , FOR MAX
+		
+		n[0] = normals[c];
+		n[2] = normals[c+1];	// y = z
+		n[1] = -normals[c+2];	// z = -y
+	}
+	
+	// TXT VERTICES
+	for(int i=0;i<vertexTxtCount;i++,c+=3)
+	{
+		u = uvList[tc++];
+		v = 1-uvList[tc++];
+	}
+
+	int triCount = meshExt->GetTriCount()/3;
+	
+	size_t *triList  = meshExt->GetTriList();
+	size_t *triUVList  = meshExt->GetUVTriList();
+	size_t *triMatEndList  = meshExt->GetTriEndList();
+	
+	//TRI
+	
+	for(int t=0;t<triCount;t++)
+	{
+		v[0] = i_vertex + triList[c+0];
+		v[1] = i_vertex + triList[c+1];
+		v[2] = i_vertex + triList[c+2];
+
+		yv[0] = i_txt_vertex + triUVList[c+0];
+		yv[1] = i_txt_vertex + triUVList[c+1];
+		yv[2] = i_txt_vertex + triUVList[c+2];
+
+	
+		c+=3;
+	}
+	
+- LOAD MATERIALS DATA
+
+	// anima have single or multiple material
+	
+	// fill a materialList
+	if (!Anima::Context::Singleton.GetPresetsExporterManager()->HaveSingleMaterial())
+	{
+		MeshObjectModelMaterial current;
+		int c=0;
+		int matIdx=0;
+		int subIdx=0;
+		for(int i=0,c=0;i<meshList.InstanceCount();i++,c++)
+		{
+			if (c == materialPackSize)
+			{
+				matIdx++;
+				subIdx=0;
+				c=0;
+			}
+			current.materialNumber = matIdx;
+			current.materialSubIdx = subIdx;
+			materialList.append(current);
+			subIdx+= meshList.GetInstance(i)->GetOgreMesh()->getNumSubMeshes();
+		}
+	}
+	else
+	{
+		MeshObjectModelMaterial current;
+		for(int i=0;i<meshList.InstanceCount();i++)
+		{
+			current.materialNumber = 0;
+			materialList.append(current);
+		}
+	}
+
+	// anima have several quality for textures
+	Anima::RenderPresetInfo *qualityInfo =  Anima::Context::Singleton.GetRenderInfo()->CurrentPreset;
+	
+	//scan materials
+	// anima have one material for submesh,
+	
+	int numSubMeshes = meshList.GetInstance(i)->GetOgreMesh()->getNumSubMeshes();
+	
+	// render mode
+	Anima::PresetsExporter_ViewportMode mode = Anima::Context::Singleton.GetPresetsExporterManager()->GetViewportMode() ;
+		
+	// LOAD 
+	
+	Anima::ModelExporterRender *modelExporterRender =NULL;
+	Anima::MeshExtModel *meshExt = meshList.GetInstance(i);
+		
+	Ogre::MeshPtr mesh = meshExt->GetOgreMesh();
+
+	// NODE , Anima::ModelExporterType::MAX is for max , another render platform must have onother, ask to me
+	Anima::ModelExporter *_modelExporter = Anima::Context::Singleton.GetPresetsExporterManager()->GetCurrentPreset()->GetExporter(Anima::ModelExporterType::MAX,GetMaxVersion());
+	
+	if (_modelExporter!= NULL)
+		modelExporterRender = _modelExporter->GetRender((Anima::ModelExporterRenderType)current_render_type,0);
+
+	int matCount = mesh->getNumSubMeshes();
+	for(int t=0;t<matCount;t++)
+	{
+		Anima::MeshExtSubmeshInfo &subInfo = meshExt->GetSubInfo(t);
+		QString partName = subInfo.name; //QString("%1").arg((t == 1) ? "Head" : " Body");
+		Ogre::SubMesh *subMesh = mesh->getSubMesh(t);
+			
+		// ho i dati del materiale di ogre
+
+		if (modelExporterRender!=NULL && qualityInfo->Folder !="")
+		{
+			Anima::ModelExporterRenderMaterial *expMat = modelExporterRender->FindMatBySource(subMesh->getMaterialName().c_str());
+			if (expMat!=NULL)
+			{
+				QString name = QString("%1_%2").arg(meshExt->GetModel()->GetModel()->GetName()).arg(partName);
+				{
+					QString path = expMat->GetFullMeshExternalFilePath(); // materia path in anima config file 
+					
+		
+				}
+			}
+		}
+	}
+		

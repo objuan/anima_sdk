@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bd682a23-505f-4d98-95ee-f66d0c142621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Command">
+      <UniqueIdentifier>{25922e9e-e82c-4be1-8481-41b57ce8ae8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Action">
+      <UniqueIdentifier>{3ae10498-741d-460a-8d2b-5f8f989977e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Action\ActionModes">
+      <UniqueIdentifier>{8fb3634e-763e-4fac-80a3-91e108fe6c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\AnimParts">
+      <UniqueIdentifier>{87606b6d-071b-45bc-a6d1-8ec81d0391aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Edit">
+      <UniqueIdentifier>{4889e551-5073-4e52-a5b2-bfd7227d5a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Modders">
+      <UniqueIdentifier>{9e35826d-2719-435c-94ea-bbe423b3354f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Gfx">
+      <UniqueIdentifier>{0be94a79-1613-4d74-8e24-0014f6886e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IA">
+      <UniqueIdentifier>{4564cc0c-db9f-4a66-92c3-a33136b91d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IA\utils">
+      <UniqueIdentifier>{f91285f3-557b-46ca-b940-dad5d8422605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Gfx\Render">
+      <UniqueIdentifier>{93ec5aee-a06b-48bd-b41a-e06efb6c5eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Gfx\Model">
+      <UniqueIdentifier>{f4541f9c-bb84-4c1a-9c6a-5f1000f7b1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import">
+      <UniqueIdentifier>{c5b69da7-65f9-4b61-8ada-e627ab8aad25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import\IO">
+      <UniqueIdentifier>{89c5c3ec-63a1-46cd-9626-7f98e78cbe65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import\Ogre">
+      <UniqueIdentifier>{d950bdc7-5314-41f1-802a-80ccf6bc5e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{a99caea6-cc13-4aa2-bb08-6624f3241604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physic">
+      <UniqueIdentifier>{65186b35-860f-46fe-8101-366b6e471898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task">
+      <UniqueIdentifier>{1dc84b4b-2512-4e72-a5ed-82f365f3e7cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Export">
+      <UniqueIdentifier>{85a89553-e425-4a21-9a23-b7c41a4176f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugUtils">
+      <UniqueIdentifier>{fb1684fa-9526-4702-acfd-b021a90e4e28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Action.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ActionLibrary.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimationPart.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimClip.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimClipCollection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimClipModel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BaseModel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BuildDispatcher.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Clip.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ClipBlend.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ClipBrain.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ClipLibrary.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CollisionManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CollisionManagerIce.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Config.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Context.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DAG.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Film.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FilmLayer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Item.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Mesh.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MeshLibrary.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Modder.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Model.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelClip.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelEdit.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelInstance.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelIO.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelLibrary.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelOverlayFunction.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MovePath.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MovePathTrx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Property.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ResourceManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneLibrary.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneObjectGfx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneObjectMaterial.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SpeedFunction.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\ActionCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\ActorCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\AnimationCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\AnimationPartCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\ClipCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\CmdLine.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\Command.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\CommandManager.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\FilmCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\GeomCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\PathCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Command\StdCommands.cpp">
+      <Filter>Core\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Action\ActionActorModder.cpp">
+      <Filter>Core\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Action\ActionAnimation.cpp">
+      <Filter>Core\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Action\ActionClip.cpp">
+      <Filter>Core\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\AnimationPartClipPoint.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\AnimationPartClipSpline.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\AnimationPartEscalator.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\AnimationPartStairs.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\EscalatorMovePath.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\LinkMovePath.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\OgreSpline.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\PointMovePath.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\SplineMovePath.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AnimParts\StairMovePath.cpp">
+      <Filter>Core\AnimParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\EditorManager.cpp">
+      <Filter>Core\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\EventManager.cpp">
+      <Filter>Core\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\PathManipolator.cpp">
+      <Filter>Core\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\SelectionManager.cpp">
+      <Filter>Core\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Modders\ClonerModder.cpp">
+      <Filter>Core\Modders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Modders\ClonerModder_Area_Mask.cpp">
+      <Filter>Core\Modders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Modders\mersenne.cpp">
+      <Filter>Core\Modders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Modders\PhaserModder.cpp">
+      <Filter>Core\Modders</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\PathGfxBuilders\PathGfxBuilder.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneObjectGfxMesh.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\SelectionManagerGfx.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\SelectionManagerGfxMesh.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Edit\SelectionManagerGfxMeshSplineHelper.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIA.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActor.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActorCollision.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActorDecision.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActorDecisionBrain.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActorDecisionHistory.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAActorSpeed.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilder.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilderPath.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilderPathInfo.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilderPathIO.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilderPathOperator.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIABuilderScanner.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIACollision.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAQualityManager.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelIAThread.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\ModelInstanceIAGfx.cpp">
+      <Filter>Core\IA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\OpenSteer\lq.c">
+      <Filter>Core\IA\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\DebugDrawer.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxContext.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxLabelManager.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxModelInstanceRender.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxPerformanceManager.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxRenderRecord .cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxScene.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxUtil.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxZoomManager.cpp">
+      <Filter>Core\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\DebugGraphics.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\Line3D.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\OgreRenderer.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\ogreutility.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\ogreutility1.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\TextureRenderer.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Render\View.cpp">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxBaseClip.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxBaseModel.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxClip.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxClipAnim.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxClipAnimCache.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxModel.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxModelEdit.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\GfxOverlayClip.cpp">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\AddOnManager.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\ImportGeometry.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\ImportModel.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\IO\ContextIO.cpp">
+      <Filter>Import\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\OgreBaseImporter.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Import\OgreModelImporter.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\GUIManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ZoomManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\Body.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\BodyCoord.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\BodyModder.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\BodyModderStair_simple.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\BodyPose.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\Bone.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\IKBrain.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\IKSkeletonBrain.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\Marker.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\MarkerFootTranform.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\MarkerModder.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Physic\TransformFun.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\Task.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TaskQueue.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\DynamicLines.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\DynamicRenderable.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\EntityMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\EscalatorMovePathMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\ModelMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\MovableText.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\OgreGridPlane.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\OgreModelRenderer.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\OgrePathHelpers.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\OgreUtil.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\PointMovePathMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\SplineMovePathMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogre\StairMovePathMesh.cpp">
+      <Filter>Import\Ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\MeshExporter.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\MeshExt.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\MeshExtGeomExt.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\ParamsExporter.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\PresetsExporter.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Export\VideoManager.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugUtils\MemoryRecorder.cpp">
+      <Filter>DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Anima.Core.cpp" />
+    <ClCompile Include="GeneralParams.cpp" />
+    <ClCompile Include="Core\moc_list.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Action.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ActionLibrary.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimationPart.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimClipCollection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimClipModel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BaseModel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BuildDispatcher.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Clip.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ClipBlend.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ClipBrain.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ClipLibrary.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CollisionManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Config.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DAG.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FilmLayer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IModelRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IMovePath.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Item.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mesh.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MeshLibrary.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Modder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Model.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelClip.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelEdit.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelInstance.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelLibrary.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelOverlayFunction.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MovePath.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MovePathTrx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Property.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ResourceManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneLibrary.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneObjectGfx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneObjectMaterial.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SpeedFunction.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\ActionCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\ActorCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\AnimationCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\AnimationPartCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\ClipCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\CmdLine.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\FilmCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\GeomCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\InCommand.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\PathCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command\StdCommands.h">
+      <Filter>Core\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Action\ActionActorModder.h">
+      <Filter>Core\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Action\ActionAnimation.h">
+      <Filter>Core\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Action\ActionClip.h">
+      <Filter>Core\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\AnimationPartClipPoint.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\AnimationPartClipSpline.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\AnimationPartEscalator.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\AnimationPartStairs.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\EscalatorMovePath.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\LinkMovePath.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\OgreSpline.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\PointMovePath.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\SplineMovePath.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AnimParts\StairMovePath.h">
+      <Filter>Core\AnimParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Edit\PathManipolator.h">
+      <Filter>Core\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Modders\ClonerModder.h">
+      <Filter>Core\Modders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Modders\ClonerModder_Area_Mask.h">
+      <Filter>Core\Modders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Modders\PhaserModder.h">
+      <Filter>Core\Modders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Modders\randomc.h">
+      <Filter>Core\Modders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PathGfxBuilders\PathGfxBuilder.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneObjectGfxMesh.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Edit\SelectionManagerGfx.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Edit\SelectionManagerGfxMesh.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Edit\SelectionManagerGfxMeshSplineHelper.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIA.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActor.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActorCollision.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActorDecision.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActorDecisionBrain.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActorDecisionHistory.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAActorSpeed.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIABuilder.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIABuilderPath.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIABuilderScanner.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIACollision.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAQualityManager.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelIAThread.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\ModelInstanceIAGfx.h">
+      <Filter>Core\IA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\OpenSteer\lq.h">
+      <Filter>Core\IA\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\OpenSteer\Proximity.h">
+      <Filter>Core\IA\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\DebugDrawer.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxContext.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxLabelManager.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxModelInstanceRender.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxPerformanceManager.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxRenderRecord.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxScene.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxUtil.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxZoomManager.h">
+      <Filter>Core\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\DebugGraphics.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\Line3D.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\OgreRenderer.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\ogreutility.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\TextureRenderer.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Render\View.h">
+      <Filter>Core\Gfx\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxBaseClip.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxBaseModel.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxClip.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxClipAnim.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxClipAnimCache.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxModel.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\GfxOverlayClip.h">
+      <Filter>Core\Gfx\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\AddOnManager.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\ImportException.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\ImportGeometry.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\ImportModel.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\IO\ContextIO.h">
+      <Filter>Import\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\OgreBaseImporter.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\OgreModelImporter.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\ZoomManager.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\Body.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\BodyCoord.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\BodyModder.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\BodyModderStair.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\BodyPose.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\Bone.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\IKSkeleton.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\Marker.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\MarkerFootTranform.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\MarkerModder.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic\TransformFun.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\Task.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\DynamicLines.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\DynamicRenderable.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\EntityMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\EscalatorMovePathMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\ModelMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\MovableText.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\OgreGridPlane.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\OgreModelRenderer.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\OgrePathHelpers.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\OgreUtil.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\PointMovePathMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\SplineMovePathMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogre\StairMovePathMesh.h">
+      <Filter>Import\Ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Export\MeshExporter.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Export\MeshExt.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Export\ParamsExporter.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Export\PresetsExporter.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtils\MemoryRecorder.h">
+      <Filter>DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Anima.Core.h" />
+    <ClInclude Include="GeneralParams.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="..\LOG.txt" />
+    <None Include="..\TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Core\AnimClip.h">
+      <Filter>Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Context.h">
+      <Filter>Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Film.h">
+      <Filter>Core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Command\Command.h">
+      <Filter>Core\Command</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Command\CommandManager.h">
+      <Filter>Core\Command</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Edit\EditorManager.h">
+      <Filter>Core\Edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Edit\EventManager.h">
+      <Filter>Core\Edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core\Edit\SelectionManager.h">
+      <Filter>Core\Edit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\GUIManager.h">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Task\TaskQueue.h">
+      <Filter>Task</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Export\VideoManager.h">
+      <Filter>Export</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

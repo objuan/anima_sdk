@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Anima.Plugin.MAX", "Anima.Plugin\MAX\Anima.Pluging.MAX.vcproj", "{D442BAAC-E368-4BCE-8E8B-82299082753F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Anima.MAX", "Anima.Plugin\MAX\Anima.MAX.vcproj", "{026A62F0-98E6-4877-8EFA-E351E74725BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MAX 2009|Win32 = Debug MAX 2009|Win32
+		Debug MAX 2009|x64 = Debug MAX 2009|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release 64|Win32 = Release 64|Win32
+		Release 64|x64 = Release 64|x64
+		Release MAX2009|Win32 = Release MAX2009|Win32
+		Release MAX2009|x64 = Release MAX2009|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug MAX 2009|Win32.ActiveCfg = Debug|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug MAX 2009|x64.ActiveCfg = Debug|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug MAX 2009|x64.Build.0 = Debug|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug|Win32.Build.0 = Debug|Win32
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug|x64.ActiveCfg = Debug|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Debug|x64.Build.0 = Debug|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release 64|Win32.ActiveCfg = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release 64|x64.ActiveCfg = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release 64|x64.Build.0 = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release MAX2009|Win32.ActiveCfg = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release MAX2009|x64.ActiveCfg = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release MAX2009|x64.Build.0 = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release|Win32.ActiveCfg = Release|Win32
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release|Win32.Build.0 = Release|Win32
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release|x64.ActiveCfg = Release|x64
+		{D442BAAC-E368-4BCE-8E8B-82299082753F}.Release|x64.Build.0 = Release|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug MAX 2009|Win32.ActiveCfg = Debug MAX 2009|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug MAX 2009|Win32.Build.0 = Debug MAX 2009|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug MAX 2009|x64.ActiveCfg = Debug MAX 2009|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug MAX 2009|x64.Build.0 = Debug MAX 2009|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug|Win32.Build.0 = Debug|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug|x64.ActiveCfg = Debug|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Debug|x64.Build.0 = Debug|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release 64|Win32.ActiveCfg = Release 64|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release 64|Win32.Build.0 = Release 64|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release 64|x64.ActiveCfg = Release 64|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release 64|x64.Build.0 = Release 64|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release MAX2009|Win32.ActiveCfg = Release MAX2009|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release MAX2009|Win32.Build.0 = Release MAX2009|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release MAX2009|x64.ActiveCfg = Release MAX2009|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release MAX2009|x64.Build.0 = Release MAX2009|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release|Win32.ActiveCfg = Release|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release|Win32.Build.0 = Release|Win32
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release|x64.ActiveCfg = Release|x64
+		{026A62F0-98E6-4877-8EFA-E351E74725BB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

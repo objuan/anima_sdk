@@ -1,0 +1,1950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0254F56E46FBB4DF14E61DD5 /* AnimationPartStairs.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4C1722C1F0C8285874C3406E /* AnimationPartStairs.cpp */; settings = {ATTRIBUTES = (); }; };
+		02C218DD45B0301D89832FE1 /* CollisionManagerIce.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 37A4A06454F841B7113ABC7C /* CollisionManagerIce.cpp */; settings = {ATTRIBUTES = (); }; };
+		048C821F1393D37100247229 /* SceneObjectGfxMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 048C821E1393D37100247229 /* SceneObjectGfxMesh.cpp */; };
+		048C82341393D4CE00247229 /* BodyModderStair_simple.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 048C82331393D4CE00247229 /* BodyModderStair_simple.cpp */; };
+		048C82581393E30600247229 /* lq.c in Build Sources */ = {isa = PBXBuildFile; fileRef = 048C82551393E30600247229 /* lq.c */; };
+		04B6C824138FAC9600954940 /* libAnimaCore.dylib in Project Copy */ = {isa = PBXBuildFile; fileRef = 04B6C822138FAC9600954940 /* libAnimaCore.dylib */; };
+		04B6C83D138FC05400954940 /* Ogre.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04B6C83C138FC05400954940 /* Ogre.framework */; };
+		04B6C932138FC53600954940 /* SelectionManagerGfx.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04B6C92F138FC53600954940 /* SelectionManagerGfx.cpp */; };
+		04B6C933138FC53600954940 /* SelectionManagerGfxMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04B6C930138FC53600954940 /* SelectionManagerGfxMesh.cpp */; };
+		04B6C934138FC53600954940 /* SelectionManagerGfxMeshSplineHelper.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04B6C931138FC53600954940 /* SelectionManagerGfxMeshSplineHelper.cpp */; };
+		04E58C5613D01B6E00F88DD7 /* GfxModelEdit.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04E58C5513D01B6E00F88DD7 /* GfxModelEdit.cpp */; };
+		04E58C6113D01BF100F88DD7 /* SceneLibrary.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04E58C6013D01BF100F88DD7 /* SceneLibrary.cpp */; };
+		04E58C6713D01DD700F88DD7 /* ModelIO.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04E58C6613D01DD700F88DD7 /* ModelIO.cpp */; };
+		04EF5B8414E531210065469C /* QtXmlAnima.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04EF5B8314E531210065469C /* QtXmlAnima.framework */; };
+		04EF5C7514E548270065469C /* QtCoreAnima.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04EF5C7214E548270065469C /* QtCoreAnima.framework */; };
+		04EF5C7614E548270065469C /* QtGuiAnima.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04EF5C7314E548270065469C /* QtGuiAnima.framework */; };
+		04EF5C7714E548270065469C /* QtNetworkAnima.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04EF5C7414E548270065469C /* QtNetworkAnima.framework */; };
+		04FE9AAF1398BBB100460656 /* libAnimaCollision.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04FE9AAE1398BBB100460656 /* libAnimaCollision.dylib */; };
+		04FE9AB31398BBB100460656 /* libAnimaImport.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04FE9AB21398BBB100460656 /* libAnimaImport.dylib */; };
+		04FE9AB51398BBB100460656 /* libAnimaMedia.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04FE9AB41398BBB100460656 /* libAnimaMedia.dylib */; };
+		04FE9AB71398BBB100460656 /* libAnimaRender.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 04FE9AB61398BBB100460656 /* libAnimaRender.dylib */; };
+		07D66862F5A5E65A02B7D48E /* LinkMovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CF8BEA9DBBD7915770B6DB60 /* LinkMovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		098EF73214B371253B3CB7C6 /* stdafx.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E5289FCB6989B94D3D785C16 /* stdafx.cpp */; settings = {ATTRIBUTES = (); }; };
+		0B067BFD773374F9752D912A /* MarkerFootTranform.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 51E9D0C52ECF311CF9AA0A5E /* MarkerFootTranform.cpp */; settings = {ATTRIBUTES = (); }; };
+		0B41D04E8101DD82090E45DF /* GfxPerformanceManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F8D5468CA7F662CE3A8143D8 /* GfxPerformanceManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		0C9D9038AB7B33EF7029B0FE /* PresetsExporter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BA7127510D9516779A75227B /* PresetsExporter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0CC393EE6804A74D798AAA09 /* Line3D.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0541C7ABE60E9B44E1C4696A /* Line3D.cpp */; settings = {ATTRIBUTES = (); }; };
+		108F225AFE82B05B93236E92 /* PointMovePathMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9332068FA17D56811431DC64 /* PointMovePathMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		111B0E155EB0E92EA54C36FC /* ModelMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 86A231699EB098D15CD95EFA /* ModelMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		12E5F4B41491F6270079713F /* libAnimaCore.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04B6C822138FAC9600954940 /* libAnimaCore.dylib */; };
+		19366D680638957968E90952 /* CollisionManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C3FC53C9C65A6083AB379265 /* CollisionManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		1BCD310B1F68AE2E4C2FA6DF /* ModelIAActorDecision.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 89EC8E2D1FE6F2E0FE056925 /* ModelIAActorDecision.cpp */; settings = {ATTRIBUTES = (); }; };
+		1F5215BFD7564998F8A654F2 /* GfxClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C5DBBC74B9396DFA2AB02A30 /* GfxClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		20DC643EF4069228FFC06E05 /* StdCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5870F380D3D50BCEC44F91CA /* StdCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		240F9648656FC80B78B106D8 /* MeshExtGeomExt.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8D48ED1FAF3A52FBF049E6AD /* MeshExtGeomExt.cpp */; settings = {ATTRIBUTES = (); }; };
+		2414FE9754B05DDD99A7516B /* AnimClipModel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7BAC87C5FBB756A2CBCF3A59 /* AnimClipModel.cpp */; settings = {ATTRIBUTES = (); }; };
+		27771CEE7ED779305143A3CF /* DynamicLines.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2708A68980D7C1B7DC2DDA95 /* DynamicLines.cpp */; settings = {ATTRIBUTES = (); }; };
+		2C2599C12997C46A7EB1D171 /* VideoManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B4C4749A25DF21F1097A22B4 /* VideoManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		2CD681E3848596CB92BCA074 /* OgreModelRenderer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1B216B964B3D68B2A501B090 /* OgreModelRenderer.cpp */; settings = {ATTRIBUTES = (); }; };
+		2CE3D5A1A46DA145095898FA /* PathGfxBuilder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A00DB7741B1BCDB0EE2103F4 /* PathGfxBuilder.cpp */; settings = {ATTRIBUTES = (); }; };
+		2D3EB4AC3BF4761135D33152 /* MovableText.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A0557A3337EFF48DD59B122C /* MovableText.cpp */; settings = {ATTRIBUTES = (); }; };
+		2DA96ECA89789B4EE165DEF6 /* SplineMovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5018B4CE878256159A36A2C /* SplineMovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		2F9C326DC9045BED880C7835 /* ActionCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5C800D0748571AD4322BB88A /* ActionCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		3305DCE639B8F1116EC2DFE5 /* BodyModder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 113F0B018F7658C0A1FF0D56 /* BodyModder.cpp */; settings = {ATTRIBUTES = (); }; };
+		33B6052405E77E011851E3C7 /* ActorCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 181CE5F1A0B83A66D5FEB5C4 /* ActorCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		33C38BC801888B56690AC278 /* ModelIAActor.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 35B99C070F860A7EBB7AF43A /* ModelIAActor.cpp */; settings = {ATTRIBUTES = (); }; };
+		34004261AB75DD1CE217B8F0 /* ClipLibrary.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8CEE7283DC54AD4ACDD65840 /* ClipLibrary.cpp */; settings = {ATTRIBUTES = (); }; };
+		351277A16E91720179F3D780 /* ModelIACollision.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BAFCAD3BB8B58F0010A81F62 /* ModelIACollision.cpp */; settings = {ATTRIBUTES = (); }; };
+		3648242017225BEC7365CB03 /* CommandManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4D1F19C1A356E57BDC13D1FE /* CommandManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		38D5CD6079D6166FBED94143 /* Config.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0319254777E353E315F24A35 /* Config.cpp */; settings = {ATTRIBUTES = (); }; };
+		3AEC3709141D7EA59D6894C3 /* PointMovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1ACB23063CDF72221F9B186B /* PointMovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		3D1BCCD54EF6971A26DCF250 /* ModelEdit.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 543F3D2B31DE6C64FEF77C8E /* ModelEdit.cpp */; settings = {ATTRIBUTES = (); }; };
+		3FE198B07F63D580C67713EA /* GfxModel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E63B57E61B8D3D008EDADAB9 /* GfxModel.cpp */; settings = {ATTRIBUTES = (); }; };
+		4058BEFAE4EF4DDDEE7856B4 /* ModelIAActorSpeed.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CBCFE8B18CE4C13F160276EB /* ModelIAActorSpeed.cpp */; settings = {ATTRIBUTES = (); }; };
+		40C4962B02B0CB63903A80A0 /* EscalatorMovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7E3AE86CD2BA1E6F3B9DDA2C /* EscalatorMovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		40C49FE5AEC546E0382837C2 /* ModelIAQualityManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 79BDE1595CC2A80D6C3BCD34 /* ModelIAQualityManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		41D7B920833C60C3F3CC146F /* MemoryRecorder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0B39E4F91255CD3188F5B733 /* MemoryRecorder.cpp */; settings = {ATTRIBUTES = (); }; };
+		437EAD90F46333DD1268387D /* SpeedFunction.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 38FFFB761B74A8502293DCE0 /* SpeedFunction.cpp */; settings = {ATTRIBUTES = (); }; };
+		43E6156891F8CE332FB391BC /* FilmLayer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FDD3F176E2D2F20147E6AE68 /* FilmLayer.cpp */; settings = {ATTRIBUTES = (); }; };
+		450B3D529A2A6C6F522C3EBD /* Body.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A056D2048E80395D91EE0551 /* Body.cpp */; settings = {ATTRIBUTES = (); }; };
+		477CE8FEA661E35C7308D86F /* Modder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 528E1F31A182853E39F97B9B /* Modder.cpp */; settings = {ATTRIBUTES = (); }; };
+		499DBC5F906739BBEB7567A0 /* ModelIABuilder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 46DCCEEC67A02FFFF123CDEF /* ModelIABuilder.cpp */; settings = {ATTRIBUTES = (); }; };
+		4B6C8058F2F29CCC98157FD4 /* BaseModel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 035775A9CA38B90B2459C145 /* BaseModel.cpp */; settings = {ATTRIBUTES = (); }; };
+		4F3DDB4BEE493319BB0CD669 /* AnimClipCollection.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1C4F989F7F99F6BBE07AA336 /* AnimClipCollection.cpp */; settings = {ATTRIBUTES = (); }; };
+		4FD7A0A9930964A1D3E48B9B /* MarkerModder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 779C1DE56DC8A5A484D888F9 /* MarkerModder.cpp */; settings = {ATTRIBUTES = (); }; };
+		50B637FF2281912E78D9FF2E /* ModelIABuilderPathIO.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AF94589A79B2EAEB6B128715 /* ModelIABuilderPathIO.cpp */; settings = {ATTRIBUTES = (); }; };
+		50D6215923943D57F37EDE9A /* AnimClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0B6A17895CB4E2728E629ED7 /* AnimClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		5159D5704555C8BB43D81716 /* GeomCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E285F52ED4AF5193D8473424 /* GeomCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		517AA48AF3E0ABC0486A74F8 /* ActionLibrary.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 046FE40ECC8478AA7C65820A /* ActionLibrary.cpp */; settings = {ATTRIBUTES = (); }; };
+		51A4E1C871F3717733F6E60D /* ogreutility.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B2F6B62B22353118BA184515 /* ogreutility.cpp */; settings = {ATTRIBUTES = (); }; };
+		5776F732E03CB3B460EF9C25 /* AnimationCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B88DE403EA74EF59028EE18F /* AnimationCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		5B3F1DFC256BBF5F47CBBD9A /* Marker.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AE0921B6C406B1D1FEC051F5 /* Marker.cpp */; settings = {ATTRIBUTES = (); }; };
+		5FB3E7E8C87C04BB439A144C /* CmdLine.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 963CD3AAB3C11E4438887CA7 /* CmdLine.cpp */; settings = {ATTRIBUTES = (); }; };
+		62DEBD71F9C4FDD4FEFE0A5E /* ModelIABuilderPathOperator.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 248D36A895E13323921585F3 /* ModelIABuilderPathOperator.cpp */; settings = {ATTRIBUTES = (); }; };
+		64AC44752F5F6562B6FC9FF3 /* ActionClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 37651DDCFE1DE7EABA8E94D1 /* ActionClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		67A68880476F81A6BFDACB04 /* ModelIA.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 684125EF3B44745B22386843 /* ModelIA.cpp */; settings = {ATTRIBUTES = (); }; };
+		6B4B074B60A955A3D250D8D3 /* GUIManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3A2507DEC27D7E2E9ABF59CE /* GUIManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		6FC6C19E3B6F0E3DAE84AEBF /* SceneObject.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2BB66DE0BCF093D08CD10E4E /* SceneObject.cpp */; settings = {ATTRIBUTES = (); }; };
+		701CFE2240698BE3D4C553A2 /* Anima.Core.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C0A9E5CE37486D6546A0E6A8 /* Anima.Core.cpp */; settings = {ATTRIBUTES = (); }; };
+		71143812161766C4DDD5A6D5 /* TextureRenderer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6A2E309C97004ECD1EFC2F21 /* TextureRenderer.cpp */; settings = {ATTRIBUTES = (); }; };
+		72D348179AEF0428825A2F2E /* GfxClipAnim.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CA18341AB5E376619E8395D2 /* GfxClipAnim.cpp */; settings = {ATTRIBUTES = (); }; };
+		72D7AB8B247102913F487090 /* Context.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 567BE82EC92BE3594651C195 /* Context.cpp */; settings = {ATTRIBUTES = (); }; };
+		742AD0DFC021E61E73C50834 /* AnimationPartClipSpline.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E5FAFFAF68B0C02BA55C1D0A /* AnimationPartClipSpline.cpp */; settings = {ATTRIBUTES = (); }; };
+		75134AAAA41BAF2A00A9E293 /* AnimationPartClipPoint.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8D83364EAD6EB7FDF9E3EC05 /* AnimationPartClipPoint.cpp */; settings = {ATTRIBUTES = (); }; };
+		75A979C758399AA83A959C31 /* EntityMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D00161871F874A3B700B90F8 /* EntityMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		764858171A432C08049D9351 /* ogreutility1.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B89A6677C3545DC8C6C00B5A /* ogreutility1.cpp */; settings = {ATTRIBUTES = (); }; };
+		76E0381549D15045F5203E5A /* PhaserModder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 88F9783D82E6C98914FB25C5 /* PhaserModder.cpp */; settings = {ATTRIBUTES = (); }; };
+		79899AED17EB7811D41B78FC /* Bone.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6470DCA358D473AAFF0A5981 /* Bone.cpp */; settings = {ATTRIBUTES = (); }; };
+		7AA6414B53F3750B076B4F8C /* SceneObjectGfx.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3E07D6AA702E0B6B337BD793 /* SceneObjectGfx.cpp */; settings = {ATTRIBUTES = (); }; };
+		7AE30D1FCCF5FFB51B2293CF /* GeneralParams.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9057989A14013B89008B0B13 /* GeneralParams.cpp */; settings = {ATTRIBUTES = (); }; };
+		7BC46494E194428B9C853956 /* MovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6DEF9472F8C9CB83CA80E3AA /* MovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		7D71FEC18DB0475992C77B09 /* OgreRenderer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E0E513DE2EB8A52ADCA04A4A /* OgreRenderer.cpp */; settings = {ATTRIBUTES = (); }; };
+		7DCB72669AC2AFABB87C5DF7 /* EscalatorMovePathMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6B71C1E2A4093292531FC188 /* EscalatorMovePathMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		7EDED066C3C351BB8C939923 /* OgreModelImporter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 84FFAE991DD470BADA955A7B /* OgreModelImporter.cpp */; settings = {ATTRIBUTES = (); }; };
+		7F4B0E9395EB6FE1B0871CE0 /* BuildDispatcher.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9F3C581B903ED2C749176531 /* BuildDispatcher.cpp */; settings = {ATTRIBUTES = (); }; };
+		7F5BD73CE6AD1E56FE3650E3 /* Action.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9318D9B8F76218D4D75844C3 /* Action.cpp */; settings = {ATTRIBUTES = (); }; };
+		817041F7A9639DE4BFB1B7AD /* StairMovePathMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9944E2066732FA10F0522DAA /* StairMovePathMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		8249A7B82FA8D1682E8DB807 /* StairMovePath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 746579F0DAF530AC8CDD6791 /* StairMovePath.cpp */; settings = {ATTRIBUTES = (); }; };
+		85434FB6910951CADBDD1A17 /* Item.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CA7D58600E9FDCA79C219779 /* Item.cpp */; settings = {ATTRIBUTES = (); }; };
+		87E8191E99C64AC155AB80F3 /* EventManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2BA94C578E6A790A67975E1B /* EventManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		8B687863C10233B12252AEE4 /* ModelIABuilderScanner.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B715EBABA87646F31D2E25F9 /* ModelIABuilderScanner.cpp */; settings = {ATTRIBUTES = (); }; };
+		8D44D628670FCB65806DF223 /* ImportModel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AC94F984265558E9BDC4799E /* ImportModel.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DC711F2176C1D2A7BEFD09B /* AnimationPart.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C22B1869A3A5FCE638009BD1 /* AnimationPart.cpp */; settings = {ATTRIBUTES = (); }; };
+		8E68585FA1C18E2683CCB232 /* Task.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 251DDB71F40F4547EFAA58B9 /* Task.cpp */; settings = {ATTRIBUTES = (); }; };
+		9264E07DE26C8028C270427C /* GfxLabelManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 279E03E08A6EFF854EDA50F9 /* GfxLabelManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		94579CCE0FD02339E3F3F3C9 /* DebugGraphics.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FD74F12A06FE74C9890C7FC1 /* DebugGraphics.cpp */; settings = {ATTRIBUTES = (); }; };
+		95506D887EB59D93C64322E5 /* ModelIAActorDecisionHistory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2B31BBD80719B70126643E24 /* ModelIAActorDecisionHistory.cpp */; settings = {ATTRIBUTES = (); }; };
+		97DA47D8A6B5A143D7637837 /* TransformFun.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7E7C3A50E4618A37A567EDB9 /* TransformFun.cpp */; settings = {ATTRIBUTES = (); }; };
+		9BE7C8BDD5E7DABF30F61E43 /* ModelIAActorDecisionBrain.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C061169684304304806C0809 /* ModelIAActorDecisionBrain.cpp */; settings = {ATTRIBUTES = (); }; };
+		9C8C49C673C476B2F449C7CF /* MovePathTrx.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C6B2939B081EEAFC44882E7C /* MovePathTrx.cpp */; settings = {ATTRIBUTES = (); }; };
+		9D381D21D0BC4C9686C09A33 /* GfxModelInstanceRender.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A990D610BA84D21C25B8006D /* GfxModelInstanceRender.cpp */; settings = {ATTRIBUTES = (); }; };
+		9DC6F7E95922E47B444504B9 /* GfxRenderRecord .cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C4B0BCFE1B98A4AEE9A24A53 /* GfxRenderRecord .cpp */; settings = {ATTRIBUTES = (); }; };
+		9E729E612EAAAF6E926ECA1F /* IKBrain.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EC04C4A00C78C2E6D431035A /* IKBrain.cpp */; settings = {ATTRIBUTES = (); }; };
+		9F219E5D37CDBC407C44EFF4 /* BodyCoord.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BC00D55E9226230025887146 /* BodyCoord.cpp */; settings = {ATTRIBUTES = (); }; };
+		A396FA05B0C6DA90853F93C5 /* AnimationPartCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 895B949C5DE26622388BD75D /* AnimationPartCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		A47F697A05603E1AA9E78C4C /* Animation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F456329BADD485AE3CC6DFEA /* Animation.cpp */; settings = {ATTRIBUTES = (); }; };
+		A5B18BBA91576E70BCB172A7 /* View.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D18CDD08A329933F59221819 /* View.cpp */; settings = {ATTRIBUTES = (); }; };
+		A67B6502C0EF7E9A107CF50D /* GfxOverlayClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CFDECA47C1397BF342B4E6D0 /* GfxOverlayClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		AA5D98A42DDD7AB48F67E7D9 /* GfxZoomManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8996F9E8A4FBD55B434DB84A /* GfxZoomManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		ABF1A398FABC0B70EC16C8D7 /* DAG.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EADF36C9863E9F5765284AE7 /* DAG.cpp */; settings = {ATTRIBUTES = (); }; };
+		AD2DAC5EE7C10E8E4A2E878C /* PathCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5C6BDE383B24BF1EBEB2AA3 /* PathCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		AE1EE4822E10BDB9D569F3D0 /* ClipCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6581B691E3F6890CF1D199E1 /* ClipCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		AFF84E316D599AFFAD5721B3 /* Model.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 848559634426120B6EB01338 /* Model.cpp */; settings = {ATTRIBUTES = (); }; };
+		B1D6FCCE72A7E83BEB2C67B5 /* ModelIAActorCollision.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1FAE9D9E07BA10D2DBC21443 /* ModelIAActorCollision.cpp */; settings = {ATTRIBUTES = (); }; };
+		B49AB60754045386CF6C990C /* ParamsExporter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E48A88ED13DD422B0C932A15 /* ParamsExporter.cpp */; settings = {ATTRIBUTES = (); }; };
+		B5D8CB9ACC1218A3BE88459F /* GfxClipAnimCache.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7053F032A3559F06EE532A89 /* GfxClipAnimCache.cpp */; settings = {ATTRIBUTES = (); }; };
+		B62BA0E628981F2F34E7E935 /* SplineMovePathMesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E43044BC73B35367E30947E8 /* SplineMovePathMesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		B67C140405ACD5FF0084B321 /* PathManipolator.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C1D0FC806494532A700C2DAC /* PathManipolator.cpp */; settings = {ATTRIBUTES = (); }; };
+		B8D8E09A14AC36944A0F9CAE /* ModelInstanceIAGfx.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 70F98B13276F8361162CAEEE /* ModelInstanceIAGfx.cpp */; settings = {ATTRIBUTES = (); }; };
+		BBFF97C61DADA0642F86A12F /* ClonerModder_Area_Mask.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 33700ACC2AD632ACF76CE29F /* ClonerModder_Area_Mask.cpp */; settings = {ATTRIBUTES = (); }; };
+		BE1E1498C2D53AD2BD0E87EE /* Film.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DB5B66E61C1DF5969D92AEBC /* Film.cpp */; settings = {ATTRIBUTES = (); }; };
+		C0D86552D02BA8B02B419BE2 /* OgreSpline.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6D995A023BF00DD5CB4C588F /* OgreSpline.cpp */; settings = {ATTRIBUTES = (); }; };
+		C0FC9A4916B0B1D648BED0FD /* ModelLibrary.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5AB61857CEB215A4DAC71667 /* ModelLibrary.cpp */; settings = {ATTRIBUTES = (); }; };
+		C2FD36337FF5E68A8B732F48 /* GfxUtil.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9BDF60393B23DCCD3D23ADEA /* GfxUtil.cpp */; settings = {ATTRIBUTES = (); }; };
+		C5A3074E4DBFF5FCE0FAB0E1 /* ModelIAThread.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 141153F215F4614EA37327B7 /* ModelIAThread.cpp */; settings = {ATTRIBUTES = (); }; };
+		C76972A09FC36417E57D8431 /* ContextIO.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 565AE0036EFB0716D27F6004 /* ContextIO.cpp */; settings = {ATTRIBUTES = (); }; };
+		C7A1DFA7A732F41583A2B1C8 /* FilmCommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 14DC518FAB4A488AD3FFECB0 /* FilmCommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		C81C298576EB42EA3B2653DD /* MeshLibrary.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C901487D9E847D01D2274DCF /* MeshLibrary.cpp */; settings = {ATTRIBUTES = (); }; };
+		C89758171E5138A2B6627FB4 /* ZoomManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7216BBA3CF5A690CF5A25331 /* ZoomManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		C9151020481CC3961AA7852A /* ModelInstance.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CF824AA375525F380FAF7FAF /* ModelInstance.cpp */; settings = {ATTRIBUTES = (); }; };
+		CB0B2C79478377B79758945B /* ModelIABuilderPath.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C1F744E5189D840081D76F2B /* ModelIABuilderPath.cpp */; settings = {ATTRIBUTES = (); }; };
+		CBAE9719718EEB35B1A28543 /* OgreBaseImporter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 52AC77464F9548E1ED98A268 /* OgreBaseImporter.cpp */; settings = {ATTRIBUTES = (); }; };
+		CCA2AAE11C094CD5211571E0 /* GfxScene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 66C974A334B33BAF6B11C3DD /* GfxScene.cpp */; settings = {ATTRIBUTES = (); }; };
+		CF1453D2A3D0C093A0EB9509 /* moc_list.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F9F54814F8BB4547ABA78BD5 /* moc_list.cpp */; settings = {ATTRIBUTES = (); }; };
+		D44B64F280761CE8287CBBA8 /* ModelIABuilderPathInfo.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FBFEA5FDC22BACDDD032AA0C /* ModelIABuilderPathInfo.cpp */; settings = {ATTRIBUTES = (); }; };
+		D4ABC62F1BEEE4AC0B197F5A /* EditorManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3479FA3967D90B5E4357BD1D /* EditorManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		D4BC29CD30EB830123A9C0BB /* TaskQueue.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 30CC7487F09D18E0DBE40BAE /* TaskQueue.cpp */; settings = {ATTRIBUTES = (); }; };
+		D5BD694B636D55416FC90772 /* DynamicRenderable.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AEB1A7BA63DD9ADFC9A3E313 /* DynamicRenderable.cpp */; settings = {ATTRIBUTES = (); }; };
+		D7160FA6B553B4A48204D3DB /* ClipBlend.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D3E6BAE34BF770BD240218C9 /* ClipBlend.cpp */; settings = {ATTRIBUTES = (); }; };
+		D961E2EEA6E365B11CED9E42 /* ImportGeometry.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04EAE08B77F51D4F5DA162CA /* ImportGeometry.cpp */; settings = {ATTRIBUTES = (); }; };
+		DB3C2BB7D919B7C37A6B4828 /* Command.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FDBF47BF8D2B0ADC867E11AA /* Command.cpp */; settings = {ATTRIBUTES = (); }; };
+		DE4783FA8335B72A3CD06039 /* ActionAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4B172CB4E899C4F46B88762E /* ActionAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF1E74F7CD8FA0A5C3CF91F8 /* IKSkeletonBrain.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 519282CF4212E1F66086E2AE /* IKSkeletonBrain.cpp */; settings = {ATTRIBUTES = (); }; };
+		E1B52BCBCD2C67D7696CE25B /* MeshExporter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A0CE2A8268F193F0FAB6115A /* MeshExporter.cpp */; settings = {ATTRIBUTES = (); }; };
+		E23B57239938B2CD7BA8C833 /* GfxBaseClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 799CD6222211F0E48DA6B3A0 /* GfxBaseClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		E25E7E441AF62893FC1DF7A6 /* ResourceManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 142B635F01BE4274E66EB1F3 /* ResourceManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		E43C44D406DB9B81964C491E /* SceneObjectMaterial.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 06F34547FC5809968C0EA163 /* SceneObjectMaterial.cpp */; settings = {ATTRIBUTES = (); }; };
+		E5A1B0BCD9AD8F94277B0342 /* ActionActorModder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7B9F07BDFA407C1735AA4597 /* ActionActorModder.cpp */; settings = {ATTRIBUTES = (); }; };
+		E6431AA00D28EE6F40ADC2A7 /* Clip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BD25B4EA01AAE56463FAA7B3 /* Clip.cpp */; settings = {ATTRIBUTES = (); }; };
+		E682C3DAD403A4D8FCB4B4CA /* OgreUtil.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4DC018EA61CE9FDE34DD35F3 /* OgreUtil.cpp */; settings = {ATTRIBUTES = (); }; };
+		E823D34A3075A79AF86C4D3D /* ClipBrain.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 45513109469B80D5425FFDEF /* ClipBrain.cpp */; settings = {ATTRIBUTES = (); }; };
+		EA925757CF5F2D0DF81F53E6 /* MeshExt.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B71ABA28B703F6215E1DCBB3 /* MeshExt.cpp */; settings = {ATTRIBUTES = (); }; };
+		EB73B2D679D591ADFF809752 /* BodyPose.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B1E20E3ECF682C9762820C6C /* BodyPose.cpp */; settings = {ATTRIBUTES = (); }; };
+		EC9DBC79C1C323BAA71532AA /* Mesh.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 94474EE3373FA3E5C2267417 /* Mesh.cpp */; settings = {ATTRIBUTES = (); }; };
+		F1CB7585BF941B85661AA061 /* mersenne.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = ACC0755036996A5762B7F22B /* mersenne.cpp */; settings = {ATTRIBUTES = (); }; };
+		F2DEAE9C942A84800F3654E7 /* ModelClip.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E7E883709C41C3D8A2E783C3 /* ModelClip.cpp */; settings = {ATTRIBUTES = (); }; };
+		F5DD515031B2859CD7E196DA /* ClonerModder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 24803A95CD21CBDA34FD7B5C /* ClonerModder.cpp */; settings = {ATTRIBUTES = (); }; };
+		F83E84595D1DDAD4705C1AA9 /* Property.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4C54BAE21B35401A37723BAD /* Property.cpp */; settings = {ATTRIBUTES = (); }; };
+		F90595B18946E96F6D3A25A6 /* OgreGridPlane.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BACFB6F3E4F5AFDC8B6E449C /* OgreGridPlane.cpp */; settings = {ATTRIBUTES = (); }; };
+		F9948906072AFE9D1BDA1CD4 /* AddOnManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0A5D12D63C82EFAE301A221D /* AddOnManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		FACCAFD70AE956BA5990F11E /* ModelOverlayFunction.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 804D6917F774EDC5CD840958 /* ModelOverlayFunction.cpp */; settings = {ATTRIBUTES = (); }; };
+		FB54EED830438086BD3F6B7E /* SelectionManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 966EE51B240210CB2AA8EEB9 /* SelectionManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		FD9FF891B8762A086BC8B1A5 /* GfxContext.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C29A513364168C83713FE2D6 /* GfxContext.cpp */; settings = {ATTRIBUTES = (); }; };
+		FDE4A79C14DCBE8A8DF0DF45 /* GfxBaseModel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 561FB4E3C7B713D47058B0F5 /* GfxBaseModel.cpp */; settings = {ATTRIBUTES = (); }; };
+		FE1898F81D0B4B3F238519F7 /* AnimationPartEscalator.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F1ACB314F99E55769FB25B2A /* AnimationPartEscalator.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12E5F4BB1491F6300079713F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../../../../bin;
+			dstSubfolderSpec = 16;
+			files = (
+				12E5F4B41491F6270079713F /* libAnimaCore.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/at2/lib;
+			dstSubfolderSpec = 0;
+			files = (
+				04B6C824138FAC9600954940 /* libAnimaCore.dylib in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A6298C61A7A811B4ADE532 /* Anima_nsuse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Anima_nsuse.h; sourceTree = "<group>"; };
+		017315BDCFD895C588DAB305 /* GfxClipAnimCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxClipAnimCache.h; path = Gfx/GfxClipAnimCache.h; sourceTree = "<group>"; };
+		020453B7A9A3829EB84884BF /* ActionCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionCommands.h; path = Core/Command/ActionCommands.h; sourceTree = "<group>"; };
+		0319254777E353E315F24A35 /* Config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = Core/Config.cpp; sourceTree = "<group>"; };
+		035775A9CA38B90B2459C145 /* BaseModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BaseModel.cpp; path = Core/BaseModel.cpp; sourceTree = "<group>"; };
+		046FE40ECC8478AA7C65820A /* ActionLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActionLibrary.cpp; path = Core/ActionLibrary.cpp; sourceTree = "<group>"; };
+		048C821E1393D37100247229 /* SceneObjectGfxMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObjectGfxMesh.cpp; path = Core/SceneObjectGfxMesh.cpp; sourceTree = "<group>"; };
+		048C82331393D4CE00247229 /* BodyModderStair_simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BodyModderStair_simple.cpp; path = Physic/BodyModderStair_simple.cpp; sourceTree = "<group>"; };
+		048C82551393E30600247229 /* lq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lq.c; path = Core/IA/OpenSteer/lq.c; sourceTree = "<group>"; };
+		048C82561393E30600247229 /* lq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lq.h; path = Core/IA/OpenSteer/lq.h; sourceTree = "<group>"; };
+		048C82571393E30600247229 /* Proximity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Proximity.h; path = Core/IA/OpenSteer/Proximity.h; sourceTree = "<group>"; };
+		04B6C822138FAC9600954940 /* libAnimaCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAnimaCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B6C83C138FC05400954940 /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = ../../lib/Ogre.framework; sourceTree = SOURCE_ROOT; };
+		04B6C92F138FC53600954940 /* SelectionManagerGfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionManagerGfx.cpp; path = Core/Edit/SelectionManagerGfx.cpp; sourceTree = "<group>"; };
+		04B6C930138FC53600954940 /* SelectionManagerGfxMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionManagerGfxMesh.cpp; path = Core/Edit/SelectionManagerGfxMesh.cpp; sourceTree = "<group>"; };
+		04B6C931138FC53600954940 /* SelectionManagerGfxMeshSplineHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionManagerGfxMeshSplineHelper.cpp; path = Core/Edit/SelectionManagerGfxMeshSplineHelper.cpp; sourceTree = "<group>"; };
+		04E58C5513D01B6E00F88DD7 /* GfxModelEdit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GfxModelEdit.cpp; path = Gfx/GfxModelEdit.cpp; sourceTree = "<group>"; };
+		04E58C6013D01BF100F88DD7 /* SceneLibrary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneLibrary.cpp; path = Core/SceneLibrary.cpp; sourceTree = "<group>"; };
+		04E58C6613D01DD700F88DD7 /* ModelIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIO.cpp; path = Core/ModelIO.cpp; sourceTree = "<group>"; };
+		04EAE08B77F51D4F5DA162CA /* ImportGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ImportGeometry.cpp; path = Import/ImportGeometry.cpp; sourceTree = "<group>"; };
+		04EF5B8314E531210065469C /* QtXmlAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXmlAnima.framework; path = ../../lib/QtXmlAnima.framework; sourceTree = SOURCE_ROOT; };
+		04EF5C7214E548270065469C /* QtCoreAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCoreAnima.framework; path = ../../lib/QtCoreAnima.framework; sourceTree = SOURCE_ROOT; };
+		04EF5C7314E548270065469C /* QtGuiAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGuiAnima.framework; path = ../../lib/QtGuiAnima.framework; sourceTree = SOURCE_ROOT; };
+		04EF5C7414E548270065469C /* QtNetworkAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetworkAnima.framework; path = ../../lib/QtNetworkAnima.framework; sourceTree = SOURCE_ROOT; };
+		04FE9AAE1398BBB100460656 /* libAnimaCollision.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAnimaCollision.dylib; path = ../../bin/libAnimaCollision.dylib; sourceTree = SOURCE_ROOT; };
+		04FE9AB21398BBB100460656 /* libAnimaImport.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAnimaImport.dylib; path = ../../bin/libAnimaImport.dylib; sourceTree = SOURCE_ROOT; };
+		04FE9AB41398BBB100460656 /* libAnimaMedia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAnimaMedia.dylib; path = ../../bin/libAnimaMedia.dylib; sourceTree = SOURCE_ROOT; };
+		04FE9AB61398BBB100460656 /* libAnimaRender.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAnimaRender.dylib; path = ../../bin/libAnimaRender.dylib; sourceTree = SOURCE_ROOT; };
+		0541C7ABE60E9B44E1C4696A /* Line3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Line3D.cpp; path = Gfx/Render/Line3D.cpp; sourceTree = "<group>"; };
+		062F856CE1F65A83BB9DE014 /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Action.h; path = Core/Action.h; sourceTree = "<group>"; };
+		06F34547FC5809968C0EA163 /* SceneObjectMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObjectMaterial.cpp; path = Core/SceneObjectMaterial.cpp; sourceTree = "<group>"; };
+		0A3B475C1F5CC8D1037BEEA3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Core/Config.h; sourceTree = "<group>"; };
+		0A5D12D63C82EFAE301A221D /* AddOnManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AddOnManager.cpp; path = Import/AddOnManager.cpp; sourceTree = "<group>"; };
+		0B39E4F91255CD3188F5B733 /* MemoryRecorder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryRecorder.cpp; path = DebugUtils/MemoryRecorder.cpp; sourceTree = "<group>"; };
+		0B6A17895CB4E2728E629ED7 /* AnimClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimClip.cpp; path = Core/AnimClip.cpp; sourceTree = "<group>"; };
+		0C87DE35C12CFD6CCFCA3765 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Core/BaseModel.h; sourceTree = "<group>"; };
+		0FFD60F83791AE0F37E7A641 /* SelectionManagerGfxMeshSplineHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SelectionManagerGfxMeshSplineHelper.h; path = Core/Edit/SelectionManagerGfxMeshSplineHelper.h; sourceTree = "<group>"; };
+		10955B9313101E886879E470 /* PathDesignMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathDesignMode.h; path = Core/Action/ActionModes/PathDesignMode.h; sourceTree = "<group>"; };
+		10B1576A7400BA48EA51660E /* ActorCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActorCommands.h; path = Core/Command/ActorCommands.h; sourceTree = "<group>"; };
+		10E441BC888E3664910B9DEB /* ModelIAActorSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActorSpeed.h; path = Core/IA/ModelIAActorSpeed.h; sourceTree = "<group>"; };
+		113F0B018F7658C0A1FF0D56 /* BodyModder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BodyModder.cpp; path = Physic/BodyModder.cpp; sourceTree = "<group>"; };
+		141153F215F4614EA37327B7 /* ModelIAThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAThread.cpp; path = Core/IA/ModelIAThread.cpp; sourceTree = "<group>"; };
+		142B635F01BE4274E66EB1F3 /* ResourceManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = Core/ResourceManager.cpp; sourceTree = "<group>"; };
+		14DC518FAB4A488AD3FFECB0 /* FilmCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FilmCommands.cpp; path = Core/Command/FilmCommands.cpp; sourceTree = "<group>"; };
+		151C975CAC0A0155BB563659 /* SelectionManagerGfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SelectionManagerGfx.h; path = Core/Edit/SelectionManagerGfx.h; sourceTree = "<group>"; };
+		159968165D5F34EDB00EDE83 /* AnimationPart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPart.h; path = Core/AnimationPart.h; sourceTree = "<group>"; };
+		1605C36DE526FC6219821A66 /* TextureRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextureRenderer.h; path = Gfx/Render/TextureRenderer.h; sourceTree = "<group>"; };
+		181CE5F1A0B83A66D5FEB5C4 /* ActorCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActorCommands.cpp; path = Core/Command/ActorCommands.cpp; sourceTree = "<group>"; };
+		1ACB23063CDF72221F9B186B /* PointMovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PointMovePath.cpp; path = Core/AnimParts/PointMovePath.cpp; sourceTree = "<group>"; };
+		1AE29DB6456BD3C458E11141 /* LinkMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LinkMovePath.h; path = Core/AnimParts/LinkMovePath.h; sourceTree = "<group>"; };
+		1B0FB067AAF3EE7F959A744C /* MovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MovePath.h; path = Core/MovePath.h; sourceTree = "<group>"; };
+		1B216B964B3D68B2A501B090 /* OgreModelRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreModelRenderer.cpp; path = Ogre/OgreModelRenderer.cpp; sourceTree = "<group>"; };
+		1C4F989F7F99F6BBE07AA336 /* AnimClipCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimClipCollection.cpp; path = Core/AnimClipCollection.cpp; sourceTree = "<group>"; };
+		1C5F45FA14DA9C65A670FFB4 /* ActionClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionClip.h; path = Core/Action/ActionClip.h; sourceTree = "<group>"; };
+		1D238E060475BE49A50DFF04 /* DebugGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DebugGraphics.h; path = Gfx/Render/DebugGraphics.h; sourceTree = "<group>"; };
+		1FAE9D9E07BA10D2DBC21443 /* ModelIAActorCollision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActorCollision.cpp; path = Core/IA/ModelIAActorCollision.cpp; sourceTree = "<group>"; };
+		23D77AE0A76A3A11A2C7FE0F /* AnimationCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationCommands.h; path = Core/Command/AnimationCommands.h; sourceTree = "<group>"; };
+		24803A95CD21CBDA34FD7B5C /* ClonerModder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClonerModder.cpp; path = Core/Modders/ClonerModder.cpp; sourceTree = "<group>"; };
+		248D36A895E13323921585F3 /* ModelIABuilderPathOperator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilderPathOperator.cpp; path = Core/IA/ModelIABuilderPathOperator.cpp; sourceTree = "<group>"; };
+		251DDB71F40F4547EFAA58B9 /* Task.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Task.cpp; path = Task/Task.cpp; sourceTree = "<group>"; };
+		2708A68980D7C1B7DC2DDA95 /* DynamicLines.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DynamicLines.cpp; path = Ogre/DynamicLines.cpp; sourceTree = "<group>"; };
+		279E03E08A6EFF854EDA50F9 /* GfxLabelManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxLabelManager.cpp; path = Gfx/GfxLabelManager.cpp; sourceTree = "<group>"; };
+		29439E772B23E18947ED4BB0 /* StdCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StdCommands.h; path = Core/Command/StdCommands.h; sourceTree = "<group>"; };
+		2A9AB6F777C8A4A08285FCF1 /* MeshExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MeshExporter.h; path = Export/MeshExporter.h; sourceTree = "<group>"; };
+		2ACAD299CDA6EA45A0E2D33B /* DynamicRenderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DynamicRenderable.h; path = Ogre/DynamicRenderable.h; sourceTree = "<group>"; };
+		2B24AC0621E354A2D421C478 /* SelectionManagerGfxMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SelectionManagerGfxMesh.h; path = Core/Edit/SelectionManagerGfxMesh.h; sourceTree = "<group>"; };
+		2B31BBD80719B70126643E24 /* ModelIAActorDecisionHistory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActorDecisionHistory.cpp; path = Core/IA/ModelIAActorDecisionHistory.cpp; sourceTree = "<group>"; };
+		2BA94C578E6A790A67975E1B /* EventManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EventManager.cpp; path = Core/Edit/EventManager.cpp; sourceTree = "<group>"; };
+		2BB66DE0BCF093D08CD10E4E /* SceneObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObject.cpp; path = Core/SceneObject.cpp; sourceTree = "<group>"; };
+		2CC7661DD9741AE8EF7F77CD /* ActionActorModder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionActorModder.h; path = Core/Action/ActionActorModder.h; sourceTree = "<group>"; };
+		2CC9BF1B064127552C83396B /* GfxClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxClip.h; path = Gfx/GfxClip.h; sourceTree = "<group>"; };
+		2CCE5E4408237B5393240B29 /* ModelIAActorDecisionBrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActorDecisionBrain.h; path = Core/IA/ModelIAActorDecisionBrain.h; sourceTree = "<group>"; };
+		2D0D8BB33F5DF8BFB68FEA47 /* ModelIABuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIABuilder.h; path = Core/IA/ModelIABuilder.h; sourceTree = "<group>"; };
+		2E7CF28DA0A398B8A26C2EB6 /* StairMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StairMovePath.h; path = Core/AnimParts/StairMovePath.h; sourceTree = "<group>"; };
+		2FA8B319D69DE1BCAB49A528 /* GfxZoomManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxZoomManager.h; path = Gfx/GfxZoomManager.h; sourceTree = "<group>"; };
+		30CC7487F09D18E0DBE40BAE /* TaskQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TaskQueue.cpp; path = Task/TaskQueue.cpp; sourceTree = "<group>"; };
+		324EAC90322E0682B48D8050 /* GfxBaseClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxBaseClip.h; path = Gfx/GfxBaseClip.h; sourceTree = "<group>"; };
+		33700ACC2AD632ACF76CE29F /* ClonerModder_Area_Mask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClonerModder_Area_Mask.cpp; path = Core/Modders/ClonerModder_Area_Mask.cpp; sourceTree = "<group>"; };
+		3479FA3967D90B5E4357BD1D /* EditorManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EditorManager.cpp; path = Core/Edit/EditorManager.cpp; sourceTree = "<group>"; };
+		349E5C28F53C4FD4D6D1F75C /* ClonerModder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClonerModder.h; path = Core/Modders/ClonerModder.h; sourceTree = "<group>"; };
+		34C90F83EAAC719E77A831A6 /* AnimationPartClipSpline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPartClipSpline.h; path = Core/AnimParts/AnimationPartClipSpline.h; sourceTree = "<group>"; };
+		35B99C070F860A7EBB7AF43A /* ModelIAActor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActor.cpp; path = Core/IA/ModelIAActor.cpp; sourceTree = "<group>"; };
+		35F425743F3CF720BCFE6BE8 /* PointMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PointMovePath.h; path = Core/AnimParts/PointMovePath.h; sourceTree = "<group>"; };
+		36B6917519CDE8AEB210E644 /* GfxLabelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxLabelManager.h; path = Gfx/GfxLabelManager.h; sourceTree = "<group>"; };
+		36ECB112E2D201CA6A70652E /* ModelLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelLibrary.h; path = Core/ModelLibrary.h; sourceTree = "<group>"; };
+		37651DDCFE1DE7EABA8E94D1 /* ActionClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActionClip.cpp; path = Core/Action/ActionClip.cpp; sourceTree = "<group>"; };
+		376EFF4B9889918A7475A9EF /* AnimClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimClip.h; path = Core/AnimClip.h; sourceTree = "<group>"; };
+		37A4A06454F841B7113ABC7C /* CollisionManagerIce.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionManagerIce.cpp; path = Core/CollisionManagerIce.cpp; sourceTree = "<group>"; };
+		37E04066EC3CE3101EA484A8 /* GfxModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxModel.h; path = Gfx/GfxModel.h; sourceTree = "<group>"; };
+		385B9561F7FD743427E00DC8 /* GfxClipAnim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxClipAnim.h; path = Gfx/GfxClipAnim.h; sourceTree = "<group>"; };
+		38FFFB761B74A8502293DCE0 /* SpeedFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedFunction.cpp; path = Core/SpeedFunction.cpp; sourceTree = "<group>"; };
+		39290F1EB0A5F356E05ADF5B /* SplineMovePathMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplineMovePathMesh.h; path = Ogre/SplineMovePathMesh.h; sourceTree = "<group>"; };
+		39E054E358198F9B874CF0B6 /* DynamicLines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DynamicLines.h; path = Ogre/DynamicLines.h; sourceTree = "<group>"; };
+		3A2507DEC27D7E2E9ABF59CE /* GUIManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GUIManager.cpp; path = UI/GUIManager.cpp; sourceTree = "<group>"; };
+		3AEBBF01EB2B54B92F210D13 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mesh.h; path = Core/Mesh.h; sourceTree = "<group>"; };
+		3B017ABD43C477127C833DBC /* resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		3D901CB211A2E400450C8157 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Core/Item.h; sourceTree = "<group>"; };
+		3E07D6AA702E0B6B337BD793 /* SceneObjectGfx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObjectGfx.cpp; path = Core/SceneObjectGfx.cpp; sourceTree = "<group>"; };
+		3E4078253F06D7190B719175 /* EditorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditorManager.h; path = Core/Edit/EditorManager.h; sourceTree = "<group>"; };
+		3E9FAF61CEC724194026518F /* MeshLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MeshLibrary.h; path = Core/MeshLibrary.h; sourceTree = "<group>"; };
+		3F3FE2A6A24829C7D35DB6EF /* MarkerModder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MarkerModder.h; path = Physic/MarkerModder.h; sourceTree = "<group>"; };
+		3FE2115270D14E3C02BC2E38 /* IKSkeleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IKSkeleton.h; path = Physic/IKSkeleton.h; sourceTree = "<group>"; };
+		42AD5FBC5B8FE1D52E25A57C /* Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Animation.h; path = Core/Animation.h; sourceTree = "<group>"; };
+		44BE7B572FF925B1665332D9 /* DAG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DAG.h; path = Core/DAG.h; sourceTree = "<group>"; };
+		45513109469B80D5425FFDEF /* ClipBrain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClipBrain.cpp; path = Core/ClipBrain.cpp; sourceTree = "<group>"; };
+		46DCCEEC67A02FFFF123CDEF /* ModelIABuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilder.cpp; path = Core/IA/ModelIABuilder.cpp; sourceTree = "<group>"; };
+		4860A96FACA4D32165FED10D /* ModelIABuilderScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIABuilderScanner.h; path = Core/IA/ModelIABuilderScanner.h; sourceTree = "<group>"; };
+		4AD8C90B784FB8800A854947 /* GfxUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxUtil.h; path = Gfx/GfxUtil.h; sourceTree = "<group>"; };
+		4B172CB4E899C4F46B88762E /* ActionAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActionAnimation.cpp; path = Core/Action/ActionAnimation.cpp; sourceTree = "<group>"; };
+		4C1722C1F0C8285874C3406E /* AnimationPartStairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPartStairs.cpp; path = Core/AnimParts/AnimationPartStairs.cpp; sourceTree = "<group>"; };
+		4C54BAE21B35401A37723BAD /* Property.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Property.cpp; path = Core/Property.cpp; sourceTree = "<group>"; };
+		4CB1496171066EA487105885 /* TaskObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TaskObject.h; path = Task/TaskObject.h; sourceTree = "<group>"; };
+		4D1F19C1A356E57BDC13D1FE /* CommandManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CommandManager.cpp; path = Core/Command/CommandManager.cpp; sourceTree = "<group>"; };
+		4D43FF118B01253B2019BF5E /* OgreBaseImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreBaseImporter.h; path = Import/OgreBaseImporter.h; sourceTree = "<group>"; };
+		4DC018EA61CE9FDE34DD35F3 /* OgreUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreUtil.cpp; path = Ogre/OgreUtil.cpp; sourceTree = "<group>"; };
+		4E2FEFB15AE73212334DEEA0 /* TaskQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TaskQueue.h; path = Task/TaskQueue.h; sourceTree = "<group>"; };
+		5022AEA78315096BC1CC4F9A /* ModelIAActorDecision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActorDecision.h; path = Core/IA/ModelIAActorDecision.h; sourceTree = "<group>"; };
+		50BB4515476F21B5474F8033 /* ClipBrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClipBrain.h; path = Core/ClipBrain.h; sourceTree = "<group>"; };
+		513C63B9438C6ECCA85B6CE1 /* TransformFun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TransformFun.h; path = Physic/TransformFun.h; sourceTree = "<group>"; };
+		519282CF4212E1F66086E2AE /* IKSkeletonBrain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IKSkeletonBrain.cpp; path = Physic/IKSkeletonBrain.cpp; sourceTree = "<group>"; };
+		51E9D0C52ECF311CF9AA0A5E /* MarkerFootTranform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MarkerFootTranform.cpp; path = Physic/MarkerFootTranform.cpp; sourceTree = "<group>"; };
+		528E1F31A182853E39F97B9B /* Modder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Modder.cpp; path = Core/Modder.cpp; sourceTree = "<group>"; };
+		52AC77464F9548E1ED98A268 /* OgreBaseImporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreBaseImporter.cpp; path = Import/OgreBaseImporter.cpp; sourceTree = "<group>"; };
+		53A8BF75FBBDBC0FDC4DC285 /* ModelIAQualityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAQualityManager.h; path = Core/IA/ModelIAQualityManager.h; sourceTree = "<group>"; };
+		543F3D2B31DE6C64FEF77C8E /* ModelEdit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelEdit.cpp; path = Core/ModelEdit.cpp; sourceTree = "<group>"; };
+		54D4C4B4C3CB08E88FF3E66B /* GfxRenderRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxRenderRecord.h; path = Gfx/GfxRenderRecord.h; sourceTree = "<group>"; };
+		561FB4E3C7B713D47058B0F5 /* GfxBaseModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxBaseModel.cpp; path = Gfx/GfxBaseModel.cpp; sourceTree = "<group>"; };
+		563EA45C91E384210A3F63F0 /* randomc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = randomc.h; path = Core/Modders/randomc.h; sourceTree = "<group>"; };
+		565AE0036EFB0716D27F6004 /* ContextIO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ContextIO.cpp; path = Import/IO/ContextIO.cpp; sourceTree = "<group>"; };
+		567BE82EC92BE3594651C195 /* Context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Context.cpp; path = Core/Context.cpp; sourceTree = "<group>"; };
+		568A79FC9D28137A2957EFF7 /* Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Property.h; path = Core/Property.h; sourceTree = "<group>"; };
+		576FD6451AAC1240800141A1 /* LibraryLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibraryLoader.h; path = Import/IO/LibraryLoader.h; sourceTree = "<group>"; };
+		577A1F6D167773858965A96C /* GfxModelInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxModelInstance.h; path = Gfx/GfxModelInstance.h; sourceTree = "<group>"; };
+		5870F380D3D50BCEC44F91CA /* StdCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StdCommands.cpp; path = Core/Command/StdCommands.cpp; sourceTree = "<group>"; };
+		591B4C9AD1D282F2B8A23E3B /* EscalatorMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EscalatorMovePath.h; path = Core/AnimParts/EscalatorMovePath.h; sourceTree = "<group>"; };
+		598C87330E1C0EDCA44ED474 /* ModelIAActorDecisionHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActorDecisionHistory.h; path = Core/IA/ModelIAActorDecisionHistory.h; sourceTree = "<group>"; };
+		5AB61857CEB215A4DAC71667 /* ModelLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelLibrary.cpp; path = Core/ModelLibrary.cpp; sourceTree = "<group>"; };
+		5AD77AF1E78E7439CCC5AC1E /* PathGfxBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathGfxBuilder.h; path = Core/PathGfxBuilders/PathGfxBuilder.h; sourceTree = "<group>"; };
+		5C800D0748571AD4322BB88A /* ActionCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActionCommands.cpp; path = Core/Command/ActionCommands.cpp; sourceTree = "<group>"; };
+		5D7A1FB21B151C40EDBA443C /* ModelIACollision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIACollision.h; path = Core/IA/ModelIACollision.h; sourceTree = "<group>"; };
+		5DD57DF2865F540128EF0071 /* CoreException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreException.h; path = Core/CoreException.h; sourceTree = "<group>"; };
+		60BADD16C15B7DF8EEE71A81 /* DeleteTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeleteTask.h; path = Task/DeleteTask.h; sourceTree = "<group>"; };
+		61366E8DA5B6E4EE7400C4C6 /* Film.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Film.h; path = Core/Film.h; sourceTree = "<group>"; };
+		61473FA2A79F13D769C051EB /* GfxPerformanceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxPerformanceManager.h; path = Gfx/GfxPerformanceManager.h; sourceTree = "<group>"; };
+		6269763BFEB91115E00BC4F2 /* EscalatorMovePathMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EscalatorMovePathMesh.h; path = Ogre/EscalatorMovePathMesh.h; sourceTree = "<group>"; };
+		6470DCA358D473AAFF0A5981 /* Bone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bone.cpp; path = Physic/Bone.cpp; sourceTree = "<group>"; };
+		64EB1AC42927678F556AFCE8 /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Task.h; path = Task/Task.h; sourceTree = "<group>"; };
+		6581B691E3F6890CF1D199E1 /* ClipCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClipCommands.cpp; path = Core/Command/ClipCommands.cpp; sourceTree = "<group>"; };
+		6631782018B59430B715A688 /* AnimationPartEscalator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPartEscalator.h; path = Core/AnimParts/AnimationPartEscalator.h; sourceTree = "<group>"; };
+		66C974A334B33BAF6B11C3DD /* GfxScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxScene.cpp; path = Gfx/GfxScene.cpp; sourceTree = "<group>"; };
+		684125EF3B44745B22386843 /* ModelIA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIA.cpp; path = Core/IA/ModelIA.cpp; sourceTree = "<group>"; };
+		69BBA448B4AD1409A4AB207D /* SceneObjectGfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneObjectGfx.h; path = Core/SceneObjectGfx.h; sourceTree = "<group>"; };
+		6A2E309C97004ECD1EFC2F21 /* TextureRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TextureRenderer.cpp; path = Gfx/Render/TextureRenderer.cpp; sourceTree = "<group>"; };
+		6B71C1E2A4093292531FC188 /* EscalatorMovePathMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EscalatorMovePathMesh.cpp; path = Ogre/EscalatorMovePathMesh.cpp; sourceTree = "<group>"; };
+		6D995A023BF00DD5CB4C588F /* OgreSpline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreSpline.cpp; path = Core/AnimParts/OgreSpline.cpp; sourceTree = "<group>"; };
+		6DEF9472F8C9CB83CA80E3AA /* MovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MovePath.cpp; path = Core/MovePath.cpp; sourceTree = "<group>"; };
+		6EDB4449EABEFA5436C95E72 /* AnimClipModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimClipModel.h; path = Core/AnimClipModel.h; sourceTree = "<group>"; };
+		7053F032A3559F06EE532A89 /* GfxClipAnimCache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxClipAnimCache.cpp; path = Gfx/GfxClipAnimCache.cpp; sourceTree = "<group>"; };
+		7069AA29E170053E4FF3CA38 /* ModelInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelInstance.h; path = Core/ModelInstance.h; sourceTree = "<group>"; };
+		70F98B13276F8361162CAEEE /* ModelInstanceIAGfx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelInstanceIAGfx.cpp; path = Core/IA/ModelInstanceIAGfx.cpp; sourceTree = "<group>"; };
+		7216BBA3CF5A690CF5A25331 /* ZoomManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ZoomManager.cpp; path = UI/ZoomManager.cpp; sourceTree = "<group>"; };
+		746579F0DAF530AC8CDD6791 /* StairMovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StairMovePath.cpp; path = Core/AnimParts/StairMovePath.cpp; sourceTree = "<group>"; };
+		74B3316B9A93AED13519B3F8 /* BodyPose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BodyPose.h; path = Physic/BodyPose.h; sourceTree = "<group>"; };
+		7518219231A4606C7B4D1D9E /* ModelMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelMesh.h; path = Ogre/ModelMesh.h; sourceTree = "<group>"; };
+		753FD7A80454657F422B97B1 /* AnimationPartStairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPartStairs.h; path = Core/AnimParts/AnimationPartStairs.h; sourceTree = "<group>"; };
+		779C1DE56DC8A5A484D888F9 /* MarkerModder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MarkerModder.cpp; path = Physic/MarkerModder.cpp; sourceTree = "<group>"; };
+		79101886F2B2030B76597A0A /* GeomCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeomCommands.h; path = Core/Command/GeomCommands.h; sourceTree = "<group>"; };
+		79977E554E7E654FEA348CFA /* GfxBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxBaseModel.h; path = Gfx/GfxBaseModel.h; sourceTree = "<group>"; };
+		799CD6222211F0E48DA6B3A0 /* GfxBaseClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxBaseClip.cpp; path = Gfx/GfxBaseClip.cpp; sourceTree = "<group>"; };
+		79BDE1595CC2A80D6C3BCD34 /* ModelIAQualityManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAQualityManager.cpp; path = Core/IA/ModelIAQualityManager.cpp; sourceTree = "<group>"; };
+		7B7720A520489FC17D9AFE59 /* OgreUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreUtil.h; path = Ogre/OgreUtil.h; sourceTree = "<group>"; };
+		7B9F07BDFA407C1735AA4597 /* ActionActorModder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ActionActorModder.cpp; path = Core/Action/ActionActorModder.cpp; sourceTree = "<group>"; };
+		7BAC87C5FBB756A2CBCF3A59 /* AnimClipModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimClipModel.cpp; path = Core/AnimClipModel.cpp; sourceTree = "<group>"; };
+		7CBF17211FB173F4852944D6 /* PhaserModder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhaserModder.h; path = Core/Modders/PhaserModder.h; sourceTree = "<group>"; };
+		7E3AE86CD2BA1E6F3B9DDA2C /* EscalatorMovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EscalatorMovePath.cpp; path = Core/AnimParts/EscalatorMovePath.cpp; sourceTree = "<group>"; };
+		7E7C3A50E4618A37A567EDB9 /* TransformFun.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TransformFun.cpp; path = Physic/TransformFun.cpp; sourceTree = "<group>"; };
+		7E7E336B417593C6C1C4CA57 /* BodyModder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BodyModder.h; path = Physic/BodyModder.h; sourceTree = "<group>"; };
+		7E82D619B9970F64AE72B4B6 /* AnimationPartCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPartCommands.h; path = Core/Command/AnimationPartCommands.h; sourceTree = "<group>"; };
+		7FE7AD899ED2871763B0F9BB /* TaskObjectPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TaskObjectPtr.h; path = Task/TaskObjectPtr.h; sourceTree = "<group>"; };
+		8000570A6D3B54FA1EB33945 /* ogreutility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ogreutility.h; path = Gfx/Render/ogreutility.h; sourceTree = "<group>"; };
+		804D6917F774EDC5CD840958 /* ModelOverlayFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelOverlayFunction.cpp; path = Core/ModelOverlayFunction.cpp; sourceTree = "<group>"; };
+		81120089E9F3D7431B28429C /* SpeedFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedFunction.h; path = Core/SpeedFunction.h; sourceTree = "<group>"; };
+		816DAB4514517D00A1735172 /* PointMovePathMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PointMovePathMesh.h; path = Ogre/PointMovePathMesh.h; sourceTree = "<group>"; };
+		828439862D85B9D86E9AE74B /* PresetsExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PresetsExporter.h; path = Export/PresetsExporter.h; sourceTree = "<group>"; };
+		848559634426120B6EB01338 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Model.cpp; path = Core/Model.cpp; sourceTree = "<group>"; };
+		84FFAE991DD470BADA955A7B /* OgreModelImporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreModelImporter.cpp; path = Import/OgreModelImporter.cpp; sourceTree = "<group>"; };
+		86A231699EB098D15CD95EFA /* ModelMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelMesh.cpp; path = Ogre/ModelMesh.cpp; sourceTree = "<group>"; };
+		88F9783D82E6C98914FB25C5 /* PhaserModder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PhaserModder.cpp; path = Core/Modders/PhaserModder.cpp; sourceTree = "<group>"; };
+		895B949C5DE26622388BD75D /* AnimationPartCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPartCommands.cpp; path = Core/Command/AnimationPartCommands.cpp; sourceTree = "<group>"; };
+		8996F9E8A4FBD55B434DB84A /* GfxZoomManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxZoomManager.cpp; path = Gfx/GfxZoomManager.cpp; sourceTree = "<group>"; };
+		89EC8E2D1FE6F2E0FE056925 /* ModelIAActorDecision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActorDecision.cpp; path = Core/IA/ModelIAActorDecision.cpp; sourceTree = "<group>"; };
+		8C23095B59F281C7288DBF37 /* VideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VideoManager.h; path = Export/VideoManager.h; sourceTree = "<group>"; };
+		8C8E6A22B882E7810BEAA832 /* OgreRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreRenderer.h; path = Gfx/Render/OgreRenderer.h; sourceTree = "<group>"; };
+		8CACDE3FE0BA713DC372065F /* OgreSpline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreSpline.h; path = Core/AnimParts/OgreSpline.h; sourceTree = "<group>"; };
+		8CEE7283DC54AD4ACDD65840 /* ClipLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClipLibrary.cpp; path = Core/ClipLibrary.cpp; sourceTree = "<group>"; };
+		8D48ED1FAF3A52FBF049E6AD /* MeshExtGeomExt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MeshExtGeomExt.cpp; path = Export/MeshExtGeomExt.cpp; sourceTree = "<group>"; };
+		8D83364EAD6EB7FDF9E3EC05 /* AnimationPartClipPoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPartClipPoint.cpp; path = Core/AnimParts/AnimationPartClipPoint.cpp; sourceTree = "<group>"; };
+		900386D46F5DBEC5E664828B /* ParamsExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParamsExporter.h; path = Export/ParamsExporter.h; sourceTree = "<group>"; };
+		9057989A14013B89008B0B13 /* GeneralParams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralParams.cpp; sourceTree = "<group>"; };
+		907376F797BA31139477F0E2 /* CommandManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommandManager.h; path = Core/Command/CommandManager.h; sourceTree = "<group>"; };
+		909D4F4898F8C8150DA8D699 /* ClonerModder_Area_Mask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClonerModder_Area_Mask.h; path = Core/Modders/ClonerModder_Area_Mask.h; sourceTree = "<group>"; };
+		9318D9B8F76218D4D75844C3 /* Action.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Action.cpp; path = Core/Action.cpp; sourceTree = "<group>"; };
+		9332068FA17D56811431DC64 /* PointMovePathMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PointMovePathMesh.cpp; path = Ogre/PointMovePathMesh.cpp; sourceTree = "<group>"; };
+		942447A485F8CD783DA3B15C /* GfxModelGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxModelGroup.h; path = Gfx/GfxModelGroup.h; sourceTree = "<group>"; };
+		94474EE3373FA3E5C2267417 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Mesh.cpp; path = Core/Mesh.cpp; sourceTree = "<group>"; };
+		954EE1C5B8B79A8DB71B0F90 /* GfxContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxContext.h; path = Gfx/GfxContext.h; sourceTree = "<group>"; };
+		9635B33DFE1269B17CC394F3 /* AddOnManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AddOnManager.h; path = Import/AddOnManager.h; sourceTree = "<group>"; };
+		963CD3AAB3C11E4438887CA7 /* CmdLine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CmdLine.cpp; path = Core/Command/CmdLine.cpp; sourceTree = "<group>"; };
+		966EE51B240210CB2AA8EEB9 /* SelectionManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionManager.cpp; path = Core/Edit/SelectionManager.cpp; sourceTree = "<group>"; };
+		96D8CA1B0E0F55647689391D /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Core/Model.h; sourceTree = "<group>"; };
+		9819DCD86A5809EBC6A0AB35 /* Marker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Marker.h; path = Physic/Marker.h; sourceTree = "<group>"; };
+		988498A51B25A8D7C09E37CA /* SceneObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneObject.h; path = Core/SceneObject.h; sourceTree = "<group>"; };
+		9944E2066732FA10F0522DAA /* StairMovePathMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StairMovePathMesh.cpp; path = Ogre/StairMovePathMesh.cpp; sourceTree = "<group>"; };
+		9B2432F2E4324439237BA250 /* CollisionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CollisionManager.h; path = Core/CollisionManager.h; sourceTree = "<group>"; };
+		9BC46241417066DDA2F4B875 /* OgreGridPlane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreGridPlane.h; path = Ogre/OgreGridPlane.h; sourceTree = "<group>"; };
+		9BDF60393B23DCCD3D23ADEA /* GfxUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxUtil.cpp; path = Gfx/GfxUtil.cpp; sourceTree = "<group>"; };
+		9D9D63F29D94BCF21467B334 /* ImportException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImportException.h; path = Import/ImportException.h; sourceTree = "<group>"; };
+		9F3C581B903ED2C749176531 /* BuildDispatcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BuildDispatcher.cpp; path = Core/BuildDispatcher.cpp; sourceTree = "<group>"; };
+		A00DB7741B1BCDB0EE2103F4 /* PathGfxBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PathGfxBuilder.cpp; path = Core/PathGfxBuilders/PathGfxBuilder.cpp; sourceTree = "<group>"; };
+		A01B33A8248B5A5A80318031 /* MovableText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MovableText.h; path = Ogre/MovableText.h; sourceTree = "<group>"; };
+		A0557A3337EFF48DD59B122C /* MovableText.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MovableText.cpp; path = Ogre/MovableText.cpp; sourceTree = "<group>"; };
+		A056D2048E80395D91EE0551 /* Body.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Body.cpp; path = Physic/Body.cpp; sourceTree = "<group>"; };
+		A0CE2A8268F193F0FAB6115A /* MeshExporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MeshExporter.cpp; path = Export/MeshExporter.cpp; sourceTree = "<group>"; };
+		A276E3A8F4C794901A55EEC1 /* BuildDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BuildDispatcher.h; path = Core/BuildDispatcher.h; sourceTree = "<group>"; };
+		A329B4DF74F2DA26EA878DF9 /* SceneObjectGfxMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneObjectGfxMesh.h; path = Core/SceneObjectGfxMesh.h; sourceTree = "<group>"; };
+		A420A96918BC0A2CDCF1FF8E /* ZoomManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZoomManager.h; path = UI/ZoomManager.h; sourceTree = "<group>"; };
+		A51065D2E16CAACED1911F44 /* OgreModelImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreModelImporter.h; path = Import/OgreModelImporter.h; sourceTree = "<group>"; };
+		A7C855BFF0C311A1517F4984 /* ModelIAActorCollision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActorCollision.h; path = Core/IA/ModelIAActorCollision.h; sourceTree = "<group>"; };
+		A88E35BDAB4B0FF96DFB7CB8 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		A949D4B46B867ACD773BEDDA /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = View.h; path = Gfx/Render/View.h; sourceTree = "<group>"; };
+		A990D610BA84D21C25B8006D /* GfxModelInstanceRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxModelInstanceRender.cpp; path = Gfx/GfxModelInstanceRender.cpp; sourceTree = "<group>"; };
+		AA9D7FD05EEAE58900E46755 /* Modder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Modder.h; path = Core/Modder.h; sourceTree = "<group>"; };
+		AB48E7AD9874B8BAEA2D4B17 /* Clip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Clip.h; path = Core/Clip.h; sourceTree = "<group>"; };
+		AC94F984265558E9BDC4799E /* ImportModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ImportModel.cpp; path = Import/ImportModel.cpp; sourceTree = "<group>"; };
+		ACC0755036996A5762B7F22B /* mersenne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mersenne.cpp; path = Core/Modders/mersenne.cpp; sourceTree = "<group>"; };
+		ADAD095DF95DF865DD9344BC /* MeshExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MeshExt.h; path = Export/MeshExt.h; sourceTree = "<group>"; };
+		AE0921B6C406B1D1FEC051F5 /* Marker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Marker.cpp; path = Physic/Marker.cpp; sourceTree = "<group>"; };
+		AE4614A05EAA001CFDC5FFDB /* EventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EventManager.h; path = Core/Edit/EventManager.h; sourceTree = "<group>"; };
+		AEB1A7BA63DD9ADFC9A3E313 /* DynamicRenderable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DynamicRenderable.cpp; path = Ogre/DynamicRenderable.cpp; sourceTree = "<group>"; };
+		AF10C3487BD218AB8943824E /* GUIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GUIManager.h; path = UI/GUIManager.h; sourceTree = "<group>"; };
+		AF66A4F76F9AA0EBAF5258C8 /* GfxModelInstanceRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxModelInstanceRender.h; path = Gfx/GfxModelInstanceRender.h; sourceTree = "<group>"; };
+		AF94589A79B2EAEB6B128715 /* ModelIABuilderPathIO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilderPathIO.cpp; path = Core/IA/ModelIABuilderPathIO.cpp; sourceTree = "<group>"; };
+		B1E20E3ECF682C9762820C6C /* BodyPose.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BodyPose.cpp; path = Physic/BodyPose.cpp; sourceTree = "<group>"; };
+		B2F6B62B22353118BA184515 /* ogreutility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ogreutility.cpp; path = Gfx/Render/ogreutility.cpp; sourceTree = "<group>"; };
+		B36679D7D710F4A58DD61756 /* Anima.Core.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = Anima.Core.pro; sourceTree = "<group>"; };
+		B3FB17247994520AEAA4212B /* Anima.Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Anima.Core.h; sourceTree = "<group>"; };
+		B4A76709FB8EA043561CA948 /* IModelRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IModelRenderer.h; path = Core/IModelRenderer.h; sourceTree = "<group>"; };
+		B4C4749A25DF21F1097A22B4 /* VideoManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VideoManager.cpp; path = Export/VideoManager.cpp; sourceTree = "<group>"; };
+		B4C6B318D119E290E36E4ED1 /* OgreSpline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreSpline.h; path = Ogre/OgreSpline.h; sourceTree = "<group>"; };
+		B715EBABA87646F31D2E25F9 /* ModelIABuilderScanner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilderScanner.cpp; path = Core/IA/ModelIABuilderScanner.cpp; sourceTree = "<group>"; };
+		B71ABA28B703F6215E1DCBB3 /* MeshExt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MeshExt.cpp; path = Export/MeshExt.cpp; sourceTree = "<group>"; };
+		B72D05CD4077C35142C22138 /* resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = resource.h; path = Core/resource.h; sourceTree = "<group>"; };
+		B84FB98FA6A7471F4A86C578 /* GfxClipAnimTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxClipAnimTask.h; path = Task/GfxClipAnimTask.h; sourceTree = "<group>"; };
+		B88DE403EA74EF59028EE18F /* AnimationCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationCommands.cpp; path = Core/Command/AnimationCommands.cpp; sourceTree = "<group>"; };
+		B89A6677C3545DC8C6C00B5A /* ogreutility1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ogreutility1.cpp; path = Gfx/Render/ogreutility1.cpp; sourceTree = "<group>"; };
+		B8A2D2E165CA0AEFFB0EAC89 /* Body.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Body.h; path = Physic/Body.h; sourceTree = "<group>"; };
+		B8BFA015486F93ABB5D7F780 /* IMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IMovePath.h; path = Core/IMovePath.h; sourceTree = "<group>"; };
+		B8FB10F77E03FBF7743D9A24 /* ModelIA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIA.h; path = Core/IA/ModelIA.h; sourceTree = "<group>"; };
+		B9B21876CB6F759BC2434536 /* EntityMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EntityMesh.h; path = Ogre/EntityMesh.h; sourceTree = "<group>"; };
+		BA7127510D9516779A75227B /* PresetsExporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PresetsExporter.cpp; path = Export/PresetsExporter.cpp; sourceTree = "<group>"; };
+		BA85C88A7E466CDC72207D28 /* SceneObjectMaterial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneObjectMaterial.h; path = Core/SceneObjectMaterial.h; sourceTree = "<group>"; };
+		BACFB6F3E4F5AFDC8B6E449C /* OgreGridPlane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreGridPlane.cpp; path = Ogre/OgreGridPlane.cpp; sourceTree = "<group>"; };
+		BAFCAD3BB8B58F0010A81F62 /* ModelIACollision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIACollision.cpp; path = Core/IA/ModelIACollision.cpp; sourceTree = "<group>"; };
+		BBBDE835EE329A82E820E9E8 /* ModelEdit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelEdit.h; path = Core/ModelEdit.h; sourceTree = "<group>"; };
+		BBF37C2BCE3BE33113ED9A2D /* ModelIABuilderPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIABuilderPath.h; path = Core/IA/ModelIABuilderPath.h; sourceTree = "<group>"; };
+		BC00D55E9226230025887146 /* BodyCoord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BodyCoord.cpp; path = Physic/BodyCoord.cpp; sourceTree = "<group>"; };
+		BCD6C26C9389566BC07FE1FE /* GfxPathFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxPathFinder.h; path = Gfx/GfxPathFinder.h; sourceTree = "<group>"; };
+		BCF3B47FBF259C78E6F3047D /* CmdLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CmdLine.h; path = Core/Command/CmdLine.h; sourceTree = "<group>"; };
+		BD25B4EA01AAE56463FAA7B3 /* Clip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Clip.cpp; path = Core/Clip.cpp; sourceTree = "<group>"; };
+		BE569E650255DDC3C4B681B5 /* ImportGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImportGeometry.h; path = Import/ImportGeometry.h; sourceTree = "<group>"; };
+		C061169684304304806C0809 /* ModelIAActorDecisionBrain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActorDecisionBrain.cpp; path = Core/IA/ModelIAActorDecisionBrain.cpp; sourceTree = "<group>"; };
+		C0A9E5CE37486D6546A0E6A8 /* Anima.Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Anima.Core.cpp; sourceTree = "<group>"; };
+		C1D0FC806494532A700C2DAC /* PathManipolator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PathManipolator.cpp; path = Core/Edit/PathManipolator.cpp; sourceTree = "<group>"; };
+		C1F744E5189D840081D76F2B /* ModelIABuilderPath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilderPath.cpp; path = Core/IA/ModelIABuilderPath.cpp; sourceTree = "<group>"; };
+		C22B1869A3A5FCE638009BD1 /* AnimationPart.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPart.cpp; path = Core/AnimationPart.cpp; sourceTree = "<group>"; };
+		C2488565C34C01D7D5AC9483 /* BodyCoord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BodyCoord.h; path = Physic/BodyCoord.h; sourceTree = "<group>"; };
+		C29A513364168C83713FE2D6 /* GfxContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxContext.cpp; path = Gfx/GfxContext.cpp; sourceTree = "<group>"; };
+		C3FC53C9C65A6083AB379265 /* CollisionManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionManager.cpp; path = Core/CollisionManager.cpp; sourceTree = "<group>"; };
+		C4B0BCFE1B98A4AEE9A24A53 /* GfxRenderRecord .cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "GfxRenderRecord .cpp"; path = "Gfx/GfxRenderRecord .cpp"; sourceTree = "<group>"; };
+		C51658C43B84B8A7B93ED988 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Command.h; path = Core/Command/Command.h; sourceTree = "<group>"; };
+		C5DBBC74B9396DFA2AB02A30 /* GfxClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxClip.cpp; path = Gfx/GfxClip.cpp; sourceTree = "<group>"; };
+		C5F7FD626BB0A7B2CBA61E05 /* Anima_nsend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Anima_nsend.h; sourceTree = "<group>"; };
+		C6564A0293B1D3818A86122F /* GfxOverlayClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxOverlayClip.h; path = Gfx/GfxOverlayClip.h; sourceTree = "<group>"; };
+		C6975DE3717CED1EBF8751E6 /* InCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InCommand.h; path = Core/Command/InCommand.h; sourceTree = "<group>"; };
+		C6B2939B081EEAFC44882E7C /* MovePathTrx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MovePathTrx.cpp; path = Core/MovePathTrx.cpp; sourceTree = "<group>"; };
+		C8F1C85E30FA7797CE99B057 /* GfxScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfxScene.h; path = Gfx/GfxScene.h; sourceTree = "<group>"; };
+		C901487D9E847D01D2274DCF /* MeshLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MeshLibrary.cpp; path = Core/MeshLibrary.cpp; sourceTree = "<group>"; };
+		CA18341AB5E376619E8395D2 /* GfxClipAnim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxClipAnim.cpp; path = Gfx/GfxClipAnim.cpp; sourceTree = "<group>"; };
+		CA7D58600E9FDCA79C219779 /* Item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Item.cpp; path = Core/Item.cpp; sourceTree = "<group>"; };
+		CBCFE8B18CE4C13F160276EB /* ModelIAActorSpeed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIAActorSpeed.cpp; path = Core/IA/ModelIAActorSpeed.cpp; sourceTree = "<group>"; };
+		CC5BABE9D8B725D1B7C2532D /* BodyModderStair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BodyModderStair.h; path = Physic/BodyModderStair.h; sourceTree = "<group>"; };
+		CDE7CF103E27AA6EFFB25C24 /* MarkerFootTranform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MarkerFootTranform.h; path = Physic/MarkerFootTranform.h; sourceTree = "<group>"; };
+		CE2121BAB3E553424776BD5C /* ActionLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionLibrary.h; path = Core/ActionLibrary.h; sourceTree = "<group>"; };
+		CF824AA375525F380FAF7FAF /* ModelInstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelInstance.cpp; path = Core/ModelInstance.cpp; sourceTree = "<group>"; };
+		CF8BEA9DBBD7915770B6DB60 /* LinkMovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LinkMovePath.cpp; path = Core/AnimParts/LinkMovePath.cpp; sourceTree = "<group>"; };
+		CFDECA47C1397BF342B4E6D0 /* GfxOverlayClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxOverlayClip.cpp; path = Gfx/GfxOverlayClip.cpp; sourceTree = "<group>"; };
+		D00161871F874A3B700B90F8 /* EntityMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EntityMesh.cpp; path = Ogre/EntityMesh.cpp; sourceTree = "<group>"; };
+		D08CBED652A79E31A9F57C1F /* ClipLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClipLibrary.h; path = Core/ClipLibrary.h; sourceTree = "<group>"; };
+		D18CDD08A329933F59221819 /* View.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = View.cpp; path = Gfx/Render/View.cpp; sourceTree = "<group>"; };
+		D19F767886A018C28381EFC1 /* MemoryRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MemoryRecorder.h; path = DebugUtils/MemoryRecorder.h; sourceTree = "<group>"; };
+		D1AD2D671FC02CD494A3D0E0 /* ModelOverlayFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelOverlayFunction.h; path = Core/ModelOverlayFunction.h; sourceTree = "<group>"; };
+		D3E6BAE34BF770BD240218C9 /* ClipBlend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ClipBlend.cpp; path = Core/ClipBlend.cpp; sourceTree = "<group>"; };
+		D4B103C2C962F5453FB9EFD2 /* StairMovePathMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StairMovePathMesh.h; path = Ogre/StairMovePathMesh.h; sourceTree = "<group>"; };
+		D5E2EE5B7457BC68C15C522E /* ResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = Core/ResourceManager.h; sourceTree = "<group>"; };
+		D8BFFFBD180B129A10D68F19 /* PathManipolator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathManipolator.h; path = Core/Edit/PathManipolator.h; sourceTree = "<group>"; };
+		DB5B66E61C1DF5969D92AEBC /* Film.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Film.cpp; path = Core/Film.cpp; sourceTree = "<group>"; };
+		DB6454EDBFE04E50CC2352E6 /* ImportModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImportModel.h; path = Import/ImportModel.h; sourceTree = "<group>"; };
+		DB7A58EC047DF6839C27F22F /* PathOffsetFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathOffsetFunction.h; path = Core/PathOffsetFunction.h; sourceTree = "<group>"; };
+		DE86D4C43449B6D9A0ED7D73 /* SplineMovePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplineMovePath.h; path = Core/AnimParts/SplineMovePath.h; sourceTree = "<group>"; };
+		E044493B5F850B8285E9DA28 /* ModelClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelClip.h; path = Core/ModelClip.h; sourceTree = "<group>"; };
+		E0E50ADE489232D01CA77AEF /* MeshOgre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MeshOgre.h; path = Core/MeshOgre.h; sourceTree = "<group>"; };
+		E0E513DE2EB8A52ADCA04A4A /* OgreRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OgreRenderer.cpp; path = Gfx/Render/OgreRenderer.cpp; sourceTree = "<group>"; };
+		E1A304828F1771A45BE14F95 /* SelectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SelectionManager.h; path = Core/Edit/SelectionManager.h; sourceTree = "<group>"; };
+		E285F52ED4AF5193D8473424 /* GeomCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GeomCommands.cpp; path = Core/Command/GeomCommands.cpp; sourceTree = "<group>"; };
+		E329FFFFA593900D299DD62D /* FilmCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FilmCommands.h; path = Core/Command/FilmCommands.h; sourceTree = "<group>"; };
+		E43044BC73B35367E30947E8 /* SplineMovePathMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SplineMovePathMesh.cpp; path = Ogre/SplineMovePathMesh.cpp; sourceTree = "<group>"; };
+		E48A88ED13DD422B0C932A15 /* ParamsExporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ParamsExporter.cpp; path = Export/ParamsExporter.cpp; sourceTree = "<group>"; };
+		E5289FCB6989B94D3D785C16 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		E56084752AD9C17E0DA3B3D8 /* Line3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Line3D.h; path = Gfx/Render/Line3D.h; sourceTree = "<group>"; };
+		E5FAFFAF68B0C02BA55C1D0A /* AnimationPartClipSpline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPartClipSpline.cpp; path = Core/AnimParts/AnimationPartClipSpline.cpp; sourceTree = "<group>"; };
+		E635034A96A65D904131C331 /* ModelIAThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAThread.h; path = Core/IA/ModelIAThread.h; sourceTree = "<group>"; };
+		E63B57E61B8D3D008EDADAB9 /* GfxModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxModel.cpp; path = Gfx/GfxModel.cpp; sourceTree = "<group>"; };
+		E7DF6A1DEAA62A2B98E1DC9C /* MovePathTrx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MovePathTrx.h; path = Core/MovePathTrx.h; sourceTree = "<group>"; };
+		E7E883709C41C3D8A2E783C3 /* ModelClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelClip.cpp; path = Core/ModelClip.cpp; sourceTree = "<group>"; };
+		E963FE0F209C2A1981A69CAA /* Bone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bone.h; path = Physic/Bone.h; sourceTree = "<group>"; };
+		EA72ABF13182422863770C93 /* PathOffsetFunctionNew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathOffsetFunctionNew.h; path = Core/PathOffsetFunctionNew.h; sourceTree = "<group>"; };
+		EACA9BB4B2A2F1277A1C9CFB /* ModelIAActor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelIAActor.h; path = Core/IA/ModelIAActor.h; sourceTree = "<group>"; };
+		EADF36C9863E9F5765284AE7 /* DAG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DAG.cpp; path = Core/DAG.cpp; sourceTree = "<group>"; };
+		EC04C4A00C78C2E6D431035A /* IKBrain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IKBrain.cpp; path = Physic/IKBrain.cpp; sourceTree = "<group>"; };
+		EEACBDAF6712FBC7018B3C2A /* PathCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PathCommands.h; path = Core/Command/PathCommands.h; sourceTree = "<group>"; };
+		EEEBD037E66F3E4BD2D0D71D /* ClipBlend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClipBlend.h; path = Core/ClipBlend.h; sourceTree = "<group>"; };
+		F09A10B71D7E6F6F3646C64D /* AnimClipCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimClipCollection.h; path = Core/AnimClipCollection.h; sourceTree = "<group>"; };
+		F1ACB314F99E55769FB25B2A /* AnimationPartEscalator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationPartEscalator.cpp; path = Core/AnimParts/AnimationPartEscalator.cpp; sourceTree = "<group>"; };
+		F26FEC64C017A43A9469EADF /* AnimationPartClipPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimationPartClipPoint.h; path = Core/AnimParts/AnimationPartClipPoint.h; sourceTree = "<group>"; };
+		F28086026A54D95A8BBAB8A3 /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Context.h; path = Core/Context.h; sourceTree = "<group>"; };
+		F456329BADD485AE3CC6DFEA /* Animation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Animation.cpp; path = Core/Animation.cpp; sourceTree = "<group>"; };
+		F5018B4CE878256159A36A2C /* SplineMovePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SplineMovePath.cpp; path = Core/AnimParts/SplineMovePath.cpp; sourceTree = "<group>"; };
+		F550333B93AE86190BF3EE3E /* Anima_nsbegin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Anima_nsbegin.h; sourceTree = "<group>"; };
+		F58B4C6F92763AAE446B4DEF /* ContextIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContextIO.h; path = Import/IO/ContextIO.h; sourceTree = "<group>"; };
+		F5C6BDE383B24BF1EBEB2AA3 /* PathCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PathCommands.cpp; path = Core/Command/PathCommands.cpp; sourceTree = "<group>"; };
+		F5F5F8CF77627624174D297B /* ActionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionAnimation.h; path = Core/Action/ActionAnimation.h; sourceTree = "<group>"; };
+		F729A35E02ED28CE57F99DAF /* GeneralParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralParams.h; sourceTree = "<group>"; };
+		F74131DD0C291FBD079D671F /* ClipCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClipCommands.h; path = Core/Command/ClipCommands.h; sourceTree = "<group>"; };
+		F7FADDD04AA68252CB4F1F28 /* SplineDesignMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplineDesignMode.h; path = Core/Action/ActionModes/SplineDesignMode.h; sourceTree = "<group>"; };
+		F8A76CAABC4C92A207CBB1B6 /* OgreModelRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OgreModelRenderer.h; path = Ogre/OgreModelRenderer.h; sourceTree = "<group>"; };
+		F8D5468CA7F662CE3A8143D8 /* GfxPerformanceManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GfxPerformanceManager.cpp; path = Gfx/GfxPerformanceManager.cpp; sourceTree = "<group>"; };
+		F91C84480AA74C64269C1997 /* ModelInstanceIAGfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelInstanceIAGfx.h; path = Core/IA/ModelInstanceIAGfx.h; sourceTree = "<group>"; };
+		F9F54814F8BB4547ABA78BD5 /* moc_list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_list.cpp; sourceTree = "<group>"; };
+		FA172000CAA64C0C8075737E /* FilmLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FilmLayer.h; path = Core/FilmLayer.h; sourceTree = "<group>"; };
+		FBFEA5FDC22BACDDD032AA0C /* ModelIABuilderPathInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelIABuilderPathInfo.cpp; path = Core/IA/ModelIABuilderPathInfo.cpp; sourceTree = "<group>"; };
+		FD74F12A06FE74C9890C7FC1 /* DebugGraphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DebugGraphics.cpp; path = Gfx/Render/DebugGraphics.cpp; sourceTree = "<group>"; };
+		FDBF47BF8D2B0ADC867E11AA /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Command.cpp; path = Core/Command/Command.cpp; sourceTree = "<group>"; };
+		FDD3F176E2D2F20147E6AE68 /* FilmLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FilmLayer.cpp; path = Core/FilmLayer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B6C83D138FC05400954940 /* Ogre.framework in Frameworks & Libraries */,
+				04FE9AAF1398BBB100460656 /* libAnimaCollision.dylib in Frameworks & Libraries */,
+				04FE9AB31398BBB100460656 /* libAnimaImport.dylib in Frameworks & Libraries */,
+				04FE9AB51398BBB100460656 /* libAnimaMedia.dylib in Frameworks & Libraries */,
+				04FE9AB71398BBB100460656 /* libAnimaRender.dylib in Frameworks & Libraries */,
+				04EF5B8414E531210065469C /* QtXmlAnima.framework in Frameworks & Libraries */,
+				04EF5C7514E548270065469C /* QtCoreAnima.framework in Frameworks & Libraries */,
+				04EF5C7614E548270065469C /* QtGuiAnima.framework in Frameworks & Libraries */,
+				04EF5C7714E548270065469C /* QtNetworkAnima.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048C82541393E2E700247229 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				048C82551393E30600247229 /* lq.c */,
+				048C82561393E30600247229 /* lq.h */,
+				048C82571393E30600247229 /* Proximity.h */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		04B6C823138FAC9600954940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B6C822138FAC9600954940 /* libAnimaCore.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05596AB53D8D521C69802C27 /* AnimaCore */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				04B6C823138FAC9600954940 /* Products */,
+			);
+			name = AnimaCore;
+			sourceTree = "<group>";
+		};
+		13ADBDDA7A22DF9F2106E6AB /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				565AE0036EFB0716D27F6004 /* ContextIO.cpp */,
+			);
+			name = IO;
+			sourceTree = "<group>";
+		};
+		1A32A0641FA0B617D74DB1A0 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				F58B4C6F92763AAE446B4DEF /* ContextIO.h */,
+				576FD6451AAC1240800141A1 /* LibraryLoader.h */,
+				F58B4C6F92763AAE446B4DEF /* ContextIO.h */,
+			);
+			name = IO;
+			sourceTree = "<group>";
+		};
+		1A832D5B2D7ED1B12B67DA5E /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				60BADD16C15B7DF8EEE71A81 /* DeleteTask.h */,
+				B84FB98FA6A7471F4A86C578 /* GfxClipAnimTask.h */,
+				64EB1AC42927678F556AFCE8 /* Task.h */,
+				4CB1496171066EA487105885 /* TaskObject.h */,
+				7FE7AD899ED2871763B0F9BB /* TaskObjectPtr.h */,
+				4E2FEFB15AE73212334DEEA0 /* TaskQueue.h */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		1A9A3909BCB9093A09410FF8 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				7B9F07BDFA407C1735AA4597 /* ActionActorModder.cpp */,
+				4B172CB4E899C4F46B88762E /* ActionAnimation.cpp */,
+				37651DDCFE1DE7EABA8E94D1 /* ActionClip.cpp */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		1CBA8D132AAA040C16FB9AF7 /* Gfx */ = {
+			isa = PBXGroup;
+			children = (
+				04E58C5513D01B6E00F88DD7 /* GfxModelEdit.cpp */,
+				799CD6222211F0E48DA6B3A0 /* GfxBaseClip.cpp */,
+				561FB4E3C7B713D47058B0F5 /* GfxBaseModel.cpp */,
+				C5DBBC74B9396DFA2AB02A30 /* GfxClip.cpp */,
+				CA18341AB5E376619E8395D2 /* GfxClipAnim.cpp */,
+				7053F032A3559F06EE532A89 /* GfxClipAnimCache.cpp */,
+				C29A513364168C83713FE2D6 /* GfxContext.cpp */,
+				279E03E08A6EFF854EDA50F9 /* GfxLabelManager.cpp */,
+				E63B57E61B8D3D008EDADAB9 /* GfxModel.cpp */,
+				A990D610BA84D21C25B8006D /* GfxModelInstanceRender.cpp */,
+				CFDECA47C1397BF342B4E6D0 /* GfxOverlayClip.cpp */,
+				F8D5468CA7F662CE3A8143D8 /* GfxPerformanceManager.cpp */,
+				C4B0BCFE1B98A4AEE9A24A53 /* GfxRenderRecord .cpp */,
+				66C974A334B33BAF6B11C3DD /* GfxScene.cpp */,
+				9BDF60393B23DCCD3D23ADEA /* GfxUtil.cpp */,
+				8996F9E8A4FBD55B434DB84A /* GfxZoomManager.cpp */,
+				EFD115062A5CC3F3DF8FE21A /* Render */,
+			);
+			name = Gfx;
+			sourceTree = "<group>";
+		};
+		1D3E2E96929DA30F114E6AD4 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				04B6C92F138FC53600954940 /* SelectionManagerGfx.cpp */,
+				04B6C930138FC53600954940 /* SelectionManagerGfxMesh.cpp */,
+				04B6C931138FC53600954940 /* SelectionManagerGfxMeshSplineHelper.cpp */,
+				3479FA3967D90B5E4357BD1D /* EditorManager.cpp */,
+				2BA94C578E6A790A67975E1B /* EventManager.cpp */,
+				C1D0FC806494532A700C2DAC /* PathManipolator.cpp */,
+				966EE51B240210CB2AA8EEB9 /* SelectionManager.cpp */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+		1F901378E55079358F7445F7 /* IA */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB10F77E03FBF7743D9A24 /* ModelIA.h */,
+				EACA9BB4B2A2F1277A1C9CFB /* ModelIAActor.h */,
+				A7C855BFF0C311A1517F4984 /* ModelIAActorCollision.h */,
+				5022AEA78315096BC1CC4F9A /* ModelIAActorDecision.h */,
+				598C87330E1C0EDCA44ED474 /* ModelIAActorDecisionHistory.h */,
+				10E441BC888E3664910B9DEB /* ModelIAActorSpeed.h */,
+				2D0D8BB33F5DF8BFB68FEA47 /* ModelIABuilder.h */,
+				BBF37C2BCE3BE33113ED9A2D /* ModelIABuilderPath.h */,
+				4860A96FACA4D32165FED10D /* ModelIABuilderScanner.h */,
+				5D7A1FB21B151C40EDBA443C /* ModelIACollision.h */,
+				53A8BF75FBBDBC0FDC4DC285 /* ModelIAQualityManager.h */,
+				E635034A96A65D904131C331 /* ModelIAThread.h */,
+				F91C84480AA74C64269C1997 /* ModelInstanceIAGfx.h */,
+				2CCE5E4408237B5393240B29 /* ModelIAActorDecisionBrain.h */,
+			);
+			name = IA;
+			sourceTree = "<group>";
+		};
+		2247E0926A2528F9DA3DE243 /* IA */ = {
+			isa = PBXGroup;
+			children = (
+				048C82541393E2E700247229 /* util */,
+				684125EF3B44745B22386843 /* ModelIA.cpp */,
+				35B99C070F860A7EBB7AF43A /* ModelIAActor.cpp */,
+				1FAE9D9E07BA10D2DBC21443 /* ModelIAActorCollision.cpp */,
+				89EC8E2D1FE6F2E0FE056925 /* ModelIAActorDecision.cpp */,
+				C061169684304304806C0809 /* ModelIAActorDecisionBrain.cpp */,
+				2B31BBD80719B70126643E24 /* ModelIAActorDecisionHistory.cpp */,
+				CBCFE8B18CE4C13F160276EB /* ModelIAActorSpeed.cpp */,
+				46DCCEEC67A02FFFF123CDEF /* ModelIABuilder.cpp */,
+				C1F744E5189D840081D76F2B /* ModelIABuilderPath.cpp */,
+				FBFEA5FDC22BACDDD032AA0C /* ModelIABuilderPathInfo.cpp */,
+				AF94589A79B2EAEB6B128715 /* ModelIABuilderPathIO.cpp */,
+				248D36A895E13323921585F3 /* ModelIABuilderPathOperator.cpp */,
+				B715EBABA87646F31D2E25F9 /* ModelIABuilderScanner.cpp */,
+				BAFCAD3BB8B58F0010A81F62 /* ModelIACollision.cpp */,
+				79BDE1595CC2A80D6C3BCD34 /* ModelIAQualityManager.cpp */,
+				141153F215F4614EA37327B7 /* ModelIAThread.cpp */,
+				70F98B13276F8361162CAEEE /* ModelInstanceIAGfx.cpp */,
+			);
+			name = IA;
+			sourceTree = "<group>";
+		};
+		227B06EAB1A98E2E5A3BB1B3 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				251DDB71F40F4547EFAA58B9 /* Task.cpp */,
+				30CC7487F09D18E0DBE40BAE /* TaskQueue.cpp */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		2BB53353178C2B1A5883D25B /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				0A5D12D63C82EFAE301A221D /* AddOnManager.cpp */,
+				04EAE08B77F51D4F5DA162CA /* ImportGeometry.cpp */,
+				AC94F984265558E9BDC4799E /* ImportModel.cpp */,
+				52AC77464F9548E1ED98A268 /* OgreBaseImporter.cpp */,
+				84FFAE991DD470BADA955A7B /* OgreModelImporter.cpp */,
+				13ADBDDA7A22DF9F2106E6AB /* IO */,
+			);
+			name = Import;
+			sourceTree = "<group>";
+		};
+		2F929AA811991355A3B50EA9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04E58C6613D01DD700F88DD7 /* ModelIO.cpp */,
+				04E58C6013D01BF100F88DD7 /* SceneLibrary.cpp */,
+				048C821E1393D37100247229 /* SceneObjectGfxMesh.cpp */,
+				9318D9B8F76218D4D75844C3 /* Action.cpp */,
+				046FE40ECC8478AA7C65820A /* ActionLibrary.cpp */,
+				F456329BADD485AE3CC6DFEA /* Animation.cpp */,
+				C22B1869A3A5FCE638009BD1 /* AnimationPart.cpp */,
+				0B6A17895CB4E2728E629ED7 /* AnimClip.cpp */,
+				1C4F989F7F99F6BBE07AA336 /* AnimClipCollection.cpp */,
+				7BAC87C5FBB756A2CBCF3A59 /* AnimClipModel.cpp */,
+				035775A9CA38B90B2459C145 /* BaseModel.cpp */,
+				9F3C581B903ED2C749176531 /* BuildDispatcher.cpp */,
+				BD25B4EA01AAE56463FAA7B3 /* Clip.cpp */,
+				D3E6BAE34BF770BD240218C9 /* ClipBlend.cpp */,
+				45513109469B80D5425FFDEF /* ClipBrain.cpp */,
+				8CEE7283DC54AD4ACDD65840 /* ClipLibrary.cpp */,
+				C3FC53C9C65A6083AB379265 /* CollisionManager.cpp */,
+				37A4A06454F841B7113ABC7C /* CollisionManagerIce.cpp */,
+				0319254777E353E315F24A35 /* Config.cpp */,
+				567BE82EC92BE3594651C195 /* Context.cpp */,
+				EADF36C9863E9F5765284AE7 /* DAG.cpp */,
+				DB5B66E61C1DF5969D92AEBC /* Film.cpp */,
+				FDD3F176E2D2F20147E6AE68 /* FilmLayer.cpp */,
+				CA7D58600E9FDCA79C219779 /* Item.cpp */,
+				94474EE3373FA3E5C2267417 /* Mesh.cpp */,
+				C901487D9E847D01D2274DCF /* MeshLibrary.cpp */,
+				528E1F31A182853E39F97B9B /* Modder.cpp */,
+				848559634426120B6EB01338 /* Model.cpp */,
+				E7E883709C41C3D8A2E783C3 /* ModelClip.cpp */,
+				543F3D2B31DE6C64FEF77C8E /* ModelEdit.cpp */,
+				CF824AA375525F380FAF7FAF /* ModelInstance.cpp */,
+				5AB61857CEB215A4DAC71667 /* ModelLibrary.cpp */,
+				804D6917F774EDC5CD840958 /* ModelOverlayFunction.cpp */,
+				6DEF9472F8C9CB83CA80E3AA /* MovePath.cpp */,
+				C6B2939B081EEAFC44882E7C /* MovePathTrx.cpp */,
+				4C54BAE21B35401A37723BAD /* Property.cpp */,
+				142B635F01BE4274E66EB1F3 /* ResourceManager.cpp */,
+				2BB66DE0BCF093D08CD10E4E /* SceneObject.cpp */,
+				3E07D6AA702E0B6B337BD793 /* SceneObjectGfx.cpp */,
+				06F34547FC5809968C0EA163 /* SceneObjectMaterial.cpp */,
+				38FFFB761B74A8502293DCE0 /* SpeedFunction.cpp */,
+				1A9A3909BCB9093A09410FF8 /* Action */,
+				DFC285DF699E947A99F4168E /* AnimParts */,
+				8E6C3166AAB42F4E54A638D3 /* Command */,
+				1D3E2E96929DA30F114E6AD4 /* Edit */,
+				2247E0926A2528F9DA3DE243 /* IA */,
+				B9AE508C53EED43FC30CF2A6 /* Modders */,
+				D73A502296BE9541023AEE3D /* PathGfxBuilders */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		318724A61CFCEDE3DD110EA2 /* ActionModes */ = {
+			isa = PBXGroup;
+			children = (
+				10955B9313101E886879E470 /* PathDesignMode.h */,
+				F7FADDD04AA68252CB4F1F28 /* SplineDesignMode.h */,
+			);
+			name = ActionModes;
+			sourceTree = "<group>";
+		};
+		333780991F83CF5E3915197B /* Gfx */ = {
+			isa = PBXGroup;
+			children = (
+				324EAC90322E0682B48D8050 /* GfxBaseClip.h */,
+				79977E554E7E654FEA348CFA /* GfxBaseModel.h */,
+				385B9561F7FD743427E00DC8 /* GfxClipAnim.h */,
+				017315BDCFD895C588DAB305 /* GfxClipAnimCache.h */,
+				954EE1C5B8B79A8DB71B0F90 /* GfxContext.h */,
+				36B6917519CDE8AEB210E644 /* GfxLabelManager.h */,
+				37E04066EC3CE3101EA484A8 /* GfxModel.h */,
+				942447A485F8CD783DA3B15C /* GfxModelGroup.h */,
+				577A1F6D167773858965A96C /* GfxModelInstance.h */,
+				AF66A4F76F9AA0EBAF5258C8 /* GfxModelInstanceRender.h */,
+				C6564A0293B1D3818A86122F /* GfxOverlayClip.h */,
+				BCD6C26C9389566BC07FE1FE /* GfxPathFinder.h */,
+				61473FA2A79F13D769C051EB /* GfxPerformanceManager.h */,
+				54D4C4B4C3CB08E88FF3E66B /* GfxRenderRecord.h */,
+				C8F1C85E30FA7797CE99B057 /* GfxScene.h */,
+				4AD8C90B784FB8800A854947 /* GfxUtil.h */,
+				2FA8B319D69DE1BCAB49A528 /* GfxZoomManager.h */,
+				D564DBE7C7F6905CF7242220 /* Render */,
+				2CC9BF1B064127552C83396B /* GfxClip.h */,
+			);
+			name = Gfx;
+			sourceTree = "<group>";
+		};
+		45B064D21A9AE7DAC7F0AE14 /* AnimParts */ = {
+			isa = PBXGroup;
+			children = (
+				F26FEC64C017A43A9469EADF /* AnimationPartClipPoint.h */,
+				34C90F83EAAC719E77A831A6 /* AnimationPartClipSpline.h */,
+				6631782018B59430B715A688 /* AnimationPartEscalator.h */,
+				753FD7A80454657F422B97B1 /* AnimationPartStairs.h */,
+				591B4C9AD1D282F2B8A23E3B /* EscalatorMovePath.h */,
+				1AE29DB6456BD3C458E11141 /* LinkMovePath.h */,
+				8CACDE3FE0BA713DC372065F /* OgreSpline.h */,
+				35F425743F3CF720BCFE6BE8 /* PointMovePath.h */,
+				DE86D4C43449B6D9A0ED7D73 /* SplineMovePath.h */,
+				2E7CF28DA0A398B8A26C2EB6 /* StairMovePath.h */,
+			);
+			name = AnimParts;
+			sourceTree = "<group>";
+		};
+		4F590B33F3187A2CA78E6FEE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				062F856CE1F65A83BB9DE014 /* Action.h */,
+				CE2121BAB3E553424776BD5C /* ActionLibrary.h */,
+				42AD5FBC5B8FE1D52E25A57C /* Animation.h */,
+				159968165D5F34EDB00EDE83 /* AnimationPart.h */,
+				376EFF4B9889918A7475A9EF /* AnimClip.h */,
+				F09A10B71D7E6F6F3646C64D /* AnimClipCollection.h */,
+				6EDB4449EABEFA5436C95E72 /* AnimClipModel.h */,
+				0C87DE35C12CFD6CCFCA3765 /* BaseModel.h */,
+				A276E3A8F4C794901A55EEC1 /* BuildDispatcher.h */,
+				AB48E7AD9874B8BAEA2D4B17 /* Clip.h */,
+				EEEBD037E66F3E4BD2D0D71D /* ClipBlend.h */,
+				50BB4515476F21B5474F8033 /* ClipBrain.h */,
+				D08CBED652A79E31A9F57C1F /* ClipLibrary.h */,
+				9B2432F2E4324439237BA250 /* CollisionManager.h */,
+				0A3B475C1F5CC8D1037BEEA3 /* Config.h */,
+				F28086026A54D95A8BBAB8A3 /* Context.h */,
+				5DD57DF2865F540128EF0071 /* CoreException.h */,
+				44BE7B572FF925B1665332D9 /* DAG.h */,
+				61366E8DA5B6E4EE7400C4C6 /* Film.h */,
+				FA172000CAA64C0C8075737E /* FilmLayer.h */,
+				B4A76709FB8EA043561CA948 /* IModelRenderer.h */,
+				B8BFA015486F93ABB5D7F780 /* IMovePath.h */,
+				3D901CB211A2E400450C8157 /* Item.h */,
+				3AEBBF01EB2B54B92F210D13 /* Mesh.h */,
+				3E9FAF61CEC724194026518F /* MeshLibrary.h */,
+				E0E50ADE489232D01CA77AEF /* MeshOgre.h */,
+				AA9D7FD05EEAE58900E46755 /* Modder.h */,
+				96D8CA1B0E0F55647689391D /* Model.h */,
+				E044493B5F850B8285E9DA28 /* ModelClip.h */,
+				BBBDE835EE329A82E820E9E8 /* ModelEdit.h */,
+				7069AA29E170053E4FF3CA38 /* ModelInstance.h */,
+				36ECB112E2D201CA6A70652E /* ModelLibrary.h */,
+				D1AD2D671FC02CD494A3D0E0 /* ModelOverlayFunction.h */,
+				1B0FB067AAF3EE7F959A744C /* MovePath.h */,
+				E7DF6A1DEAA62A2B98E1DC9C /* MovePathTrx.h */,
+				DB7A58EC047DF6839C27F22F /* PathOffsetFunction.h */,
+				EA72ABF13182422863770C93 /* PathOffsetFunctionNew.h */,
+				568A79FC9D28137A2957EFF7 /* Property.h */,
+				B72D05CD4077C35142C22138 /* resource.h */,
+				D5E2EE5B7457BC68C15C522E /* ResourceManager.h */,
+				988498A51B25A8D7C09E37CA /* SceneObject.h */,
+				69BBA448B4AD1409A4AB207D /* SceneObjectGfx.h */,
+				A329B4DF74F2DA26EA878DF9 /* SceneObjectGfxMesh.h */,
+				BA85C88A7E466CDC72207D28 /* SceneObjectMaterial.h */,
+				81120089E9F3D7431B28429C /* SpeedFunction.h */,
+				6A9F69FBA37186D2014FB6BA /* Action */,
+				45B064D21A9AE7DAC7F0AE14 /* AnimParts */,
+				E1ED6D0335AC84BE89E1DBD9 /* Command */,
+				BC8DD3DC4CCD468B988FAD0A /* Edit */,
+				1F901378E55079358F7445F7 /* IA */,
+				CD59F8B01F52597EA2E96AC8 /* Modders */,
+				5B66B59967266FB6323E4B4A /* PathGfxBuilders */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		50C2AD640ACB9CEB5348F8EC /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				9635B33DFE1269B17CC394F3 /* AddOnManager.h */,
+				9D9D63F29D94BCF21467B334 /* ImportException.h */,
+				BE569E650255DDC3C4B681B5 /* ImportGeometry.h */,
+				DB6454EDBFE04E50CC2352E6 /* ImportModel.h */,
+				4D43FF118B01253B2019BF5E /* OgreBaseImporter.h */,
+				A51065D2E16CAACED1911F44 /* OgreModelImporter.h */,
+				1A32A0641FA0B617D74DB1A0 /* IO */,
+			);
+			name = Import;
+			sourceTree = "<group>";
+		};
+		58B9B5845C44CEA7F3C971DB /* Ogre */ = {
+			isa = PBXGroup;
+			children = (
+				39E054E358198F9B874CF0B6 /* DynamicLines.h */,
+				2ACAD299CDA6EA45A0E2D33B /* DynamicRenderable.h */,
+				B9B21876CB6F759BC2434536 /* EntityMesh.h */,
+				6269763BFEB91115E00BC4F2 /* EscalatorMovePathMesh.h */,
+				7518219231A4606C7B4D1D9E /* ModelMesh.h */,
+				A01B33A8248B5A5A80318031 /* MovableText.h */,
+				9BC46241417066DDA2F4B875 /* OgreGridPlane.h */,
+				F8A76CAABC4C92A207CBB1B6 /* OgreModelRenderer.h */,
+				B4C6B318D119E290E36E4ED1 /* OgreSpline.h */,
+				7B7720A520489FC17D9AFE59 /* OgreUtil.h */,
+				816DAB4514517D00A1735172 /* PointMovePathMesh.h */,
+				39290F1EB0A5F356E05ADF5B /* SplineMovePathMesh.h */,
+				D4B103C2C962F5453FB9EFD2 /* StairMovePathMesh.h */,
+			);
+			name = Ogre;
+			sourceTree = "<group>";
+		};
+		5B66B59967266FB6323E4B4A /* PathGfxBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				5AD77AF1E78E7439CCC5AC1E /* PathGfxBuilder.h */,
+			);
+			name = PathGfxBuilders;
+			sourceTree = "<group>";
+		};
+		6A9F69FBA37186D2014FB6BA /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				2CC7661DD9741AE8EF7F77CD /* ActionActorModder.h */,
+				F5F5F8CF77627624174D297B /* ActionAnimation.h */,
+				1C5F45FA14DA9C65A670FFB4 /* ActionClip.h */,
+				318724A61CFCEDE3DD110EA2 /* ActionModes */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				B36679D7D710F4A58DD61756 /* Anima.Core.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		7E82BDBC986DE701F6DA5394 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				2A9AB6F777C8A4A08285FCF1 /* MeshExporter.h */,
+				ADAD095DF95DF865DD9344BC /* MeshExt.h */,
+				900386D46F5DBEC5E664828B /* ParamsExporter.h */,
+				828439862D85B9D86E9AE74B /* PresetsExporter.h */,
+				8C23095B59F281C7288DBF37 /* VideoManager.h */,
+			);
+			name = Export;
+			sourceTree = "<group>";
+		};
+		832A5C4DE03A8CFB58140552 /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0B39E4F91255CD3188F5B733 /* MemoryRecorder.cpp */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		868C29ABF9FBC72B30001D43 /* Ogre */ = {
+			isa = PBXGroup;
+			children = (
+				2708A68980D7C1B7DC2DDA95 /* DynamicLines.cpp */,
+				AEB1A7BA63DD9ADFC9A3E313 /* DynamicRenderable.cpp */,
+				D00161871F874A3B700B90F8 /* EntityMesh.cpp */,
+				6B71C1E2A4093292531FC188 /* EscalatorMovePathMesh.cpp */,
+				86A231699EB098D15CD95EFA /* ModelMesh.cpp */,
+				A0557A3337EFF48DD59B122C /* MovableText.cpp */,
+				BACFB6F3E4F5AFDC8B6E449C /* OgreGridPlane.cpp */,
+				1B216B964B3D68B2A501B090 /* OgreModelRenderer.cpp */,
+				4DC018EA61CE9FDE34DD35F3 /* OgreUtil.cpp */,
+				9332068FA17D56811431DC64 /* PointMovePathMesh.cpp */,
+				E43044BC73B35367E30947E8 /* SplineMovePathMesh.cpp */,
+				9944E2066732FA10F0522DAA /* StairMovePathMesh.cpp */,
+			);
+			name = Ogre;
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB17247994520AEAA4212B /* Anima.Core.h */,
+				F550333B93AE86190BF3EE3E /* Anima_nsbegin.h */,
+				C5F7FD626BB0A7B2CBA61E05 /* Anima_nsend.h */,
+				00A6298C61A7A811B4ADE532 /* Anima_nsuse.h */,
+				F729A35E02ED28CE57F99DAF /* GeneralParams.h */,
+				3B017ABD43C477127C833DBC /* resource.h */,
+				A88E35BDAB4B0FF96DFB7CB8 /* stdafx.h */,
+				4F590B33F3187A2CA78E6FEE /* Core */,
+				ACEFABCE79370CE2AB9608E7 /* DebugUtils */,
+				7E82BDBC986DE701F6DA5394 /* Export */,
+				333780991F83CF5E3915197B /* Gfx */,
+				50C2AD640ACB9CEB5348F8EC /* Import */,
+				58B9B5845C44CEA7F3C971DB /* Ogre */,
+				F09E184825C80E9BA9E830A0 /* Physic */,
+				1A832D5B2D7ED1B12B67DA5E /* Task */,
+				9FA9B2DB05EF9049DE253C52 /* UI */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		8E6C3166AAB42F4E54A638D3 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				5C800D0748571AD4322BB88A /* ActionCommands.cpp */,
+				181CE5F1A0B83A66D5FEB5C4 /* ActorCommands.cpp */,
+				B88DE403EA74EF59028EE18F /* AnimationCommands.cpp */,
+				895B949C5DE26622388BD75D /* AnimationPartCommands.cpp */,
+				6581B691E3F6890CF1D199E1 /* ClipCommands.cpp */,
+				963CD3AAB3C11E4438887CA7 /* CmdLine.cpp */,
+				FDBF47BF8D2B0ADC867E11AA /* Command.cpp */,
+				4D1F19C1A356E57BDC13D1FE /* CommandManager.cpp */,
+				14DC518FAB4A488AD3FFECB0 /* FilmCommands.cpp */,
+				E285F52ED4AF5193D8473424 /* GeomCommands.cpp */,
+				F5C6BDE383B24BF1EBEB2AA3 /* PathCommands.cpp */,
+				5870F380D3D50BCEC44F91CA /* StdCommands.cpp */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		9FA9B2DB05EF9049DE253C52 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AF10C3487BD218AB8943824E /* GUIManager.h */,
+				A420A96918BC0A2CDCF1FF8E /* ZoomManager.h */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A4A4C203CBBED4EC20047C76 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				A0CE2A8268F193F0FAB6115A /* MeshExporter.cpp */,
+				B71ABA28B703F6215E1DCBB3 /* MeshExt.cpp */,
+				8D48ED1FAF3A52FBF049E6AD /* MeshExtGeomExt.cpp */,
+				E48A88ED13DD422B0C932A15 /* ParamsExporter.cpp */,
+				BA7127510D9516779A75227B /* PresetsExporter.cpp */,
+				B4C4749A25DF21F1097A22B4 /* VideoManager.cpp */,
+			);
+			name = Export;
+			sourceTree = "<group>";
+		};
+		ACEFABCE79370CE2AB9608E7 /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				D19F767886A018C28381EFC1 /* MemoryRecorder.h */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		B9AE508C53EED43FC30CF2A6 /* Modders */ = {
+			isa = PBXGroup;
+			children = (
+				24803A95CD21CBDA34FD7B5C /* ClonerModder.cpp */,
+				33700ACC2AD632ACF76CE29F /* ClonerModder_Area_Mask.cpp */,
+				ACC0755036996A5762B7F22B /* mersenne.cpp */,
+				88F9783D82E6C98914FB25C5 /* PhaserModder.cpp */,
+			);
+			name = Modders;
+			sourceTree = "<group>";
+		};
+		BC8DD3DC4CCD468B988FAD0A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				3E4078253F06D7190B719175 /* EditorManager.h */,
+				AE4614A05EAA001CFDC5FFDB /* EventManager.h */,
+				D8BFFFBD180B129A10D68F19 /* PathManipolator.h */,
+				E1A304828F1771A45BE14F95 /* SelectionManager.h */,
+				151C975CAC0A0155BB563659 /* SelectionManagerGfx.h */,
+				2B24AC0621E354A2D421C478 /* SelectionManagerGfxMesh.h */,
+				0FFD60F83791AE0F37E7A641 /* SelectionManagerGfxMeshSplineHelper.h */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+		BCE94210D0223296EB860A91 /* Physic */ = {
+			isa = PBXGroup;
+			children = (
+				048C82331393D4CE00247229 /* BodyModderStair_simple.cpp */,
+				A056D2048E80395D91EE0551 /* Body.cpp */,
+				BC00D55E9226230025887146 /* BodyCoord.cpp */,
+				113F0B018F7658C0A1FF0D56 /* BodyModder.cpp */,
+				B1E20E3ECF682C9762820C6C /* BodyPose.cpp */,
+				6470DCA358D473AAFF0A5981 /* Bone.cpp */,
+				EC04C4A00C78C2E6D431035A /* IKBrain.cpp */,
+				519282CF4212E1F66086E2AE /* IKSkeletonBrain.cpp */,
+				AE0921B6C406B1D1FEC051F5 /* Marker.cpp */,
+				779C1DE56DC8A5A484D888F9 /* MarkerModder.cpp */,
+				51E9D0C52ECF311CF9AA0A5E /* MarkerFootTranform.cpp */,
+				7E7C3A50E4618A37A567EDB9 /* TransformFun.cpp */,
+			);
+			name = Physic;
+			sourceTree = "<group>";
+		};
+		CD59F8B01F52597EA2E96AC8 /* Modders */ = {
+			isa = PBXGroup;
+			children = (
+				349E5C28F53C4FD4D6D1F75C /* ClonerModder.h */,
+				909D4F4898F8C8150DA8D699 /* ClonerModder_Area_Mask.h */,
+				7CBF17211FB173F4852944D6 /* PhaserModder.h */,
+				563EA45C91E384210A3F63F0 /* randomc.h */,
+			);
+			name = Modders;
+			sourceTree = "<group>";
+		};
+		D564DBE7C7F6905CF7242220 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				1D238E060475BE49A50DFF04 /* DebugGraphics.h */,
+				E56084752AD9C17E0DA3B3D8 /* Line3D.h */,
+				8C8E6A22B882E7810BEAA832 /* OgreRenderer.h */,
+				8000570A6D3B54FA1EB33945 /* ogreutility.h */,
+				1605C36DE526FC6219821A66 /* TextureRenderer.h */,
+				A949D4B46B867ACD773BEDDA /* View.h */,
+			);
+			name = Render;
+			sourceTree = "<group>";
+		};
+		D73A502296BE9541023AEE3D /* PathGfxBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				A00DB7741B1BCDB0EE2103F4 /* PathGfxBuilder.cpp */,
+			);
+			name = PathGfxBuilders;
+			sourceTree = "<group>";
+		};
+		DFC285DF699E947A99F4168E /* AnimParts */ = {
+			isa = PBXGroup;
+			children = (
+				8D83364EAD6EB7FDF9E3EC05 /* AnimationPartClipPoint.cpp */,
+				E5FAFFAF68B0C02BA55C1D0A /* AnimationPartClipSpline.cpp */,
+				F1ACB314F99E55769FB25B2A /* AnimationPartEscalator.cpp */,
+				4C1722C1F0C8285874C3406E /* AnimationPartStairs.cpp */,
+				7E3AE86CD2BA1E6F3B9DDA2C /* EscalatorMovePath.cpp */,
+				CF8BEA9DBBD7915770B6DB60 /* LinkMovePath.cpp */,
+				6D995A023BF00DD5CB4C588F /* OgreSpline.cpp */,
+				1ACB23063CDF72221F9B186B /* PointMovePath.cpp */,
+				F5018B4CE878256159A36A2C /* SplineMovePath.cpp */,
+				746579F0DAF530AC8CDD6791 /* StairMovePath.cpp */,
+			);
+			name = AnimParts;
+			sourceTree = "<group>";
+		};
+		E1ED6D0335AC84BE89E1DBD9 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				020453B7A9A3829EB84884BF /* ActionCommands.h */,
+				10B1576A7400BA48EA51660E /* ActorCommands.h */,
+				23D77AE0A76A3A11A2C7FE0F /* AnimationCommands.h */,
+				7E82D619B9970F64AE72B4B6 /* AnimationPartCommands.h */,
+				F74131DD0C291FBD079D671F /* ClipCommands.h */,
+				BCF3B47FBF259C78E6F3047D /* CmdLine.h */,
+				C51658C43B84B8A7B93ED988 /* Command.h */,
+				907376F797BA31139477F0E2 /* CommandManager.h */,
+				E329FFFFA593900D299DD62D /* FilmCommands.h */,
+				79101886F2B2030B76597A0A /* GeomCommands.h */,
+				C6975DE3717CED1EBF8751E6 /* InCommand.h */,
+				EEACBDAF6712FBC7018B3C2A /* PathCommands.h */,
+				29439E772B23E18947ED4BB0 /* StdCommands.h */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				04B6C83C138FC05400954940 /* Ogre.framework */,
+				04FE9AAE1398BBB100460656 /* libAnimaCollision.dylib */,
+				04FE9AB21398BBB100460656 /* libAnimaImport.dylib */,
+				04FE9AB41398BBB100460656 /* libAnimaMedia.dylib */,
+				04FE9AB61398BBB100460656 /* libAnimaRender.dylib */,
+				04EF5C7214E548270065469C /* QtCoreAnima.framework */,
+				04EF5C7314E548270065469C /* QtGuiAnima.framework */,
+				04EF5C7414E548270065469C /* QtNetworkAnima.framework */,
+				04EF5B8314E531210065469C /* QtXmlAnima.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		EFD115062A5CC3F3DF8FE21A /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				FD74F12A06FE74C9890C7FC1 /* DebugGraphics.cpp */,
+				0541C7ABE60E9B44E1C4696A /* Line3D.cpp */,
+				E0E513DE2EB8A52ADCA04A4A /* OgreRenderer.cpp */,
+				B2F6B62B22353118BA184515 /* ogreutility.cpp */,
+				B89A6677C3545DC8C6C00B5A /* ogreutility1.cpp */,
+				6A2E309C97004ECD1EFC2F21 /* TextureRenderer.cpp */,
+				D18CDD08A329933F59221819 /* View.cpp */,
+			);
+			name = Render;
+			sourceTree = "<group>";
+		};
+		F09E184825C80E9BA9E830A0 /* Physic */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2D2E165CA0AEFFB0EAC89 /* Body.h */,
+				C2488565C34C01D7D5AC9483 /* BodyCoord.h */,
+				7E7E336B417593C6C1C4CA57 /* BodyModder.h */,
+				CC5BABE9D8B725D1B7C2532D /* BodyModderStair.h */,
+				74B3316B9A93AED13519B3F8 /* BodyPose.h */,
+				E963FE0F209C2A1981A69CAA /* Bone.h */,
+				3FE2115270D14E3C02BC2E38 /* IKSkeleton.h */,
+				9819DCD86A5809EBC6A0AB35 /* Marker.h */,
+				CDE7CF103E27AA6EFFB25C24 /* MarkerFootTranform.h */,
+				3F3FE2A6A24829C7D35DB6EF /* MarkerModder.h */,
+				513C63B9438C6ECCA85B6CE1 /* TransformFun.h */,
+			);
+			name = Physic;
+			sourceTree = "<group>";
+		};
+		F697C2611F9EA66F8C819228 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A2507DEC27D7E2E9ABF59CE /* GUIManager.cpp */,
+				7216BBA3CF5A690CF5A25331 /* ZoomManager.cpp */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C0A9E5CE37486D6546A0E6A8 /* Anima.Core.cpp */,
+				9057989A14013B89008B0B13 /* GeneralParams.cpp */,
+				F9F54814F8BB4547ABA78BD5 /* moc_list.cpp */,
+				E5289FCB6989B94D3D785C16 /* stdafx.cpp */,
+				2F929AA811991355A3B50EA9 /* Core */,
+				832A5C4DE03A8CFB58140552 /* DebugUtils */,
+				A4A4C203CBBED4EC20047C76 /* Export */,
+				1CBA8D132AAA040C16FB9AF7 /* Gfx */,
+				2BB53353178C2B1A5883D25B /* Import */,
+				868C29ABF9FBC72B30001D43 /* Ogre */,
+				BCE94210D0223296EB860A91 /* Physic */,
+				227B06EAB1A98E2E5A3BB1B3 /* Task */,
+				F697C2611F9EA66F8C819228 /* UI */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F503181BCE783A2DE7BFE46 /* libAnimaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B6C82B138FACA200954940 /* Build configuration list for PBXNativeTarget "libAnimaCore" */;
+			buildPhases = (
+				04BB492613CF3A96001643DE /* ShellScript */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				12E5F4BB1491F6300079713F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libAnimaCore;
+			productName = libAnimaCore;
+			productReference = 04B6C822138FAC9600954940 /* libAnimaCore.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "AnimaCore" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 05596AB53D8D521C69802C27 /* AnimaCore */;
+			productRefGroup = 04B6C823138FAC9600954940 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F503181BCE783A2DE7BFE46 /* libAnimaCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BB492613CF3A96001643DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Command/CommandManager.h -o Core/Command/moc_CommandManager.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Context.h -o Core/Command/moc_Context.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Film.h -o Core/Command/moc_Film.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Edit/EditorManager.h -o Core/Edit/moc_EditorManager.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Edit/EventManager.h -o Core/Edit/moc_EventManager.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Core/Edit/SelectionManager.h -o Core/Edit/moc_SelectionManager.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Ui/GUIManager.h -o Ui/moc_GUIManager.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Task/TaskQueue.h -o Task/moc_TaskQueue.cpp\n/Developer/Tools/Qt/moc $DEFINES $INCPATH -D__APPLE__ -D__GNUC__ Export/VideoManager.h -o Export/moc_VideoManager.cpp\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701CFE2240698BE3D4C553A2 /* Anima.Core.cpp in Build Sources */,
+				7AE30D1FCCF5FFB51B2293CF /* GeneralParams.cpp in Build Sources */,
+				CF1453D2A3D0C093A0EB9509 /* moc_list.cpp in Build Sources */,
+				098EF73214B371253B3CB7C6 /* stdafx.cpp in Build Sources */,
+				7F5BD73CE6AD1E56FE3650E3 /* Action.cpp in Build Sources */,
+				517AA48AF3E0ABC0486A74F8 /* ActionLibrary.cpp in Build Sources */,
+				A47F697A05603E1AA9E78C4C /* Animation.cpp in Build Sources */,
+				8DC711F2176C1D2A7BEFD09B /* AnimationPart.cpp in Build Sources */,
+				50D6215923943D57F37EDE9A /* AnimClip.cpp in Build Sources */,
+				4F3DDB4BEE493319BB0CD669 /* AnimClipCollection.cpp in Build Sources */,
+				2414FE9754B05DDD99A7516B /* AnimClipModel.cpp in Build Sources */,
+				4B6C8058F2F29CCC98157FD4 /* BaseModel.cpp in Build Sources */,
+				7F4B0E9395EB6FE1B0871CE0 /* BuildDispatcher.cpp in Build Sources */,
+				E6431AA00D28EE6F40ADC2A7 /* Clip.cpp in Build Sources */,
+				D7160FA6B553B4A48204D3DB /* ClipBlend.cpp in Build Sources */,
+				E823D34A3075A79AF86C4D3D /* ClipBrain.cpp in Build Sources */,
+				34004261AB75DD1CE217B8F0 /* ClipLibrary.cpp in Build Sources */,
+				19366D680638957968E90952 /* CollisionManager.cpp in Build Sources */,
+				02C218DD45B0301D89832FE1 /* CollisionManagerIce.cpp in Build Sources */,
+				38D5CD6079D6166FBED94143 /* Config.cpp in Build Sources */,
+				72D7AB8B247102913F487090 /* Context.cpp in Build Sources */,
+				ABF1A398FABC0B70EC16C8D7 /* DAG.cpp in Build Sources */,
+				BE1E1498C2D53AD2BD0E87EE /* Film.cpp in Build Sources */,
+				43E6156891F8CE332FB391BC /* FilmLayer.cpp in Build Sources */,
+				85434FB6910951CADBDD1A17 /* Item.cpp in Build Sources */,
+				EC9DBC79C1C323BAA71532AA /* Mesh.cpp in Build Sources */,
+				C81C298576EB42EA3B2653DD /* MeshLibrary.cpp in Build Sources */,
+				477CE8FEA661E35C7308D86F /* Modder.cpp in Build Sources */,
+				AFF84E316D599AFFAD5721B3 /* Model.cpp in Build Sources */,
+				F2DEAE9C942A84800F3654E7 /* ModelClip.cpp in Build Sources */,
+				3D1BCCD54EF6971A26DCF250 /* ModelEdit.cpp in Build Sources */,
+				C9151020481CC3961AA7852A /* ModelInstance.cpp in Build Sources */,
+				C0FC9A4916B0B1D648BED0FD /* ModelLibrary.cpp in Build Sources */,
+				FACCAFD70AE956BA5990F11E /* ModelOverlayFunction.cpp in Build Sources */,
+				7BC46494E194428B9C853956 /* MovePath.cpp in Build Sources */,
+				9C8C49C673C476B2F449C7CF /* MovePathTrx.cpp in Build Sources */,
+				F83E84595D1DDAD4705C1AA9 /* Property.cpp in Build Sources */,
+				E25E7E441AF62893FC1DF7A6 /* ResourceManager.cpp in Build Sources */,
+				6FC6C19E3B6F0E3DAE84AEBF /* SceneObject.cpp in Build Sources */,
+				7AA6414B53F3750B076B4F8C /* SceneObjectGfx.cpp in Build Sources */,
+				E43C44D406DB9B81964C491E /* SceneObjectMaterial.cpp in Build Sources */,
+				437EAD90F46333DD1268387D /* SpeedFunction.cpp in Build Sources */,
+				41D7B920833C60C3F3CC146F /* MemoryRecorder.cpp in Build Sources */,
+				E1B52BCBCD2C67D7696CE25B /* MeshExporter.cpp in Build Sources */,
+				EA925757CF5F2D0DF81F53E6 /* MeshExt.cpp in Build Sources */,
+				240F9648656FC80B78B106D8 /* MeshExtGeomExt.cpp in Build Sources */,
+				B49AB60754045386CF6C990C /* ParamsExporter.cpp in Build Sources */,
+				0C9D9038AB7B33EF7029B0FE /* PresetsExporter.cpp in Build Sources */,
+				2C2599C12997C46A7EB1D171 /* VideoManager.cpp in Build Sources */,
+				E23B57239938B2CD7BA8C833 /* GfxBaseClip.cpp in Build Sources */,
+				FDE4A79C14DCBE8A8DF0DF45 /* GfxBaseModel.cpp in Build Sources */,
+				1F5215BFD7564998F8A654F2 /* GfxClip.cpp in Build Sources */,
+				72D348179AEF0428825A2F2E /* GfxClipAnim.cpp in Build Sources */,
+				B5D8CB9ACC1218A3BE88459F /* GfxClipAnimCache.cpp in Build Sources */,
+				FD9FF891B8762A086BC8B1A5 /* GfxContext.cpp in Build Sources */,
+				9264E07DE26C8028C270427C /* GfxLabelManager.cpp in Build Sources */,
+				3FE198B07F63D580C67713EA /* GfxModel.cpp in Build Sources */,
+				9D381D21D0BC4C9686C09A33 /* GfxModelInstanceRender.cpp in Build Sources */,
+				A67B6502C0EF7E9A107CF50D /* GfxOverlayClip.cpp in Build Sources */,
+				0B41D04E8101DD82090E45DF /* GfxPerformanceManager.cpp in Build Sources */,
+				9DC6F7E95922E47B444504B9 /* GfxRenderRecord .cpp in Build Sources */,
+				CCA2AAE11C094CD5211571E0 /* GfxScene.cpp in Build Sources */,
+				C2FD36337FF5E68A8B732F48 /* GfxUtil.cpp in Build Sources */,
+				AA5D98A42DDD7AB48F67E7D9 /* GfxZoomManager.cpp in Build Sources */,
+				F9948906072AFE9D1BDA1CD4 /* AddOnManager.cpp in Build Sources */,
+				D961E2EEA6E365B11CED9E42 /* ImportGeometry.cpp in Build Sources */,
+				8D44D628670FCB65806DF223 /* ImportModel.cpp in Build Sources */,
+				CBAE9719718EEB35B1A28543 /* OgreBaseImporter.cpp in Build Sources */,
+				7EDED066C3C351BB8C939923 /* OgreModelImporter.cpp in Build Sources */,
+				27771CEE7ED779305143A3CF /* DynamicLines.cpp in Build Sources */,
+				D5BD694B636D55416FC90772 /* DynamicRenderable.cpp in Build Sources */,
+				75A979C758399AA83A959C31 /* EntityMesh.cpp in Build Sources */,
+				7DCB72669AC2AFABB87C5DF7 /* EscalatorMovePathMesh.cpp in Build Sources */,
+				111B0E155EB0E92EA54C36FC /* ModelMesh.cpp in Build Sources */,
+				2D3EB4AC3BF4761135D33152 /* MovableText.cpp in Build Sources */,
+				F90595B18946E96F6D3A25A6 /* OgreGridPlane.cpp in Build Sources */,
+				2CD681E3848596CB92BCA074 /* OgreModelRenderer.cpp in Build Sources */,
+				E682C3DAD403A4D8FCB4B4CA /* OgreUtil.cpp in Build Sources */,
+				108F225AFE82B05B93236E92 /* PointMovePathMesh.cpp in Build Sources */,
+				B62BA0E628981F2F34E7E935 /* SplineMovePathMesh.cpp in Build Sources */,
+				817041F7A9639DE4BFB1B7AD /* StairMovePathMesh.cpp in Build Sources */,
+				450B3D529A2A6C6F522C3EBD /* Body.cpp in Build Sources */,
+				9F219E5D37CDBC407C44EFF4 /* BodyCoord.cpp in Build Sources */,
+				3305DCE639B8F1116EC2DFE5 /* BodyModder.cpp in Build Sources */,
+				EB73B2D679D591ADFF809752 /* BodyPose.cpp in Build Sources */,
+				79899AED17EB7811D41B78FC /* Bone.cpp in Build Sources */,
+				9E729E612EAAAF6E926ECA1F /* IKBrain.cpp in Build Sources */,
+				DF1E74F7CD8FA0A5C3CF91F8 /* IKSkeletonBrain.cpp in Build Sources */,
+				5B3F1DFC256BBF5F47CBBD9A /* Marker.cpp in Build Sources */,
+				4FD7A0A9930964A1D3E48B9B /* MarkerModder.cpp in Build Sources */,
+				0B067BFD773374F9752D912A /* MarkerFootTranform.cpp in Build Sources */,
+				97DA47D8A6B5A143D7637837 /* TransformFun.cpp in Build Sources */,
+				8E68585FA1C18E2683CCB232 /* Task.cpp in Build Sources */,
+				D4BC29CD30EB830123A9C0BB /* TaskQueue.cpp in Build Sources */,
+				6B4B074B60A955A3D250D8D3 /* GUIManager.cpp in Build Sources */,
+				C89758171E5138A2B6627FB4 /* ZoomManager.cpp in Build Sources */,
+				E5A1B0BCD9AD8F94277B0342 /* ActionActorModder.cpp in Build Sources */,
+				DE4783FA8335B72A3CD06039 /* ActionAnimation.cpp in Build Sources */,
+				64AC44752F5F6562B6FC9FF3 /* ActionClip.cpp in Build Sources */,
+				75134AAAA41BAF2A00A9E293 /* AnimationPartClipPoint.cpp in Build Sources */,
+				742AD0DFC021E61E73C50834 /* AnimationPartClipSpline.cpp in Build Sources */,
+				FE1898F81D0B4B3F238519F7 /* AnimationPartEscalator.cpp in Build Sources */,
+				0254F56E46FBB4DF14E61DD5 /* AnimationPartStairs.cpp in Build Sources */,
+				40C4962B02B0CB63903A80A0 /* EscalatorMovePath.cpp in Build Sources */,
+				07D66862F5A5E65A02B7D48E /* LinkMovePath.cpp in Build Sources */,
+				C0D86552D02BA8B02B419BE2 /* OgreSpline.cpp in Build Sources */,
+				3AEC3709141D7EA59D6894C3 /* PointMovePath.cpp in Build Sources */,
+				2DA96ECA89789B4EE165DEF6 /* SplineMovePath.cpp in Build Sources */,
+				8249A7B82FA8D1682E8DB807 /* StairMovePath.cpp in Build Sources */,
+				2F9C326DC9045BED880C7835 /* ActionCommands.cpp in Build Sources */,
+				33B6052405E77E011851E3C7 /* ActorCommands.cpp in Build Sources */,
+				5776F732E03CB3B460EF9C25 /* AnimationCommands.cpp in Build Sources */,
+				A396FA05B0C6DA90853F93C5 /* AnimationPartCommands.cpp in Build Sources */,
+				AE1EE4822E10BDB9D569F3D0 /* ClipCommands.cpp in Build Sources */,
+				5FB3E7E8C87C04BB439A144C /* CmdLine.cpp in Build Sources */,
+				DB3C2BB7D919B7C37A6B4828 /* Command.cpp in Build Sources */,
+				3648242017225BEC7365CB03 /* CommandManager.cpp in Build Sources */,
+				C7A1DFA7A732F41583A2B1C8 /* FilmCommands.cpp in Build Sources */,
+				5159D5704555C8BB43D81716 /* GeomCommands.cpp in Build Sources */,
+				AD2DAC5EE7C10E8E4A2E878C /* PathCommands.cpp in Build Sources */,
+				20DC643EF4069228FFC06E05 /* StdCommands.cpp in Build Sources */,
+				D4ABC62F1BEEE4AC0B197F5A /* EditorManager.cpp in Build Sources */,
+				87E8191E99C64AC155AB80F3 /* EventManager.cpp in Build Sources */,
+				B67C140405ACD5FF0084B321 /* PathManipolator.cpp in Build Sources */,
+				FB54EED830438086BD3F6B7E /* SelectionManager.cpp in Build Sources */,
+				67A68880476F81A6BFDACB04 /* ModelIA.cpp in Build Sources */,
+				33C38BC801888B56690AC278 /* ModelIAActor.cpp in Build Sources */,
+				B1D6FCCE72A7E83BEB2C67B5 /* ModelIAActorCollision.cpp in Build Sources */,
+				1BCD310B1F68AE2E4C2FA6DF /* ModelIAActorDecision.cpp in Build Sources */,
+				9BE7C8BDD5E7DABF30F61E43 /* ModelIAActorDecisionBrain.cpp in Build Sources */,
+				95506D887EB59D93C64322E5 /* ModelIAActorDecisionHistory.cpp in Build Sources */,
+				4058BEFAE4EF4DDDEE7856B4 /* ModelIAActorSpeed.cpp in Build Sources */,
+				499DBC5F906739BBEB7567A0 /* ModelIABuilder.cpp in Build Sources */,
+				CB0B2C79478377B79758945B /* ModelIABuilderPath.cpp in Build Sources */,
+				D44B64F280761CE8287CBBA8 /* ModelIABuilderPathInfo.cpp in Build Sources */,
+				50B637FF2281912E78D9FF2E /* ModelIABuilderPathIO.cpp in Build Sources */,
+				62DEBD71F9C4FDD4FEFE0A5E /* ModelIABuilderPathOperator.cpp in Build Sources */,
+				8B687863C10233B12252AEE4 /* ModelIABuilderScanner.cpp in Build Sources */,
+				351277A16E91720179F3D780 /* ModelIACollision.cpp in Build Sources */,
+				40C49FE5AEC546E0382837C2 /* ModelIAQualityManager.cpp in Build Sources */,
+				C5A3074E4DBFF5FCE0FAB0E1 /* ModelIAThread.cpp in Build Sources */,
+				B8D8E09A14AC36944A0F9CAE /* ModelInstanceIAGfx.cpp in Build Sources */,
+				F5DD515031B2859CD7E196DA /* ClonerModder.cpp in Build Sources */,
+				BBFF97C61DADA0642F86A12F /* ClonerModder_Area_Mask.cpp in Build Sources */,
+				F1CB7585BF941B85661AA061 /* mersenne.cpp in Build Sources */,
+				76E0381549D15045F5203E5A /* PhaserModder.cpp in Build Sources */,
+				2CE3D5A1A46DA145095898FA /* PathGfxBuilder.cpp in Build Sources */,
+				94579CCE0FD02339E3F3F3C9 /* DebugGraphics.cpp in Build Sources */,
+				0CC393EE6804A74D798AAA09 /* Line3D.cpp in Build Sources */,
+				7D71FEC18DB0475992C77B09 /* OgreRenderer.cpp in Build Sources */,
+				51A4E1C871F3717733F6E60D /* ogreutility.cpp in Build Sources */,
+				764858171A432C08049D9351 /* ogreutility1.cpp in Build Sources */,
+				71143812161766C4DDD5A6D5 /* TextureRenderer.cpp in Build Sources */,
+				A5B18BBA91576E70BCB172A7 /* View.cpp in Build Sources */,
+				C76972A09FC36417E57D8431 /* ContextIO.cpp in Build Sources */,
+				04B6C932138FC53600954940 /* SelectionManagerGfx.cpp in Build Sources */,
+				04B6C933138FC53600954940 /* SelectionManagerGfxMesh.cpp in Build Sources */,
+				04B6C934138FC53600954940 /* SelectionManagerGfxMeshSplineHelper.cpp in Build Sources */,
+				048C821F1393D37100247229 /* SceneObjectGfxMesh.cpp in Build Sources */,
+				048C82341393D4CE00247229 /* BodyModderStair_simple.cpp in Build Sources */,
+				048C82581393E30600247229 /* lq.c in Build Sources */,
+				04E58C5613D01B6E00F88DD7 /* GfxModelEdit.cpp in Build Sources */,
+				04E58C6113D01BF100F88DD7 /* SceneLibrary.cpp in Build Sources */,
+				04E58C6713D01DD700F88DD7 /* ModelIO.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04B6C828138FAC9800954940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/mac/Desktop/anima/src/Anima.Core;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../lib\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../frrm\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../lib\"";
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCoreAnima.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGuiAnima.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtXmlAnima.framework/Versions/4/Headers,
+					/usr/include/QtXml,
+					/usr/include,
+					.,
+					Core,
+					DebugUtils,
+					Core/Edit,
+					Core/Action,
+					Core/Action/ActionModes,
+					Core/AnimParts,
+					Gfx,
+					Gfx/Render,
+					Physic,
+					Task,
+					Import/IO,
+					Core/Modders,
+					UI,
+					Core/IA,
+					Core/IA/OpenSteer,
+					Core/PathGfxBuilders,
+					Export,
+					Core/Command,
+					Import,
+					Ogre,
+					Gfx/GL,
+					../Anima.Import,
+					../../extlibs/OgreSDK/include/Ogre,
+					../../extlibs/OgreSDK/boost_1_42,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.6/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "@rpath";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Anima.Collision\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../Anima.Import\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../Anima.Render\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../Anima.Media\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../bin\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../../lib\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libAnimaCore;
+				SECTORDER_FLAGS = "";
+				USER_HEADER_SEARCH_PATHS = "../../lib/Ogre.framework/Headers ../../lib/boost_1_46_1";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		04B6C829138FAC9800954940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/mac/Desktop/anima/src/Anima.Core;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../lib\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../frrm\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../lib\"";
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCoreAnima.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGuiAnima.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtXmlAnima.framework/Versions/4/Headers,
+					/usr/include/QtXml,
+					/usr/include,
+					.,
+					Core,
+					DebugUtils,
+					Core/Edit,
+					Core/Action,
+					Core/Action/ActionModes,
+					Core/AnimParts,
+					Gfx,
+					Gfx/Render,
+					Physic,
+					Task,
+					Import/IO,
+					Core/Modders,
+					UI,
+					Core/IA,
+					Core/IA/OpenSteer,
+					Core/PathGfxBuilders,
+					Export,
+					Core/Command,
+					Import,
+					Ogre,
+					Gfx/GL,
+					../Anima.Import,
+					../../extlibs/OgreSDK/include/Ogre,
+					../../extlibs/OgreSDK/boost_1_42,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.6/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "@rpath";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Anima.Collision\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../Anima.Import\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../Anima.Render\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../Anima.Media\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../bin\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../../lib\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libAnimaCore;
+				SECTORDER_FLAGS = "";
+				USER_HEADER_SEARCH_PATHS = "../../lib/Ogre.framework/Headers ../../lib/boost_1_46_1";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		04B6C82A138FAC9800954940 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/mac/Desktop/anima/src/Anima.Core;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../lib\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../lib\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../frrm\"";
+				GCC_ENABLE_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtXml.framework/Versions/4/Headers,
+					/usr/include/QtXml,
+					/usr/include,
+					.,
+					Core,
+					DebugUtils,
+					Core/Edit,
+					Core/Action,
+					Core/Action/ActionModes,
+					Core/AnimParts,
+					Gfx,
+					Gfx/Render,
+					Physic,
+					Task,
+					Import/IO,
+					Core/Modders,
+					UI,
+					Core/IA,
+					Core/IA/OpenSteer,
+					Core/PathGfxBuilders,
+					Export,
+					Core/Command,
+					Import,
+					Ogre,
+					Gfx/GL,
+					../Anima.Import,
+					../../extlibs/OgreSDK/include/Ogre,
+					../../extlibs/OgreSDK/boost_1_42,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.6/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "@rpath";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Anima.Collision\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../Anima.Import\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../Anima.Render\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../Anima.Media\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../bin\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../../lib\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libAnimaCore;
+				SECTORDER_FLAGS = "";
+				USER_HEADER_SEARCH_PATHS = "../../lib/Ogre.framework/Headers ../../lib/boost_1_46_1";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_RELEASE,
+					NDEBUG,
+				);
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				INSTALL_PATH = "@rpath";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_LDFLAGS_QUOTED_FOR_PROJECT_2)",
+				);
+				OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1 = "\"../../lib/boost_1_46_1/lib/libboost_date_time-xgcc42-mt-1_46_1.a\"";
+				OTHER_LDFLAGS_QUOTED_FOR_PROJECT_2 = "\"../../lib/boost_1_46_1/lib/libboost_date_time-xgcc42-mt-1_46_1.a\"";
+				USER_HEADER_SEARCH_PATHS = "../../lib/Ogre.framework/Headers ../../lib/boost_1_46_1";
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_RELEASE,
+				);
+				INSTALL_PATH = "@rpath";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_LDFLAGS_QUOTED_FOR_PROJECT_2)",
+				);
+				OTHER_LDFLAGS_QUOTED_FOR_PROJECT_1 = "\"../../lib/boost_1_46_1/lib/libboost_date_time-xgcc42-mt-1_46_1.a\"";
+				OTHER_LDFLAGS_QUOTED_FOR_PROJECT_2 = "\"../../lib/boost_1_46_1/lib/libboost_date_time-xgcc42-mt-1_46_1.a\"";
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../lib/Ogre.framework/Headers ../../lib/boost_1_46_1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B6C82B138FACA200954940 /* Build configuration list for PBXNativeTarget "libAnimaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B6C828138FAC9800954940 /* Debug */,
+				04B6C829138FAC9800954940 /* Release */,
+				04B6C82A138FAC9800954940 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "AnimaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}
