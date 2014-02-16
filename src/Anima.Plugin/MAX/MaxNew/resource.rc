@@ -1,0 +1,307 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_SPECULAR_PANEL DIALOGEX 0, 0, 108, 97
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "Dull",IDC_STATIC,7,30,12,9,NOT WS_GROUP
+    CONTROL         "Custom1",IDC_SPEC_HEAD_SLIDER,"SliderControl",WS_TABSTOP,27,27,53,16
+    LTEXT           "Oily",IDC_STATIC,84,28,15,9,NOT WS_GROUP
+    CONTROL         "",IDC_SPEC_HEAD_EDIT,"CustEdit",WS_TABSTOP,45,14,20,10
+    RTEXT           "Rough",IDC_STATIC,3,74,22,9,NOT WS_GROUP
+    CONTROL         "Custom1",IDC_SPEC_BODY_SLIDER,"SliderControl",WS_TABSTOP,28,72,54,16
+    LTEXT           "Shiny",IDC_STATIC,83,73,19,9,NOT WS_GROUP
+    CONTROL         "",IDC_SPEC_BODY_EDIT,"CustEdit",WS_TABSTOP,46,59,20,10
+    GROUPBOX        "Head",IDC_STATIC,1,0,103,47
+    GROUPBOX        "Body",IDC_STATIC,1,48,103,46
+END
+
+ID_MAIN_PANEL DIALOGEX 0, 0, 108, 42
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+ID_DETAIL_PANEL DIALOGEX 0, 0, 108, 42
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "Dark",IDC_STATIC,9,20,19,9,NOT WS_GROUP
+    CONTROL         "Custom1",IDC_DETAIL_SLIDER,"SliderControl",WS_TABSTOP,31,21,53,16
+    LTEXT           "Light",IDC_STATIC,87,20,18,9,NOT WS_GROUP
+    CONTROL         "",IDC_DETAIL_EDIT,"CustEdit",WS_TABSTOP,44,7,20,10
+END
+
+ID_DISPLAY_PANEL DIALOGEX 0, 0, 108, 43
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "BBox",IDC_STATIC,3,20,18,16,NOT WS_GROUP
+    CONTROL         "Custom1",IDC_MODEL_SLIDER,"SliderControl",WS_TABSTOP,24,20,58,16
+    CONTROL         "",IDC_MODEL_EDIT,"CustEdit",WS_TABSTOP,44,7,20,10
+    RTEXT           "Mesh",IDC_STATIC,83,20,18,16,NOT WS_GROUP
+END
+
+ID_RENDERING_PANEL DIALOGEX 0, 0, 108, 61
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Renderable",IDC_RENDERABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,35,53,10
+    CONTROL         "Smoothing",IDC_SMOOTING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,49,10
+    CONTROL         "Off",IDC_RADIO_B_NONE,"Button",BS_AUTORADIOBUTTON,7,18,27,10
+    CONTROL         "Object",IDC_RADIO_B_OBJ,"Button",BS_AUTORADIOBUTTON,33,18,37,10
+    CONTROL         "Image",IDC_RADIO_B_IMG,"Button",BS_AUTORADIOBUTTON,71,17,35,10
+    LTEXT           "Motion Blur",IDC_STATIC,8,7,35,8
+END
+
+ID_UPDATE_PANEL DIALOGEX 0, 0, 111, 51
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Static",IDC_FILE_NAME,"Static",SS_LEFTNOWORDWRAP | WS_BORDER | WS_GROUP,3,5,90,13,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_BUTTON_FILE_BROWSE,96,4,12,14
+    PUSHBUTTON      "Reload",IDC_BUTTON_RELOAD,4,21,103,13
+    PUSHBUTTON      "Rebuild Materials",IDC_BUTTON_REBUILD,4,36,103,13
+END
+
+ID_INFO_PANEL DIALOGEX 0, 0, 108, 52
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "an(i)ma 1 for 3DS Max",IDC_STATIC,1,30,104,12,NOT WS_GROUP
+    CTEXT           "Copyright(c) aXYZ design 2012",IDC_STATIC,1,40,105,11,NOT WS_GROUP
+    CONTROL         103,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,106,29
+END
+
+IDD_PANEL DIALOGEX 0, 0, 108, 281
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_SIZE2,"CustEdit",WS_GROUP | WS_TABSTOP,56,8,36,10
+    CONTROL         "",IDC_TENSION,"CustEdit",WS_GROUP | WS_TABSTOP,56,22,36,10
+    CONTROL         "",IDC_RENDER,"CustEdit",WS_GROUP | WS_TABSTOP,56,48,36,10
+    CONTROL         "",IDC_VIEWPORT,"CustEdit",WS_GROUP | WS_TABSTOP,56,61,36,10
+    CONTROL         "Relative Coarseness",IDC_AUTOCOARSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,75,81,10
+    CONTROL         "Use Soft Selection",IDC_USESOFTSEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,94,75,10
+    CONTROL         "",IDC_MINSIZE,"CustEdit",WS_GROUP | WS_TABSTOP,56,107,36,10
+    CONTROL         "Large Data Optimization",IDC_OLDMETHOD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,123,94,11
+    CONTROL         "Off In Viewport",IDC_OFFINVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,138,63,10
+    LISTBOX         IDC_LIST1,7,164,93,84,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Pick",IDC_PICK,"CustButton",WS_TABSTOP,7,255,28,11
+    CONTROL         "Add",IDC_ADD,"CustButton",WS_TABSTOP,39,255,28,11
+    CONTROL         "Remove",IDC_REMOVE,"CustButton",WS_TABSTOP,70,255,31,11
+    CONTROL         "",IDC_TENSIONSPIN,"SpinnerControl",0x0,94,22,7,10
+    CONTROL         "",IDC_SIZE2SPIN,"SpinnerControl",0x0,94,8,7,10
+    CONTROL         "",IDC_RENDERSPIN,"SpinnerControl",0x0,94,48,7,10
+    CONTROL         "",IDC_VIEWPORTSPIN,"SpinnerControl",0x0,94,61,7,10
+    RTEXT           "Tension:",IDC_STATIC,26,22,28,8
+    RTEXT           "Render:",IDC_STATIC,28,48,26,8
+    RTEXT           "Size:",IDC_STATIC,20,8,34,8
+    RTEXT           "Viewport:",IDC_STATIC,24,61,30,8
+    RTEXT           "Evaluation Coarseness:",IDC_STATIC,16,35,75,8
+    GROUPBOX        "Blob Objects",IDC_STATIC,0,154,107,120
+    CONTROL         "",IDC_MINSIZESPIN,"SpinnerControl",0x0,94,107,7,10
+    RTEXT           "Min Size:",IDC_STATIC,20,107,34,8
+END
+
+IDD_PFPANEL DIALOGEX 0, 0, 108, 151
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "All Particle Flow Events",IDC_USEALLPF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,89,10
+    LISTBOX         IDC_PFLIST,7,34,93,84,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADDPF_EVENT_BUTTON,7,125,46,11
+    CONTROL         "Remove",IDC_PFREMOVE,"CustButton",WS_TABSTOP,55,125,46,11
+    GROUPBOX        "Particle Flow Events",-1,0,24,107,120
+END
+
+IDD_ADD_DIALOG DIALOGEX 0, 0, 144, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Particle Flow Events"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,37,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,170,50,14
+    LISTBOX         IDC_EVENTLIST,7,7,130,153,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+END
+
+ID_SCENE_INFO_PANEL DIALOGEX 0, 0, 108, 70
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Copyright(c) aXYZ design 2010\nsss",IDC_STATIC_SCENE_INFO,6,3,95,55,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ANIMA_LOGO          BITMAP                  "Logo_Alpha.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    ID_DETAIL_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 37
+    END
+
+    ID_DISPLAY_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 36
+    END
+
+    ID_RENDERING_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 57
+    END
+
+    ID_UPDATE_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ADDEVENTS           "Add Events"
+    IDS_OFFINVIEW           "Off In View"
+    IDS_SPECULAR_HEAD       "pippo"
+    IDS_ANIMA_TITLE         "Anima"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD                 "Add Blobs"
+    IDS_REMOVE_BLOB         "Remove Blob"
+    IDS_REMOVE              "Remove"
+    IDS_DISPLAY_PROPERTIES  "Display Properties"
+    IDS_RENDERING           "Rendering Control"
+    IDS_LIBDESCRIPTION      "AnimaMesh (Mio)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY            "Compound Objects"
+    IDS_CLASS_NAME          "MyBlobObject"
+    IDS_PARAMS              "Parameters"
+    IDS_SPIN                "Spin"
+    IDS_SIZE                "Size"
+    IDS_TENSION             "Tension"
+    IDS_RENDER              "Render"
+    IDS_COARSENESS          "Coarseness"
+    IDS_NODELIST            "Node List"
+    IDS_USESOFTSEL          "Use Soft Selection"
+    IDS_MINSIZE             "Min Size"
+    IDS_OLDMETHOD           "Large Data Set Optimization"
+    IDS_PFPARAM             "Particle Flow Parameters"
+    IDS_USEALLPFEVENTS      "Use All PF Events"
+    IDS_PFEVENTLIST         "PF Event List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CM_FILE_TYPES       "AXYZ Anima(*.ani)|*.ani|"
+    IDS_ANIMAFILENAME       "Select a Anima file"
+    IDS_MAX_MODEL           "Max model"
+    IDS_SCENE_PARAM_INFO    "Scene Information"
+    IDS_RENDERABLE          "Renderable"
+    IDS_SMOOTHING           "Smoothing"
+    IDS_BLURMODE            "Motion Blur"
+    IDS_EMBEDDED            "Embedded"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARAM_SPEC          "Specular Hightlights"
+    IDS_PARAM_DETAIL        "Textures RGB Level"
+    IDS_SPEC_HEAD           "Spec Head"
+    IDS_SPEC_BODY           "Spec Body"
+    IDS_DETAIL              "detail"
+    IDS_PARAM_UPDATE        "Update Options"
+    IDS_UPDATE_MODE         "UpdateMode"
+    IDS_PARAM_INFO          "Plugin info"
+    IDS_DS_FILENAME         ".."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

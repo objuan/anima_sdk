@@ -1,0 +1,8 @@
+LIBRARY
+EXPORTS
+	LW_API_Load
+	LW_API_DisplacementInit
+	LW_API_NewTime
+	LW_API_Clear
+	LW_API_DisplaceLWPoint
+

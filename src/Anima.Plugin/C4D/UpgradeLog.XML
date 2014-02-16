@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="animaC4D">
+</Property><Property Name="Solution File" Value="C:\Lavoro\anima\sdk\src\Anima.Plugin\C4D\animaC4D.sln">
+</Property><Property Name="Date" Value="venerdì 17 gennaio 2014">
+</Property><Property Name="Time" Value="21:19">
+</Property></Properties><Event ErrorLevel="0" Project="anima" Source="anima.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="2" Project="anima" Source="anima.vcproj" Description="The following error has occurred during XML parsing:&#xA;&#xA;File: C:\Lavoro\anima\sdk\src\Anima.Plugin\C4D\anima.vcproj&#xA;Line: 95&#xA;Column: 4&#xA;Error Message:&#xA;Property sheet file '..\..\resource\_api_lib\DebugWin64.vsprops' was not found or failed to load.&#xA;The file 'C:\Lavoro\anima\sdk\src\Anima.Plugin\C4D\anima.vcproj' has failed to load.">
+</Event><Event ErrorLevel="2" Project="anima" Source="anima.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="anima" Source="anima.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="_api" Source="..\..\resource\_api_lib\_api.vcproj" Description="Failed to upgrade project file 'C:\Lavoro\anima\sdk\src\resource\_api_lib\_api.vcproj'.  Please make sure the file exists and is not write-protected.">
+</Event><Event ErrorLevel="2" Project="_api" Source="..\..\resource\_api_lib\_api.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="_api" Source="..\..\resource\_api_lib\_api.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="PluginWrapper" Source="PluginWrapper.vcproj" Description="The following error has occurred during XML parsing:&#xA;&#xA;File: C:\Lavoro\anima\sdk\src\Anima.Plugin\C4D\PluginWrapper.vcproj&#xA;Line: 24&#xA;Column: 4&#xA;Error Message:&#xA;Property sheet file '..\..\resource\_api_lib\DebugWin32.vsprops' was not found or failed to load.&#xA;The file 'C:\Lavoro\anima\sdk\src\Anima.Plugin\C4D\PluginWrapper.vcproj' has failed to load.">
+</Event><Event ErrorLevel="2" Project="PluginWrapper" Source="PluginWrapper.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="PluginWrapper" Source="PluginWrapper.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="animaC4D.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="animaC4D.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,7 @@
+STRINGTABLE Xcolorweight
+{
+	Xcolorweight "Color Weight Shader";
+
+	COLORWEIGHT_COLOR 		"Color";
+	COLORWEIGHT_TEXTURE	"Texture";
+}

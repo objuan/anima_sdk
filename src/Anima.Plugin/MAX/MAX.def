@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+	MAX_API_DoImport
+	MAX_API_AnimaObjectClass
+	MAX_API_AnimaObjectSubMeshClass

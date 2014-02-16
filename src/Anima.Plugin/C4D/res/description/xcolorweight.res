@@ -1,0 +1,13 @@
+CONTAINER Xcolorweight
+{
+	NAME Xcolorweight;
+
+	INCLUDE Mpreview;
+	INCLUDE Xbase;
+
+	GROUP ID_SHADERPROPERTIES
+	{
+		COLOR COLORWEIGHT_COLOR 	{  }
+		SHADERLINK COLORWEIGHT_TEXTURE { }
+	}
+}

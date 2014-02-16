@@ -1,0 +1,8 @@
+// C4D-StringResource
+// Identifier	Text
+
+STRINGTABLE
+{
+  IDS_ANIMAOBJECT "an(i)ma Object";
+  IDS_ANIMAMESHOBJECT "an(i)ma Mesh";
+}

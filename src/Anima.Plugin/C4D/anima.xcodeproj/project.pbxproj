@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04AE764513D033A7000F4B38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AE763913D033A7000F4B38 /* main.cpp */; };
+		1237434514237C7700026CF0 /* AnimaIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237433C14237C7700026CF0 /* AnimaIncludes.h */; };
+		1237434614237C7700026CF0 /* AnimaMeshObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1237433D14237C7700026CF0 /* AnimaMeshObject.cpp */; };
+		1237434714237C7700026CF0 /* AnimaMeshObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237433E14237C7700026CF0 /* AnimaMeshObject.h */; };
+		1237434814237C7700026CF0 /* AnimaObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1237433F14237C7700026CF0 /* AnimaObject.cpp */; };
+		1237434914237C7700026CF0 /* AnimaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237434014237C7700026CF0 /* AnimaObject.h */; };
+		1237434A14237C7700026CF0 /* ColorWeightShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1237434114237C7700026CF0 /* ColorWeightShader.cpp */; };
+		1237434B14237C7700026CF0 /* ColorWeightShader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237434214237C7700026CF0 /* ColorWeightShader.h */; };
+		1237434C14237C7700026CF0 /* oldversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237434314237C7700026CF0 /* oldversions.h */; };
+		1237434D14237C7700026CF0 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1237434414237C7700026CF0 /* Utils.h */; };
+		12CDBE8D1407DD5D00B19C6C /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBE8C1407DD5D00B19C6C /* Ogre.framework */; };
+		12CDBE9C1407DE4700B19C6C /* BulkGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12CDBE931407DE4700B19C6C /* BulkGUI.cpp */; };
+		12CDBE9D1407DE4700B19C6C /* BulkGUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CDBE941407DE4700B19C6C /* BulkGUI.h */; };
+		12CDBEA41407DE5D00B19C6C /* QtCoreAnima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBEA01407DE5D00B19C6C /* QtCoreAnima.framework */; };
+		12CDBEA51407DE5D00B19C6C /* QtGuiAnima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBEA11407DE5D00B19C6C /* QtGuiAnima.framework */; };
+		12CDBEA61407DE5D00B19C6C /* QtNetworkAnima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBEA21407DE5D00B19C6C /* QtNetworkAnima.framework */; };
+		12CDBEA71407DE5D00B19C6C /* QtXmlAnima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBEA31407DE5D00B19C6C /* QtXmlAnima.framework */; };
+		12CDBEA91407DE6700B19C6C /* libAnimaCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CDBEA81407DE6700B19C6C /* libAnimaCore.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		65805F2D0851B32A0065CE1B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		26EDA6230FA303CF00050D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653A926E0858FEB50017BCBC /* _api.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26B036990E672B8000A14379;
+			remoteInfo = _api_stdmem;
+		};
+		657FF108085913EC00750201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653A926E0858FEB50017BCBC /* _api.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B7742C083D084C00F90C2D;
+			remoteInfo = _api;
+		};
+		657FF1C80859150C00750201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653A926E0858FEB50017BCBC /* _api.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B7742B083D084C00F90C2D;
+			remoteInfo = _api;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AE763913D033A7000F4B38 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		1237433C14237C7700026CF0 /* AnimaIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimaIncludes.h; sourceTree = SOURCE_ROOT; };
+		1237433D14237C7700026CF0 /* AnimaMeshObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimaMeshObject.cpp; sourceTree = SOURCE_ROOT; };
+		1237433E14237C7700026CF0 /* AnimaMeshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimaMeshObject.h; sourceTree = SOURCE_ROOT; };
+		1237433F14237C7700026CF0 /* AnimaObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimaObject.cpp; sourceTree = SOURCE_ROOT; };
+		1237434014237C7700026CF0 /* AnimaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimaObject.h; sourceTree = SOURCE_ROOT; };
+		1237434114237C7700026CF0 /* ColorWeightShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorWeightShader.cpp; sourceTree = SOURCE_ROOT; };
+		1237434214237C7700026CF0 /* ColorWeightShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWeightShader.h; sourceTree = SOURCE_ROOT; };
+		1237434314237C7700026CF0 /* oldversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oldversions.h; sourceTree = SOURCE_ROOT; };
+		1237434414237C7700026CF0 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = SOURCE_ROOT; };
+		12CDBE8C1407DD5D00B19C6C /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = ../../../../anima/lib/Ogre.framework; sourceTree = "<group>"; };
+		12CDBE931407DE4700B19C6C /* BulkGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulkGUI.cpp; sourceTree = SOURCE_ROOT; };
+		12CDBE941407DE4700B19C6C /* BulkGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulkGUI.h; sourceTree = SOURCE_ROOT; };
+		12CDBEA01407DE5D00B19C6C /* QtCoreAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCoreAnima.framework; path = ../../../../anima/lib/QtCoreAnima.framework; sourceTree = "<group>"; };
+		12CDBEA11407DE5D00B19C6C /* QtGuiAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGuiAnima.framework; path = ../../../../anima/lib/QtGuiAnima.framework; sourceTree = "<group>"; };
+		12CDBEA21407DE5D00B19C6C /* QtNetworkAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetworkAnima.framework; path = ../../../../anima/lib/QtNetworkAnima.framework; sourceTree = "<group>"; };
+		12CDBEA31407DE5D00B19C6C /* QtXmlAnima.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXmlAnima.framework; path = ../../../../anima/lib/QtXmlAnima.framework; sourceTree = "<group>"; };
+		12CDBEA81407DE6700B19C6C /* libAnimaCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAnimaCore.dylib; path = ../../../../anima/bin/libAnimaCore.dylib; sourceTree = "<group>"; };
+		653A926E0858FEB50017BCBC /* _api.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = _api.xcodeproj; path = ../../resource/_api_lib/_api.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6553A1DA0926F00F0034739A /* _api_debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = _api_debug.xcconfig; path = ../../resource/_api_lib/_api_debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		6553A1DB0926F00F0034739A /* _api_release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = _api_release.xcconfig; path = ../../resource/_api_lib/_api_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		65E51693083D10D0005BFD9A /* anima.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = anima.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65E51690083D10D0005BFD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDBE8D1407DD5D00B19C6C /* Ogre.framework in Frameworks */,
+				12CDBEA41407DE5D00B19C6C /* QtCoreAnima.framework in Frameworks */,
+				12CDBEA51407DE5D00B19C6C /* QtGuiAnima.framework in Frameworks */,
+				12CDBEA61407DE5D00B19C6C /* QtNetworkAnima.framework in Frameworks */,
+				12CDBEA71407DE5D00B19C6C /* QtXmlAnima.framework in Frameworks */,
+				12CDBEA91407DE6700B19C6C /* libAnimaCore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65636BD708E5922100FBAB34 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1237433C14237C7700026CF0 /* AnimaIncludes.h */,
+				1237433D14237C7700026CF0 /* AnimaMeshObject.cpp */,
+				1237433E14237C7700026CF0 /* AnimaMeshObject.h */,
+				1237433F14237C7700026CF0 /* AnimaObject.cpp */,
+				1237434014237C7700026CF0 /* AnimaObject.h */,
+				1237434114237C7700026CF0 /* ColorWeightShader.cpp */,
+				1237434214237C7700026CF0 /* ColorWeightShader.h */,
+				1237434314237C7700026CF0 /* oldversions.h */,
+				1237434414237C7700026CF0 /* Utils.h */,
+				12CDBE931407DE4700B19C6C /* BulkGUI.cpp */,
+				12CDBE941407DE4700B19C6C /* BulkGUI.h */,
+				04AE763913D033A7000F4B38 /* main.cpp */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		657FF105085913EC00750201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				657FF109085913EC00750201 /* lib_api_release.a */,
+				26EDA6240FA303CF00050D59 /* lib_api_stdmem_release.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E51686083D10D0005BFD9A = {
+			isa = PBXGroup;
+			children = (
+				12CDBEA81407DE6700B19C6C /* libAnimaCore.dylib */,
+				12CDBEA01407DE5D00B19C6C /* QtCoreAnima.framework */,
+				12CDBEA11407DE5D00B19C6C /* QtGuiAnima.framework */,
+				12CDBEA21407DE5D00B19C6C /* QtNetworkAnima.framework */,
+				12CDBEA31407DE5D00B19C6C /* QtXmlAnima.framework */,
+				12CDBE8C1407DD5D00B19C6C /* Ogre.framework */,
+				65636BD708E5922100FBAB34 /* source */,
+				65E516A4083D10D1005BFD9A /* _libs */,
+				65E51694083D10D0005BFD9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65E51694083D10D0005BFD9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E51693083D10D0005BFD9A /* anima.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E516A4083D10D1005BFD9A /* _libs */ = {
+			isa = PBXGroup;
+			children = (
+				6553A1DA0926F00F0034739A /* _api_debug.xcconfig */,
+				6553A1DB0926F00F0034739A /* _api_release.xcconfig */,
+				653A926E0858FEB50017BCBC /* _api.xcodeproj */,
+			);
+			name = _libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65E5168D083D10D0005BFD9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDBE9D1407DE4700B19C6C /* BulkGUI.h in Headers */,
+				1237434514237C7700026CF0 /* AnimaIncludes.h in Headers */,
+				1237434714237C7700026CF0 /* AnimaMeshObject.h in Headers */,
+				1237434914237C7700026CF0 /* AnimaObject.h in Headers */,
+				1237434B14237C7700026CF0 /* ColorWeightShader.h in Headers */,
+				1237434C14237C7700026CF0 /* oldversions.h in Headers */,
+				1237434D14237C7700026CF0 /* Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65E51692083D10D0005BFD9A /* anima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65450B66085517D80099394F /* Build configuration list for PBXNativeTarget "anima" */;
+			buildPhases = (
+				65E5168D083D10D0005BFD9A /* Headers */,
+				65E5168E083D10D0005BFD9A /* Sources */,
+				65E5168F083D10D0005BFD9A /* Resources */,
+				65E51690083D10D0005BFD9A /* Frameworks */,
+				65E51691083D10D0005BFD9A /* Rez */,
+			);
+			buildRules = (
+				65805F2D0851B32A0065CE1B /* PBXBuildRule */,
+			);
+			dependencies = (
+				657FF1C90859150C00750201 /* PBXTargetDependency */,
+			);
+			name = anima;
+			productName = "xtensions (Debug)";
+			productReference = 65E51693083D10D0005BFD9A /* anima.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65E5168A083D10D0005BFD9A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 65450B6A085517D90099394F /* Build configuration list for PBXProject "anima" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 65E51686083D10D0005BFD9A;
+			productRefGroup = 65E51694083D10D0005BFD9A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 657FF105085913EC00750201 /* Products */;
+					ProjectRef = 653A926E0858FEB50017BCBC /* _api.xcodeproj */;
+				},
+			);
+			projectRoot = ../../..;
+			targets = (
+				65E51692083D10D0005BFD9A /* anima */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26EDA6240FA303CF00050D59 /* lib_api_stdmem_release.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = lib_api_stdmem_debug.a;
+			remoteRef = 26EDA6230FA303CF00050D59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		657FF109085913EC00750201 /* lib_api_release.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = lib_api_debug.a;
+			remoteRef = 657FF108085913EC00750201 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65E5168F083D10D0005BFD9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		65E51691083D10D0005BFD9A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65E5168E083D10D0005BFD9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AE764513D033A7000F4B38 /* main.cpp in Sources */,
+				12CDBE9C1407DE4700B19C6C /* BulkGUI.cpp in Sources */,
+				1237434614237C7700026CF0 /* AnimaMeshObject.cpp in Sources */,
+				1237434814237C7700026CF0 /* AnimaObject.cpp in Sources */,
+				1237434A14237C7700026CF0 /* ColorWeightShader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		657FF1C90859150C00750201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = _api;
+			targetProxy = 657FF1C80859150C00750201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65450B67085517D80099394F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../anima/lib\"",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.7.sdk/System/Library/Frameworks\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../anima/bin\"",
+					"\"$(SRCROOT)/../../../../anima/lib/Ogre.framework\"",
+					"\"$(SRCROOT)/../../../../anima/lib/Ogre.framework/Versions/1.7.3\"",
+					"\"$(SRCROOT)/../../../../anima/lib\"",
+					"\"$(SRCROOT)/../../../../anima/lib/OgreSDK/lib/release\"",
+				);
+				SDKROOT = macosx10.6;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		65450B68085517D80099394F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../anima/lib\"",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.7.sdk/System/Library/Frameworks\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../anima/bin\"",
+					"\"$(SRCROOT)/../../../../anima/lib/Ogre.framework\"",
+					"\"$(SRCROOT)/../../../../anima/lib/Ogre.framework/Versions/1.7.3\"",
+					"\"$(SRCROOT)/../../../../anima/lib\"",
+					"\"$(SRCROOT)/../../../../anima/lib/OgreSDK/lib/release\"",
+				);
+				SDKROOT = macosx10.6;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		65450B6B085517D90099394F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6553A1DA0926F00F0034739A /* _api_debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				C4D_ROOTDIR = ../..;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/mac/Desktop/anima/sdk/lib,
+					"$(C4D_ROOTDIR)/resource/_api_lib",
+				);
+				OTHER_LDFLAGS = "$(C4D_ROOTDIR)/resource/_api_lib/lib_api_debug.a";
+				PREBINDING = NO;
+				PRODUCT_NAME = anima;
+				USER_HEADER_SEARCH_PATHS = "/Users/at2/Desktop/anima/lib/boost_1_46_1 /Users/at2/Desktop/anima/lib/Ogre.framework/Headers /Users/at2/Desktop/anima/lib/QtNetwork.framework/Headers /Users/at2/Desktop/anima/lib/QtXml.framework/Headers /Users/at2/Desktop/anima/lib/QtGui.framework/Headers /Users/at2/Desktop/anima/lib/QtCore.framework/Headers /Users/at2/Desktop/anima/sdk/src/Anima.Import /Users/at2/Desktop/anima/sdk/contrib/ogre/x32 /Users/at2/Desktop/anima/sdk/src/Anima.Core";
+			};
+			name = Debug;
+		};
+		65450B6C085517D90099394F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6553A1DB0926F00F0034739A /* _api_release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				C4D_ROOTDIR = ../..;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42; /*  linker error typeinfo for ShaderData, referenced from... to remove this error enable rtti in c4d _api_lib */
+				LIBRARY_SEARCH_PATHS = (
+					/Users/mac/Desktop/anima/sdk/lib,
+					"$(C4D_ROOTDIR)/resource/_api_lib",
+				);
+				OTHER_LDFLAGS = "$(C4D_ROOTDIR)/resource/_api_lib/lib_api_release.a";
+				PREBINDING = NO;
+				PRODUCT_NAME = anima;
+				USER_HEADER_SEARCH_PATHS = "/Users/at2/Desktop/anima/lib/boost_1_46_1 /Users/at2/Desktop/anima/lib/Ogre.framework/Headers /Users/at2/Desktop/anima/lib/QtNetwork.framework/Headers /Users/at2/Desktop/anima/lib/QtXml.framework/Headers /Users/at2/Desktop/anima/lib/QtGui.framework/Headers /Users/at2/Desktop/anima/lib/QtCore.framework/Headers /Users/at2/Desktop/anima/sdk/src/Anima.Import /Users/at2/Desktop/anima/sdk/contrib/ogre/x32 /Users/at2/Desktop/anima/sdk/src/Anima.Core";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65450B66085517D80099394F /* Build configuration list for PBXNativeTarget "anima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65450B67085517D80099394F /* Debug */,
+				65450B68085517D80099394F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65450B6A085517D90099394F /* Build configuration list for PBXProject "anima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65450B6B085517D90099394F /* Debug */,
+				65450B6C085517D90099394F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65E5168A083D10D0005BFD9A /* Project object */;
+}

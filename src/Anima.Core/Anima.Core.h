@@ -474,6 +474,7 @@ void __NotifyDelete(BObject *pointer);
 
 // per ogre 1.7
 #define OGRE_17
+#define OGRE_VERSION_17
 #define _getUserAny(e) e->getUserObjectBindings().getUserAny()
 #define _setUserAny(e,v) e->getUserObjectBindings().setUserAny(Ogre::Any(v))
 
