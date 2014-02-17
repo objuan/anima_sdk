@@ -46,21 +46,24 @@ Anima::ModelExporterRenderType GetCurrentRender(Interface *globalInt)
 	Class_ID renClass = ren->ClassID();
 	MSTR s;
 	ren->GetClassName (s);
-	QString ms = _MQ(s);
-	for(int i=0;i<14;i+=2)
+	QString ms = _MQ(s).toUpper();
+	Anima::_LogDebug(QString("Render: '%1'").arg(ms),__FUNCTION__,__LINE__);
+
+	/*for(int i=0;i<14;i+=2)
 	{
 		if (ms == map[i] || ms.startsWith(map[i], Qt::CaseInsensitive)) 
 		{
 			sendMaterialEvent=true;
 			return map[i+1];
 		}
-	}
+	}*/
 	sendMaterialEvent=true;
-#ifdef MAX2014
-	return "NVIDIA MENTAL RAY";
-#else
-	return map[1];
-#endif
+	return ms;
+//#ifdef MAX2014
+//	return "NVIDIA MENTAL RAY";
+//#else
+//	return map[1];
+//#endif
 }
 
 void MeshObject::CheckMaterial()

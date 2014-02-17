@@ -275,7 +275,7 @@
     <Link>
       <AdditionalDependencies>bmm.lib;comctl32.lib;core.lib;paramblk2.lib;geom.lib;gfx.lib;maxutil.lib;mesh.lib;QtGuiAnima_x64_4.lib;QtCoreAnima_x64_4.lib;QtXmlAnima_x64_4.lib;OgreMain.lib;Anima.Core_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\x64\Anima.MAX2014_x64.dll</OutputFile>
-      <AdditionalLibraryDirectories>../../../lib/x64;$(MAX2014_SDK)\lib\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../../../lib/x64;$(MAX2014_SDK)\lib\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>MAX.def</ModuleDefinitionFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
